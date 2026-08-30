@@ -1,0 +1,33 @@
+{
+ "beta_real": -0.02959546280140025,
+ "se_real": 0.10610271987294692,
+ "reps": 1000,
+ "n_planets": 2135,
+ "ess": 1644.987404492584,
+ "seed": 20260826,
+ "generated_by": "colab_highrep_gate_fast_v3.py",
+ "execution": "process_pool_exact_rng",
+ "workers": 2,
+ "batch_size": 8,
+ "reps_completed": {
+  "null": 1000,
+  "signal": 1000
+ },
+ "null": {
+  "median": -0.01855849360393125,
+  "q025": -0.24763807780858463,
+  "q975": 0.2245704752421164,
+  "pct_rank_of_real": 0.456
+ },
+ "signal": {
+  "median": -0.13653333397213901,
+  "q025": -0.38981131180392004,
+  "q975": 0.08363177981708804,
+  "pct_rank_of_real": 0.812
+ },
+ "verdict": {
+  "distinguishable_from_null": false,
+  "consistent_with_signal": true,
+  "PASS": false
+ }
+}

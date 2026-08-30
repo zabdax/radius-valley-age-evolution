@@ -1,0 +1,6 @@
+AU Mic       lit_age=   22 Myr  vtan=  21.0 km/s
+TOI 1227     lit_age=    8 Myr  vtan=  33.9 km/s
+K2-25        lit_age=  650 Myr  vtan=  26.3 km/s
+
+Spearman(log age_literature, vtan) n=3: rho=-0.50 p=0.667
+Spearman(log gyro age, vtan)  n=12: rho=0.12 p=0.712

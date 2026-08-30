@@ -1,0 +1,54 @@
+#
+#   VizieR Astronomical Server vizier.cds.unistra.fr
+#    Date: 2026-08-26T13:04:32 [V7.6]
+#   In case of problem, please report to:	cds-question@unistra.fr
+#
+#
+#Coosys	J2000:	eq_FK5 J2000
+#INFO	service_protocol=ASU	  IVOID of the protocol through which the data was retrieved
+#INFO	request_date=2026-08-26T13:04:32	  Query execution date
+#INFO	request=https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J%2fAJ%2f160%2f108&-out.max=2	  Full request URL
+#INFO	contact=cds-question@unistra.fr	  Email or URL to contact publisher
+#INFO	server_software=VizieR/7.6	  Software version
+#INFO	publisher=CDS	  Data centre that produced the VOTable
+
+#RESOURCE=yCat_51600108
+#Name: J/AJ/160/108
+#Title: Gaia-Kepler stellar properties catalog. II. Planets (Berger+, 2020)
+#INFO	ivoid=ivo://cds.vizier/j/aj/160/108	    IVOID of underlying data collection
+#INFO	data_ivoid=ivo://cds.vizier/j/aj/160/108	    IVOID of underlying data collection
+#INFO	creator=Berger T.A.	    First author or institution
+#INFO	cites=bibcode:2020AJ....160..108B	    Article or Data origin sources
+#INFO	journal=AJ	    Journal name
+#INFO	original_date=2020	    Year of the article publication
+#INFO	reference_url=https://cdsarc.cds.unistra.fr/viz-bin/cat/J/AJ/160/108	    Dataset landing page
+#INFO	citation=doi:10.26093/cds/vizier.51600108	    Dataset identifier that can be used for citation
+#INFO	publication_date=2022-06-03	    Date of first publication in the data centre
+#INFO	rights_uri=https://cds.unistra.fr/vizier-org/licences_vizier.html	    Licence URI
+#Table	J_AJ_160_108_table1:
+#Name: J/AJ/160/108/table1
+#Title: Planet parameters
+#Column	KIC	(I8)	Kepler input catalog identifier	[ucd=meta.id;meta.main]
+#Column	KOI	(F7.2)	Kepler object of interest planet ID	[ucd=meta.id.assoc]
+#Column	KOIs	(I3)	Display data from Kepler planetary candidates (J/ApJS/217/31) within 5"	[ucd=meta.ref.url]
+#Column	PD	(A9)	Planet Disposition (1878 candidates and 2020 confirmed)	[ucd=meta.code]
+#Column	Radius	(F8.2)	[0.28/77247] Planet Radius	[ucd=phys.size.radius]
+#Column	E_Radius	(F8.2)	[0.01/33204] Upper uncertainty on Radius	[ucd=stat.error;stat.max]
+#Column	e_Radius	(F8.2)	[0.01/22537] Lower uncertainty on Radius	[ucd=stat.error;phys.size.radius]
+#Column	a	(F7.4)	[0.006/2.76]? Semi-major axis	[ucd=phys.angSize.smajAxis;src.orbital]
+#Column	E_a	(F7.4)	[0.0001/0.14]? Upper uncertainty on a	[ucd=stat.error;stat.max]
+#Column	e_a	(F7.4)	[0.0001/0.14]? Lower uncertainty on a	[ucd=stat.error]
+#Column	Flux	(F9.2)	[0.03/165894]? Incident Flux	[ucd=phot.flux]
+#Column	E_Flux	(F8.2)	[0/17898]? Upper uncertainty on Flux	[ucd=stat.error;stat.max]
+#Column	e_Flux	(F8.2)	[0/13972]? Lower uncertainty on Flux	[ucd=stat.error;phot.flux]
+#Column	ZAMSFlux	(F9.2)	[0.02/104977] Zero Age Main Sequence flux	[ucd=phot.flux]
+#Column	Flag	(a13)	Interesting Object Flag (1)	[ucd=meta.code.error]
+#Column	SimbadName	(A12)	Simbad column added by the CDS	[ucd=meta.id]
+#Column	_RA	(F9.5)	Positions of the star from SIMBAD (right ascension part)	[ucd=pos.eq.ra;meta.main]
+#Column	_DE	(F9.5)	Positions of the star from SIMBAD (declination part)	[ucd=pos.eq.dec;meta.main]
+KIC	KOI	KOIs	PD	Radius	E_Radius	e_Radius	a	E_a	e_a	Flux	E_Flux	e_Flux	ZAMSFlux	Flag	SimbadName	_RA	_DE
+ 	 	 	 	Rgeo	Rgeo	Rgeo	au	au	au	Earth	Earth	Earth	Earth	 	 	deg	deg
+--------	-------	---	---------	--------	--------	--------	-------	-------	-------	---------	--------	--------	---------	-------------	------------	---------	---------
+11446443	   1.01	  0	CONFIRMED	   14.21	    0.29	    0.29	 0.0355	 0.0008	 0.0008	   854.78	   69.34	   64.81	   524.75	AO           	KIC 11446443	286.80849	+49.31641
+10666592	   2.01	  0	CONFIRMED	   16.45	    0.35	    0.34	 0.0381	 0.0005	 0.0006	  4285.95	  331.23	  336.99	  2394.68	AO           	KIC 10666592	292.24731	+47.96950
+

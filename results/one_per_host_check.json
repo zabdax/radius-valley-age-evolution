@@ -1,0 +1,43 @@
+{
+ "protocol": "13_calibration_fgk: FGK, Kepler-only, trim 0.95, fixed_su sandwich SE, per-IQR beta",
+ "selection_primary": "largest planet per host (max pl_rade)",
+ "selection_sensitivity": "random planet per host, seed 20260829",
+ "reps_null": 120,
+ "smoke": false,
+ "full": {
+  "n_planets": 2135,
+  "n_hosts": 1588,
+  "ess": 1644.987404492584,
+  "beta_per_iqr": -0.029595804682207197,
+  "se_per_iqr": 0.10610266655040212,
+  "z": -0.27893554087208783
+ },
+ "one_per_host_largest": {
+  "n_planets": 1588,
+  "n_hosts": 1588,
+  "ess": 1232.4943402245449,
+  "beta_per_iqr": -0.04071574642761672,
+  "se_per_iqr": 0.12340562945455179,
+  "z": -0.32993427129360936,
+  "se_ratio_vs_full": 1.1630775499495125,
+  "null_gate": {
+   "reps": 120,
+   "median": -0.02234557500551163,
+   "q025": -0.2955680167793811,
+   "q975": 0.1918869890894043,
+   "pct_rank_of_real": 0.43333333333333335,
+   "p_upper": 0.5666666666666667,
+   "distinguishable_from_null": false
+  },
+  "verdict": "FAIL(inconclusive)"
+ },
+ "one_per_host_random": {
+  "n_planets": 1588,
+  "n_hosts": 1588,
+  "ess": 1216.3720740149727,
+  "beta_per_iqr": -0.03965108264455715,
+  "se_per_iqr": 0.12147137228563996,
+  "z": -0.32642327075483774,
+  "se_ratio_vs_full": 1.1448474975691325
+ }
+}

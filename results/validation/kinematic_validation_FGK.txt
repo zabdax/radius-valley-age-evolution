@@ -1,0 +1,6 @@
+HIP 67522    lit_age=   17 Myr  vtan=   6.0 km/s
+TOI 1227     lit_age=    8 Myr  vtan=  49.2 km/s
+K2-25        lit_age=  650 Myr  vtan= 100.0 km/s
+K2-136       lit_age=  550 Myr  vtan=  25.1 km/s
+
+Spearman(log age_literature, vtan) n=4: rho=0.40 p=0.600

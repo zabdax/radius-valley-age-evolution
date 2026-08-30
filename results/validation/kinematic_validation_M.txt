@@ -1,0 +1,9 @@
+AU Mic       lit_age=   22 Myr  vtan=  21.0 km/s
+HIP 67522    lit_age=   17 Myr  NOT IN SAMPLE
+DS Tuc       lit_age=   40 Myr  NOT IN SAMPLE
+TOI 1227     lit_age=    8 Myr  NOT IN SAMPLE
+K2-25        lit_age=  650 Myr  vtan=  26.3 km/s
+K2-136       lit_age=  550 Myr  NOT IN SAMPLE
+
+anchor coverage too thin for Spearman (n=2)
+Spearman(log gyro age, vtan)  n=12: rho=0.25 p=0.430

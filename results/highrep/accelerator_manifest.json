@@ -1,0 +1,13 @@
+{
+ "script": "colab_highrep_gate_fast_v3.py",
+ "gate_reps": 1000,
+ "grid_reps": 500,
+ "workers": 2,
+ "executor": "process",
+ "batch_size": 8,
+ "grid_budget_hours": 5.0,
+ "drive_persistence_verified": true,
+ "rng_stream": "original serial order preserved",
+ "model_spec_unchanged": true,
+ "note": "Synthetic generation serial; fitting parallelized (process pool by default)."
+}

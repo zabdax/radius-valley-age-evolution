@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code, data, or results, please cite the accompanying manuscript and this repository."
+title: "The Radius Valley's Age Evolution Around M Dwarfs: An Inconclusive Verdict and a Quantified Path Forward"
+authors:
+  - family-names: Shaad
+    given-names: Zubayer Hasan
+    orcid: "https://orcid.org/0009-0002-2322-8553"
+  - name: "The Radius Valley Age Evolution Collaboration"
+version: 1.0.0
+date-released: "2026-08-30"
+license: MIT
+repository-code: "https://github.com/zabdax/radius-valley-age-evolution"
+abstract: "A calibrated statistical gate (null- and signal-injected Monte Carlo ensembles) applied to the FGK radius-valley age-evolution control and the M-dwarf regime, with a 15-cell power grid quantifying the sample size and age-precision requirements for resolution."
+keywords:
+  - exoplanets
+  - radius valley
+  - M dwarf stars
+  - astrostatistics

@@ -1,0 +1,16 @@
+{
+ "reps": 500,
+ "next_rep": 500,
+ "alpha": 0.14366216026246548,
+ "rng_state": {
+  "bit_generator": "PCG64",
+  "state": {
+   "state": 87773501537116315303225898205691791519,
+   "inc": 53709909391944472686487603281063924259
+  },
+  "has_uint32": 1,
+  "uinteger": 3387704378
+ },
+ "seed": 2200,
+ "mode": "process_pool_exact_rng"
+}

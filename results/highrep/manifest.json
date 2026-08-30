@@ -1,0 +1,14 @@
+{
+ "generated_by": "colab_highrep_gate_fast_v3.py",
+ "gate_reps_per_arm": 1000,
+ "grid_reps_per_cell": 500,
+ "grid_budget_hours": 5.0,
+ "workers": 2,
+ "executor": "process",
+ "batch_size": 8,
+ "grid_skipped_cells": [],
+ "elapsed_hours": 6.0348035832246145,
+ "drive_output": "/content/drive/MyDrive/mdwarf_radius_valley_highrep_fast_v3",
+ "model_spec_unchanged": true,
+ "rng_stream_exact": true
+}

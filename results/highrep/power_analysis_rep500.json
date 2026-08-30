@@ -1,0 +1,137 @@
+[
+ {
+  "scale": "0.5x",
+  "effect": "null",
+  "beta_inj": 0.0,
+  "reps": 500,
+  "detect_rate": 0.072,
+  "coverage": 0.928,
+  "median_beta_hat": 0.00372171534705545
+ },
+ {
+  "scale": "0.5x",
+  "effect": "SWEET",
+  "beta_inj": -0.14,
+  "reps": 500,
+  "detect_rate": 0.09,
+  "coverage": 0.954,
+  "median_beta_hat": -0.12344559457989634
+ },
+ {
+  "scale": "0.5x",
+  "effect": "strong",
+  "beta_inj": -0.28,
+  "reps": 500,
+  "detect_rate": 0.162,
+  "coverage": 0.91,
+  "median_beta_hat": -0.21655638689699225
+ },
+ {
+  "scale": "1x",
+  "effect": "null",
+  "beta_inj": 0.0,
+  "reps": 500,
+  "detect_rate": 0.082,
+  "coverage": 0.918,
+  "median_beta_hat": -0.0038299159577963498
+ },
+ {
+  "scale": "1x",
+  "effect": "SWEET",
+  "beta_inj": -0.14,
+  "reps": 500,
+  "detect_rate": 0.094,
+  "coverage": 0.918,
+  "median_beta_hat": -0.10339543807661655
+ },
+ {
+  "scale": "1x",
+  "effect": "strong",
+  "beta_inj": -0.28,
+  "reps": 500,
+  "detect_rate": 0.27,
+  "coverage": 0.888,
+  "median_beta_hat": -0.21544161926497524
+ },
+ {
+  "scale": "2x",
+  "effect": "null",
+  "beta_inj": 0.0,
+  "reps": 500,
+  "detect_rate": 0.052,
+  "coverage": 0.948,
+  "median_beta_hat": -0.00987347186083245
+ },
+ {
+  "scale": "2x",
+  "effect": "SWEET",
+  "beta_inj": -0.14,
+  "reps": 500,
+  "detect_rate": 0.136,
+  "coverage": 0.912,
+  "median_beta_hat": -0.09519330979706256
+ },
+ {
+  "scale": "2x",
+  "effect": "strong",
+  "beta_inj": -0.28,
+  "reps": 500,
+  "detect_rate": 0.388,
+  "coverage": 0.894,
+  "median_beta_hat": -0.21219599412945167
+ },
+ {
+  "scale": "4x",
+  "effect": "null",
+  "beta_inj": 0.0,
+  "reps": 500,
+  "detect_rate": 0.056,
+  "coverage": 0.944,
+  "median_beta_hat": -0.00026347019350899797
+ },
+ {
+  "scale": "4x",
+  "effect": "SWEET",
+  "beta_inj": -0.14,
+  "reps": 500,
+  "detect_rate": 0.188,
+  "coverage": 0.908,
+  "median_beta_hat": -0.103806123825573
+ },
+ {
+  "scale": "4x",
+  "effect": "strong",
+  "beta_inj": -0.28,
+  "reps": 500,
+  "detect_rate": 0.502,
+  "coverage": 0.884,
+  "median_beta_hat": -0.21453094012637064
+ },
+ {
+  "scale": "8x",
+  "effect": "null",
+  "beta_inj": 0.0,
+  "reps": 500,
+  "detect_rate": 0.072,
+  "coverage": 0.928,
+  "median_beta_hat": -0.006522081677657301
+ },
+ {
+  "scale": "8x",
+  "effect": "SWEET",
+  "beta_inj": -0.14,
+  "reps": 500,
+  "detect_rate": 0.232,
+  "coverage": 0.914,
+  "median_beta_hat": -0.1150705651795875
+ },
+ {
+  "scale": "8x",
+  "effect": "strong",
+  "beta_inj": -0.28,
+  "reps": 500,
+  "detect_rate": 0.606,
+  "coverage": 0.852,
+  "median_beta_hat": -0.2160195241298799
+ }
+]

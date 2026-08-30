@@ -1,0 +1,23 @@
+{
+ "reps": 1000,
+ "done": {
+  "null": 1000,
+  "signal": 1000
+ },
+ "alpha": {
+  "null": -0.708347775042057,
+  "signal": -0.708347775042057
+ },
+ "next_rep": 1000,
+ "arm": "signal",
+ "rng_state": {
+  "bit_generator": "PCG64",
+  "state": {
+   "state": 116082732632456079626559337143341806778,
+   "inc": 252525158552028846429020611706745890935
+  },
+  "has_uint32": 0,
+  "uinteger": 1442245148
+ },
+ "mode": "process_pool_exact_rng"
+}

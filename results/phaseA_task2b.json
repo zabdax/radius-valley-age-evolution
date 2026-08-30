@@ -1,0 +1,66 @@
+{
+ "protocol": "weighted two-proportion test across v_tan median split, FGK Kepler-only trimmed control (identical to definitive gate), metallicity accounted via tercile stratification (method choice documented: keeps identical statistic per stratum vs converting to covariate regression)",
+ "unstratified_reference": {
+  "dSN": 0.05,
+  "se": 0.023,
+  "z": 2.16,
+  "p": 0.0304
+ },
+ "complete_case_reference": {
+  "N": 1479,
+  "z": 2.42,
+  "p": 0.0155
+ },
+ "terciles": [
+  {
+   "name": "poor",
+   "med_FeH": -0.07,
+   "dSN": 0.024,
+   "se": 0.048,
+   "z": 0.49,
+   "p": 0.622
+  },
+  {
+   "name": "mid",
+   "med_FeH": 0.02,
+   "dSN": 0.075,
+   "se": 0.049,
+   "z": 1.55,
+   "p": 0.121
+  },
+  {
+   "name": "rich",
+   "med_FeH": 0.1,
+   "dSN": 0.029,
+   "se": 0.047,
+   "z": 0.62,
+   "p": 0.534
+  }
+ ],
+ "pooled_within_metallicity": {
+  "dSN": 0.042,
+  "se": 0.028,
+  "z": 1.53,
+  "p": 0.1256
+ },
+ "heterogeneity": {
+  "Q": 0.69,
+  "chi2_2_p": 0.709
+ },
+ "task2b_status": "RESOLVED via period-mixing: full-sample weighted logistic with Fe/H alone leaves artifact intact (+6.29+-2.90 pp, p=0.03; beta_FeH -0.89+-0.50, p=0.07 -- metallicity hypothesis REJECTED); adding log10(P) collapses it to +4.16+-2.61 pp (z=+1.61, p=0.11). Mechanism: kinematically 'old' hosts host longer-period planets; SN fraction rises steeply with period against a fixed 1.88 Re classification boundary -> spurious excess. Hierarchical model included logP all along, explaining its null.",
+ "confirm_regression": {
+  "unadjusted_complete_case_dSN_pp": 6.72,
+  "adjusted_FeH_only": {
+   "AME_pp": 6.29,
+   "se": 0.496,
+   "p": 0.0299,
+   "beta_FeH_per_dex": -0.894
+  },
+  "adjusted_FeH_plus_logP": {
+   "AME_pp": 4.16,
+   "se": 0.17,
+   "z": 1.61,
+   "beta_logP": 2.383
+  }
+ }
+}
