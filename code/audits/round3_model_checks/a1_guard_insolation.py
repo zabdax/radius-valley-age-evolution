@@ -4,7 +4,7 @@ import pathlib, sys
 import numpy as np
 import pandas as pd
 
-D = pathlib.Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data")
+D = pathlib.Path(__file__).resolve().parents[3] / "data"
 
 def load(tag, kin_col="vtan"):
     pl = pd.read_csv(D / f"planet_sample_{tag}.csv")

@@ -33,7 +33,7 @@ except Exception:
     BODY_BOLD = "Times-Bold"
     BODY_ITALIC = "Times-Italic"
 
-base_dir = Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley")
+base_dir = Path(__file__).resolve().parents[2]
 fig_dir = base_dir / "figures"
 out_pdf = base_dir / "PAPER_PUBLICATION.pdf"
 

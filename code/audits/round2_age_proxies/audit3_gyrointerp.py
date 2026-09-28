@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from gyrointerp.gyro_posterior import gyro_age_posterior
 
-D = pathlib.Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data")
+D = pathlib.Path(__file__).resolve().parents[3] / "data"
 GRID = np.linspace(0, 3000, 500) / 1000.0
 
 def age_from_posterior(prot, teff):

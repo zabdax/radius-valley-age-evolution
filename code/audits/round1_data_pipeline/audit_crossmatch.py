@@ -4,10 +4,11 @@
 (d) 06 resume-read crash reproduction."""
 import numpy as np
 import pandas as pd
+from pathlib import Path
 import astropy.units as u
 from astropy.coordinates import SkyCoord
 
-D = "C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data/"
+D = str(Path(__file__).resolve().parents[3] / "data") + "/"
 names = ["hostname", "source_id", "ra", "dec", "parallax", "pmra", "pmdec",
          "radial_velocity", "phot_bp_mean_mag", "phot_rp_mean_mag",
          "phot_g_mean_mag"]

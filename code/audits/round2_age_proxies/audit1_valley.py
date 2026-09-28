@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import fisher_exact
 
-D = pathlib.Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data")
+D = pathlib.Path(__file__).resolve().parents[3] / "data"
 
 m = pd.read_csv(D / "planet_sample_M.csv")
 f = pd.read_csv(D / "planet_sample_FGK.csv")

@@ -3,9 +3,10 @@ pandas header behavior, groupby.first() risk, merge-loss identity."""
 import io
 import numpy as np
 import pandas as pd
+from pathlib import Path
 from scipy.stats import fisher_exact, spearmanr
 
-D = "C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data/"
+D = str(Path(__file__).resolve().parents[3] / "data") + "/"
 
 # --- pandas names/header behavior (07.load_gaia latent hazard) ---
 buf = "hostname,num\nAU Mic,1\n"

@@ -6,7 +6,7 @@ import pandas as pd
 from scipy.special import erf, expit, logsumexp
 from scipy.optimize import minimize
 
-ROOT = pathlib.Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley")
+ROOT = pathlib.Path(__file__).resolve().parents[3]
 D = ROOT/"data"; R = ROOT/"results"
 sys.path.insert(0, str(ROOT/"code"))
 import importlib.util

@@ -4,7 +4,7 @@ import pathlib, sys
 import numpy as np
 import pandas as pd
 
-ROOT = pathlib.Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley")
+ROOT = pathlib.Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT/"code"))
 import importlib.util
 spec = importlib.util.spec_from_file_location("h9", ROOT/"code"/"09_hierarchical_model.py")

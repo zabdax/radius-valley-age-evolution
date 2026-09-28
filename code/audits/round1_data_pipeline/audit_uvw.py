@@ -2,11 +2,12 @@
 AU Mic sanity check, independent Johnson&Soderblom-style computation."""
 import numpy as np
 import pandas as pd
+from pathlib import Path
 import astropy.units as u
 from astropy.coordinates import SkyCoord
 from astropy.coordinates import Galactic
 
-D = "C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data/"
+D = str(Path(__file__).resolve().parents[3] / "data") + "/"
 
 g = pd.read_csv(D + "gaia_hosts_M.csv", skiprows=1,
                 names=["hostname", "source_id", "ra", "dec", "parallax",

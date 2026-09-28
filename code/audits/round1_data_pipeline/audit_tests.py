@@ -1,9 +1,10 @@
 """Audit part 1: Tests A/C/C2 recompute, merge cardinality, anchor matching."""
 import numpy as np
 import pandas as pd
+from pathlib import Path
 from scipy.stats import fisher_exact, spearmanr
 
-D = "C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data/"
+D = str(Path(__file__).resolve().parents[3] / "data") + "/"
 VALLEY_M = 1.85
 
 m = pd.read_csv(D + "planet_sample_M.csv")

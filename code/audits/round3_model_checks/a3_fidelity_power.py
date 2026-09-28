@@ -6,7 +6,7 @@ import numpy as np
 import pandas as pd
 from scipy.stats import ks_2samp
 
-ROOT = pathlib.Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley")
+ROOT = pathlib.Path(__file__).resolve().parents[3]
 sys.path.insert(0, str(ROOT/"code"))
 import importlib.util
 spec = importlib.util.spec_from_file_location("pw", ROOT/"code"/"11_power_analysis.py")

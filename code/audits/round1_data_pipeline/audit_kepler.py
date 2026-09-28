@@ -1,9 +1,10 @@
 import numpy as np
 import pandas as pd
+from pathlib import Path
 from astropy.coordinates import SkyCoord
 import astropy.units as u
 
-D = "C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data/"
+D = str(Path(__file__).resolve().parents[3] / "data") + "/"
 names = ["hostname", "source_id", "ra", "dec", "parallax", "pmra", "pmdec",
          "radial_velocity", "phot_bp_mean_mag", "phot_rp_mean_mag",
          "phot_g_mean_mag"]

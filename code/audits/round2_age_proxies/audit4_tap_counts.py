@@ -8,7 +8,7 @@ import urllib.request
 import pandas as pd
 
 BASE = "https://exoplanetarchive.ipac.caltech.edu/TAP/sync"
-D = pathlib.Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data")
+D = pathlib.Path(__file__).resolve().parents[3] / "data"
 
 CUTS = ("default_flag=1 AND pl_controv_flag=0 "
         "AND discoverymethod='Transit' "

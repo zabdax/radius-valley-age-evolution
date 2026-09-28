@@ -6,7 +6,7 @@ import pathlib
 import numpy as np
 import pandas as pd
 
-D = pathlib.Path("C:/Users/MIT/Downloads/Astro_research_ASGSR/mdwarf_radius_valley/data")
+D = pathlib.Path(__file__).resolve().parents[3] / "data"
 
 # ---- replicate 05 parser exactly ----
 rows = []
