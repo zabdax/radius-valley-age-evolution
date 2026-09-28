@@ -1,4 +1,4 @@
-# 🪐 The Radius Valley's Age Evolution Around M Dwarfs
+# The Radius Valley's Age Evolution Around M Dwarfs
 
 ![Python](https://img.shields.io/badge/python-%3E%3D3.10-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -22,16 +22,22 @@ it will take.
 > Regenerate with `python figures/make_overview.py`. Alt text: three-panel
 > summary described above; data in `results/highrep/` + `data/`.
 
-## ✨ Why this repo stands out
+![Gate convergence animation: distributions accumulate to 45.6% / 81.2%](figures/gate_convergence.gif)
 
-- 🔒 **Frozen + checksummed data** — every number reproduces offline (`sha256sum -c data/checksums.sha256`)
-- 🧪 **Calibrated gate, not a single fit** — 2,000 high-replicate injections (1,000 null + 1,000 signal)
-- 📊 **7,500-replicate power grid** — 15 cells × 500, with 95% CIs on every point
-- 🔍 **Independent audit** — `results/colab_audit/AUDIT_REPORT.md` + re-runnable `code/audit_highrep.py`
-- 📝 **Publication figures + revision log** — `manuscript/` (figures, `REVISION_NOTES.md`; `.tex` source withheld until publication)
-- 🖼️ **Publication figures + hero overview** — `figures/` (all regenerable from raw CSVs)
+> Animation: the calibrated gate converging as replicates accumulate
+> (40/arm per frame, recorded order) to the published percentiles.
+> Regenerate with `python figures/make_gate_animation.py`.
 
-## 🎯 Headline results (authoritative high-replicate run)
+## Why this repo stands out
+
+- **Frozen + checksummed data** — every number reproduces offline (`sha256sum -c data/checksums.sha256`)
+- **Calibrated gate, not a single fit** — 2,000 high-replicate injections (1,000 null + 1,000 signal)
+- **7,500-replicate power grid** — 15 cells × 500, with 95% CIs on every point
+- **Independent audit** — `results/colab_audit/AUDIT_REPORT.md` + re-runnable `code/audit_highrep.py`
+- **Publication figures + revision log** — `manuscript/` (figures, `REVISION_NOTES.md`; `.tex` source withheld until publication)
+- **Regenerable figures + animation** — `figures/` (all rebuilt from raw CSVs)
+
+## Headline results (authoritative high-replicate run)
 
 | Quantity | Value |
 |---|---|
@@ -49,7 +55,7 @@ it will take.
 A wrong-sign binned age signal is a **period-mixing artifact**: old (high-`v_tan`)
 hosts sit at longer periods where sub-Neptunes dominate.
 
-## 🗺️ Pipeline
+## Pipeline
 
 ```mermaid
 flowchart LR
@@ -66,7 +72,7 @@ flowchart LR
 Run order = number order in `code/`. All scripts run from repo root with
 relative paths.
 
-## 🚀 Quickstart
+## Quickstart
 
 ```bash
 pip install -r requirements.txt
@@ -81,33 +87,33 @@ Methods: [`docs/METHODS.md`](docs/METHODS.md) ·
 Data dictionary: [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md) ·
 Colab high-rep run: [`colab/README.md`](colab/README.md)
 
-## 📁 Repository layout
+## Repository layout
 
 ```
 ├── code/          numbered pipeline (01→15, B1/B2, appendix_* , audit_highrep)
 ├── data/          frozen CSVs + checksums.sha256 (offline-reproducible)
 ├── results/       pipeline outputs; results/highrep/ = authoritative raw replicates
-├── figures/       fig1–fig4 + overview.png/pdf + make_overview.py
+├── figures/       fig1–fig4 + overview.png/pdf + gate_convergence.gif (scripts included)
 ├── manuscript/    figures, revision log, build files (.tex withheld until publication)
 ├── colab/         high-replicate experiment (1,000/arm gate, 500/cell grid)
 ├── docs/          METHODS, REPRODUCIBILITY, DATA_DICTIONARY, USAGE_COLAB, notes
 └── .github/workflows/ci.yml
 ```
 
-## ⚠️ Caveats (disclosed in manuscript)
+## Caveats (disclosed in manuscript)
 
 - Age is host-level; M-dwarf information is dominated by population-level `v_tan` (only 12/303 hosts yield gyro ages).
 - Bootstrap grid re-uses ~301 M hosts — diversity saturates; σ ∝ N<sup>−1/2</sup> is a premise.
 - M sample (T<sub>eff</sub> < 4200 K) spans late-K–late-M, not isolated M3+.
 - Isochrone validation incomplete (`B1`/`B2`).
 
-## 📚 Citation
+## Citation
 
 See [`CITATION.cff`](CITATION.cff). If you use code, data, or results, cite the
 paper via its journal/arXiv record and this repository. Curated CSVs follow NASA
 Exoplanet Archive / Gaia DR3 / Kepler DR25 access conditions (see `LICENSE`).
 
-## 🛠️ Built with (skills)
+## Built with
 
 - `scientific-visualization` + `matplotlib` — truthful, accessible figures
   (Okabe–Itō palette, redundant color+marker encoding, explicit uncertainty)
