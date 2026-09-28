@@ -1,7 +1,11 @@
 # Manuscript
 
-`sample701.tex` is the authoritative submission-ready manuscript (AASTeX
-v7.01, two-column), fully updated to the high-replicate Monte Carlo results:
+> **Manuscript source (`.tex`/`.bib`) is withheld from this public repository
+> until publication**, to protect authorship. The figures, revision log, and
+> numerical results below are shared; the paper text itself will appear via the
+> journal / arXiv record, which carries the authoritative author list and date.
+
+## Results the manuscript reports (high-replicate Monte Carlo)
 
 - gate: 1,000 replicates per arm (real percentile 45.6% null / 81.2% signal,
   verdict FAIL inconclusive);
@@ -10,25 +14,15 @@ v7.01, two-column), fully updated to the high-replicate Monte Carlo results:
 
 ## Files
 
-- `sample701.tex`, `sample701.bib` — manuscript source and references
-- `aastex701.cls`, `aasjournalv7.bst` — AASTeX class and bibliography style
 - `fig1_ess.png`, `fig2_gate.png`, `fig3_period.png`, `fig4_power.png` — figures
   (Fig 2 and Fig 4 are the high-replicate versions; identical files are in
   `../figures/`)
-- `REVISION_NOTES.md` — complete revision log across all passes, with the
-  final numerical-consistency verification results
+- `aastex701.cls`, `aasjournalv7.bst` — AASTeX class and bibliography style
+  (kept so the build environment is documented; the `.tex`/`.bib` are private)
+- `FIX_LOG.md`, `REVISION_NOTES.md` — revision logs with the final
+  numerical-consistency verification results
 
-## Compiling
+## Citing
 
-Upload the whole folder to Overleaf (compiler: pdfLaTeX), or locally:
-
-    pdflatex sample701.tex
-    bibtex sample701
-    pdflatex sample701.tex
-    pdflatex sample701.tex
-
-`orcid-ID.png` is required by the class for the ORCID marker. All four
-figures are referenced with `\includegraphics` at explicit `\textwidth`
-fractions and placed as `figure*[!t]` two-column floats; float placement
-parameters are tuned in the preamble so no figure occupies a float page, and
-the references start on their own page (`\clearpage` before the bibliography).
+Cite the paper via its journal/arXiv record (author list + date are fixed
+there) and this repository via `CITATION.cff`.

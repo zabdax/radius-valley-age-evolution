@@ -28,7 +28,7 @@ it will take.
 - 🧪 **Calibrated gate, not a single fit** — 2,000 high-replicate injections (1,000 null + 1,000 signal)
 - 📊 **7,500-replicate power grid** — 15 cells × 500, with 95% CIs on every point
 - 🔍 **Independent audit** — `results/colab_audit/AUDIT_REPORT.md` + re-runnable `code/audit_highrep.py`
-- 📝 **Submission-ready manuscript** — AASTeX v7.01 source in `manuscript/`
+- 📝 **Publication figures + revision log** — `manuscript/` (figures, `REVISION_NOTES.md`; `.tex` source withheld until publication)
 - 🖼️ **Publication figures + hero overview** — `figures/` (all regenerable from raw CSVs)
 
 ## 🎯 Headline results (authoritative high-replicate run)
@@ -88,7 +88,7 @@ Colab high-rep run: [`colab/README.md`](colab/README.md)
 ├── data/          frozen CSVs + checksums.sha256 (offline-reproducible)
 ├── results/       pipeline outputs; results/highrep/ = authoritative raw replicates
 ├── figures/       fig1–fig4 + overview.png/pdf + make_overview.py
-├── manuscript/    AASTeX source, .bib, revision log, compile instructions
+├── manuscript/    figures, revision log, build files (.tex withheld until publication)
 ├── colab/         high-replicate experiment (1,000/arm gate, 500/cell grid)
 ├── docs/          METHODS, REPRODUCIBILITY, DATA_DICTIONARY, USAGE_COLAB, notes
 └── .github/workflows/ci.yml
@@ -104,7 +104,7 @@ Colab high-rep run: [`colab/README.md`](colab/README.md)
 ## 📚 Citation
 
 See [`CITATION.cff`](CITATION.cff). If you use code, data, or results, cite the
-manuscript (`manuscript/`) and this repository. Curated CSVs follow NASA
+paper via its journal/arXiv record and this repository. Curated CSVs follow NASA
 Exoplanet Archive / Gaia DR3 / Kepler DR25 access conditions (see `LICENSE`).
 
 ## 🛠️ Built with (skills)
@@ -112,7 +112,7 @@ Exoplanet Archive / Gaia DR3 / Kepler DR25 access conditions (see `LICENSE`).
 - `scientific-visualization` + `matplotlib` — truthful, accessible figures
   (Okabe–Itō palette, redundant color+marker encoding, explicit uncertainty)
 - `scientific-writing` — evidence-bound prose, no invented numbers
-- `citation-management` — verifiable references (`manuscript/sample701.bib`)
+- `citation-management` — verifiable references (manuscript `.bib` kept private until publication)
 - `astropy` — Gaia kinematics; `statsmodels`/`scipy` — sandwich SEs, CIs
 
 > Kassis, T., et al. (2026). Scientific Agent Skills. arXiv:2609.00065.
