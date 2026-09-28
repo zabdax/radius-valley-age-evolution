@@ -1,0 +1,8 @@
+# Keep data byte-identical on every platform: checksums.sha256 must verify
+# on Linux CI and Windows checkouts alike, so Git must never convert them.
+data/* -text
+
+# Explicit binary (no conversion, no diff text)
+*.png binary
+*.pdf binary
+*.zip binary
