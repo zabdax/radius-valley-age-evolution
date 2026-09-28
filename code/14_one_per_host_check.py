@@ -113,13 +113,13 @@ def calibrate_alpha(df, target_frac):
     return 0.5 * (lo + hi)
 
 
-def synth_null(base, alpha, rng):
-    """One null synthetic realization; host-bootstrap + one shared host
-    effect per host (identical structure to 13_calibration_fgk.synth with
-    beta_inj = 0)."""
+def synth_null(base, alpha, rng, independent_hosts=False):
+    """One null synthetic realization; host-bootstrap + host effects
+    (identical structure to 13_calibration_fgk.synth with beta_inj = 0).
+    independent_hosts=True gives one draw per bootstrap OCCURRENCE;
+    False preserves legacy shared-effect behavior for comparability."""
     picked = rng.choice(base.hostname.unique(),
                         size=base.hostname.nunique(), replace=True)
-    pos = {h: i for i, h in enumerate(picked)}
     parts = [base[base.hostname == h] for h in picked]
     d = pd.concat(parts, ignore_index=True)
     zp = ((np.log10(d.pl_orbper.values)
@@ -127,7 +127,12 @@ def synth_null(base, alpha, rng):
           / np.log10(base.pl_orbper).std())
     eta = alpha + GAMMA_LOGP * zp
     uh = rng.normal(0, SIGMA_U, len(picked))
-    eta += uh[d.hostname.map(pos).values]
+    if independent_hosts:
+        sizes = np.array([len(p) for p in parts])
+        eta += np.repeat(uh, sizes)
+    else:
+        pos = {h: i for i, h in enumerate(picked)}
+        eta += uh[d.hostname.map(pos).values]
     pi = 1 / (1 + np.exp(-np.clip(eta, -30, 30)))
     sn = rng.uniform(size=len(d)) < pi
     r_true = np.where(sn, rng.normal(2.10, 0.35, len(d)),

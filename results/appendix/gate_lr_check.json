@@ -1,0 +1,17 @@
+{
+ "FGK_pooled_1000arm": {
+  "LR": 0.6766227845296925,
+  "bandwidth_factor": 0.251188643150958,
+  "expect": 0.68
+ },
+ "FGK_stratified_400arm": {
+  "LR": 1.7438859614966036,
+  "bandwidth_factor": 0.30170881682725814,
+  "expect": 1.74
+ },
+ "M_pooled_200arm_appendix": {
+  "LR": 1.0288257363208213,
+  "bandwidth_factor": 0.3465724215775732,
+  "note": "reduced ensemble; prod 0.93"
+ }
+}

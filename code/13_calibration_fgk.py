@@ -37,6 +37,7 @@ _spec.loader.exec_module(m9)
 D = pathlib.Path(__file__).resolve().parents[1] / "data"
 R = pathlib.Path(__file__).resolve().parents[1] / "results"
 B_INJ = -0.14          # SWEET-Cat-equivalent, per SD of v_tan
+B_INJ_ALT = -0.127      # 17th-pct split (136/687 at 3 Gyr, 1.79 SD); 9% smaller
 REPS = 120
 
 
@@ -68,10 +69,9 @@ def weighted_binned(df, label):
     return z, pval
 
 
-def synth(base, beta_inj, alpha, rng):
+def synth(base, beta_inj, alpha, rng, independent_hosts=False):
     picked = rng.choice(base.hostname.unique(),
                         size=base.hostname.nunique(), replace=True)
-    pos = {h: i for i, h in enumerate(picked)}
     parts = [base[base.hostname == h] for h in picked]
     d = pd.concat(parts, ignore_index=True)
     zv = (d.vtan.values - base.vtan.mean()) / base.vtan.std()
@@ -80,7 +80,17 @@ def synth(base, beta_inj, alpha, rng):
     # reuse measured gamma_logP from the unweighted FGK fit (~+2.3)
     eta = alpha + beta_inj * zv + 2.3 * zp
     uh = rng.normal(0, 1.5, len(picked))
-    eta += uh[d.hostname.map(pos).values]
+    if independent_hosts:
+        # FIX: one independent draw per bootstrap OCCURRENCE (j-th pick
+        # -> j-th planet block). Legacy pos={h:i...} mapped duplicates
+        # to LAST index (shared effect, wasted draws).
+        sizes = np.array([len(p) for p in parts])
+        eta += np.repeat(uh, sizes)
+    else:
+        # Legacy production behavior (preserved for comparability with
+        # archived run; see Sec audits): duplicates share last effect.
+        pos = {h: i for i, h in enumerate(picked)}
+        eta += uh[d.hostname.map(pos).values]
     pi = 1 / (1 + np.exp(-np.clip(eta, -30, 30)))
     sn = rng.uniform(size=len(d)) < pi
     r_true = np.where(sn, rng.normal(2.10, 0.35, len(d)),

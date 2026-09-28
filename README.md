@@ -1,168 +1,119 @@
-# The Radius Valley's Age Evolution Around M Dwarfs: An Inconclusive Verdict and a Quantified Path Forward
+# 🪐 The Radius Valley's Age Evolution Around M Dwarfs
 
-Code, data, and results for a calibrated statistical gate that asks whether
-current archival samples can discriminate a literature-sized age-evolution
-effect in radius-valley demographics around M dwarfs from a null effect.
+![Python](https://img.shields.io/badge/python-%3E%3D3.10-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Data](https://img.shields.io/badge/data-frozen%20%2B%20checksums-0072B2)
+![Gate](https://img.shields.io/badge/gate-1000%20reps%2Farm-D55E00)
+![Power](https://img.shields.io/badge/power--grid-15%20cells%20%C3%97%20500-009E73)
+![Status](https://img.shields.io/badge/verdict-FAIL%20(inconclusive)-999999)
 
-**Central result.** Applied to a completeness-weighted FGK Kepler-only
-control (2,135 planets, ESS = 1,645) with 1,000 Monte Carlo replicates per
-hypothesis, the gate returns **FAIL (inconclusive)**: the real age-proxy
-coefficient (beta_age/IQR = -0.0296 +/- 0.1061) lies at the 45.6th percentile
-of the null-injected distribution and the 81.2nd percentile of the
-literature-sized signal-injected distribution — both hypotheses remain
-admissible. A wrong-sign binned age signal is identified as a **period-mixing
-artifact** of this dataset. For the M-dwarf question, a 15-cell power grid
-(500 replicates per cell) shows that at 8x the current inventory
-(~3,337 planets) a literature-sized effect is **detected in only 23.2%**
-(95% empirical range 19.6-27.2%) of realizations — no tested scale approaches
-conventional 80% power, so 8x is a floor, not a sufficient target. A simple
-Gaussian independent-host extrapolation places 80% power at order
-1e4-2e4 planets (point estimate ~1.7e4), a model-dependent guide rather than
-an empirically demonstrated requirement.
+**An inconclusive verdict — and a quantified path forward.** A calibrated
+null/signal-injected gate asks whether today's archives can tell a
+literature-sized age-evolution effect apart from no effect in radius-valley
+demographics around M dwarfs. Answer: **not yet** — and here is exactly what
+it will take.
 
-The manuscript is in [`manuscript/`](manuscript/) (AASTeX v7.01,
-submission-ready).
+![Overview: calibrated gate, power grid, and samples](figures/overview.png)
 
-## Repository layout
+> Figure: (a) FGK control gate — observed β<sub>age</sub> sits at the 45.6th
+> percentile of the null and 81.2th of the signal (both admissible, verdict
+> FAIL). (b) M-dwarf power grid with Clopper–Pearson 95% CIs — 8× inventory
+> still only 23.2% SWEET detection. (c) Frozen samples behind the result.
+> Regenerate with `python figures/make_overview.py`. Alt text: three-panel
+> summary described above; data in `results/highrep/` + `data/`.
 
-```
-├── code/                     numbered pipeline scripts (run order = number order)
-│   ├── 01_download.py        NASA Exoplanet Archive (TAP) sample construction
-│   ├── 02_explore.py         exploratory checks
-│   ├── 03_gyro_ages.py       gyrochronological ages (gyrointerp / Angus+2019)
-│   ├── 04_validate.py        sample validation
-│   ├── 05_literature_rotations.py   McQuillan+2014 rotation crossmatch
-│   ├── 06_gaia_crossmatch.py Gaia DR3 crossmatch (+ 06b quality filter)
-│   ├── 07_kinematic_ages.py  v_tan and U,V,W kinematic age proxies
-│   ├── 08_headline_fgk_vtan.py      FGK headline fit
-│   ├── 09_hierarchical_model.py     mixture model + host-robust sandwich SE
-│   ├── 11_power_analysis.py         15-cell Monte Carlo power grid
-│   ├── 12_completeness.py           DR25-CDPP completeness weighting (+ 12b sharpened M variant)
-│   ├── 13_calibration_fgk.py        calibrated gate (null/signal injection)
-│   ├── 14_one_per_host_check.py     within-host clustering robustness check
-│   ├── B1_get_berger_ages.py, B2_isochrone_gate.py   isochrone validation attempt (incomplete)
-│   ├── generate_figures.py          original 120/150-replicate figure pipeline
-│   ├── regen_manuscript_figs.py     authoritative high-replicate Fig 2 / Fig 4
-│   ├── audit_highrep.py             re-runnable audit of results/highrep/
-│   └── audits/                      the three adversarial audit rounds (see audits/README.md)
-├── colab/                    high-replicate Colab experiment (1,000/arm gate, 500/cell grid)
-├── data/                     frozen input/output CSVs + provenance and SHA-256 checksums
-├── figures/                  manuscript figures (Fig 2 / Fig 4 = high-replicate versions)
-├── results/                  pipeline outputs; results/highrep/ = authoritative raw replicate results
-├── results/colab_audit/      independent audit of the high-replicate run (AUDIT_REPORT.md)
-├── manuscript/               AASTeX source, figures, revision log, compile instructions
-└── docs/                     Colab usage guide, project notes, legacy draft
-```
+## ✨ Why this repo stands out
 
-## Requirements
+- 🔒 **Frozen + checksummed data** — every number reproduces offline (`sha256sum -c data/checksums.sha256`)
+- 🧪 **Calibrated gate, not a single fit** — 2,000 high-replicate injections (1,000 null + 1,000 signal)
+- 📊 **7,500-replicate power grid** — 15 cells × 500, with 95% CIs on every point
+- 🔍 **Independent audit** — `results/colab_audit/AUDIT_REPORT.md` + re-runnable `code/audit_highrep.py`
+- 📝 **Submission-ready manuscript** — AASTeX v7.01 source in `manuscript/`
+- 🖼️ **Publication figures + hero overview** — `figures/` (all regenerable from raw CSVs)
 
-Python >= 3.10 with:
-
-```
-numpy, pandas, scipy, matplotlib, astropy, gyrointerp
-```
-
-(`pip install -r requirements.txt`; `gyrointerp` implements the Angus et al.
-2019 gyrochronology model. Network access is needed only for
-`code/01_download.py`, which queries the NASA Exoplanet Archive TAP service.)
-
-## Reproducing the analysis
-
-All scripts are run from the repository root and write to `results/` via
-paths relative to the repo; no absolute paths are used.
-
-1. **Sample construction and validation** (requires network):
-   `python code/01_download.py` -> `code/06_gaia_crossmatch.py` ->
-   `code/06b_filter_gaia.py` -> `code/07_kinematic_ages.py` ->
-   `code/03_gyro_ages.py` -> `code/04_validate.py`.
-   The frozen outputs of every step are already committed under `data/`, so
-   steps 2-7 work offline against the exact snapshots used in the paper.
-2. **Completeness weighting**: `python code/12_completeness.py`
-   (FGK Kepler-only DR25-CDPP weights; `12b_sharpen_weights.py` is the
-   sharpened M-dwarf sensitivity variant).
-3. **Hierarchical mixture model fits**: `python code/09_hierarchical_model.py`
-   (add `SELFTEST` for the synthetic recovery self-test).
-4. **Calibrated gate (original 120-replicate run)**:
-   `python code/13_calibration_fgk.py kepler_only 0.95`.
-5. **Power grid (original 120/150-replicate run)**:
-   `python code/11_power_analysis.py`.
-6. **High-replicate experiment (authoritative)**: see
-   [`colab/README.md`](colab/README.md) — 1,000 replicates per gate arm and
-   500 per grid cell on Google Colab. The archived outputs of this run are in
-   [`results/highrep/`](results/highrep/) and are the numbers used in the
-   manuscript.
-7. **Figures**: `python code/regen_manuscript_figs.py` regenerates the
-   authoritative Figure 2 and Figure 4 from `results/highrep/`;
-   `python code/generate_figures.py` regenerates the original-run versions of
-   all four figures (archived for the record).
-8. **Robustness and audit**: `python code/14_one_per_host_check.py`
-   (within-host clustering check); `python code/audit_highrep.py`
-   (integrity + statistics audit of `results/highrep/`).
-
-## Key authoritative results (high-replicate run)
+## 🎯 Headline results (authoritative high-replicate run)
 
 | Quantity | Value |
 |---|---|
-| Real beta_age/IQR (FGK control) | -0.0296 +/- 0.1061 |
-| Null-injected median / 95% envelope (n=1000) | -0.0186 / [-0.2476, +0.2246] |
-| Real percentile in null (binomial 95%) | 45.6% [42.5, 48.7] |
-| P(null >= real) | 0.544 |
-| Signal-injected median / 95% envelope (n=1000) | -0.1365 / [-0.3898, +0.0836] |
+| Real β<sub>age</sub>/IQR (FGK control) | −0.0296 ± 0.1061 |
+| Null median / 95% envelope (n=1,000) | −0.0186 / [−0.2476, +0.2246] |
+| Real percentile in null (95% CI) | 45.6% [42.5, 48.7] · P(null ≥ real) = 0.544 |
+| Signal median / 95% envelope (n=1,000) | −0.1365 / [−0.3898, +0.0836] |
 | Real percentile in signal | 81.2% [78.6, 83.6] |
-| Gate verdict | FAIL (inconclusive) |
-| 8x SWEET detection (n=500) | 23.2% [19.6, 27.2] |
-| 8x strong detection (n=500) | 60.6% [56.2, 64.9] |
-| Pooled null FPR / pooled coverage | 6.68% / 91.3% |
-| Extrapolated 80%-power scale (model-dependent) | ~1.7e4 planets [1.4, 2.2]e4 |
+| **Gate verdict** | **FAIL (inconclusive)** — both hypotheses survive |
+| 8× SWEET detection (n=500) | 23.2% [19.6, 27.2] |
+| 8× strong detection (n=500) | 60.6% [56.2, 64.9] |
+| Pooled null FPR / coverage | 6.68% / 91.3% (analytical intervals mildly anti-conservative; gate unaffected) |
+| 80%-power scale (model-dependent) | ~1.7×10⁴ planets [1.4, 2.2]×10⁴ — a guide, not a requirement |
 
-`python code/audit_highrep.py` recomputes the gate statistics, false-positive
-rates, coverage, and power table directly from the raw replicate CSVs and
-prints the full comparison against the summary JSONs (which agree exactly).
+A wrong-sign binned age signal is a **period-mixing artifact**: old (high-`v_tan`)
+hosts sit at longer periods where sub-Neptunes dominate.
 
-## Known caveats (also documented in the manuscript)
+## 🗺️ Pipeline
 
-- Planet count is not independent age information: stellar age is a
-  host-level quantity, and the M-dwarf age information is dominated by the
-  kinematic proxy v_tan (population-level, not per-star ages); only 12 of 303
-  M-dwarf hosts yield usable gyrochronological ages.
-- The bootstrap grid upsamples the same ~301 M-dwarf hosts, so host-covariate
-  diversity saturates at large scale; the sigma proportional to N^(-1/2)
-  extrapolation is a premise, not a grid demonstration.
-- Analytical sandwich intervals used inside the power diagnostics are mildly
-  anti-conservative (pooled coverage 91.3%, pooled null FPR 6.68%); the
-  primary gate verdict is based on empirical injected distributions and is
-  unaffected.
-- The M-dwarf sample (T_eff < 4200 K) spans late K through late M and does
-  not isolate the approximately M3+ regime where the cited valley
-  disappearance occurs; spectral-type subdivision is future work.
+```mermaid
+flowchart LR
+    A[01_download<br/>NASA TAP] --> B[06 Gaia DR3<br/>crossmatch]
+    B --> C[07 kinematics<br/>v_tan / UVW]
+    C --> D[03 gyro ages<br/>+ 05 rotations]
+    D --> E[12 completeness<br/>DR25 CDPP weights]
+    E --> F[09 mixture model<br/>+ sandwich SE]
+    F --> G[13 calibrated gate<br/>null/signal injection]
+    G --> H[11 power grid<br/>15 cells x 500]
+    H --> I[regen figs<br/>+ audit]
+```
 
-See the manuscript and `results/colab_audit/AUDIT_REPORT.md` for the complete
-discussion.
+Run order = number order in `code/`. All scripts run from repo root with
+relative paths.
 
-## Reproducibility limitations (disclosed)
+## 🚀 Quickstart
 
-- The executed Colab orchestration variant is archived:
-  [`colab/colab_highrep_gate_fast_v3.py`](colab/colab_highrep_gate_fast_v3.py)
-  (SHA-256 `fed4824d...d53a69e59`; full hash in `colab/README.md`). It drives
-  the reference implementation
-  [`colab/colab_highrep_gate.py`](colab/colab_highrep_gate.py) as a library —
-  serial synthetic generation in the original rng order, fits dispatched to a
-  fork-based process pool, and the per-gate-replicate Hessian (unused by the
-  gate statistics) skipped for speed. The audit's fingerprint evidence
-  (null-arm first-120 statistics reproduce the original run to <=6e-5;
-  identical calibration constants and planet-count sequences) is in
-  `results/colab_audit/AUDIT_REPORT.md`.
-- `data/berger/` (Berger et al. 2020 supplementary catalog, used only by the
-  incomplete isochrone attempt) is third-party material and is not
-  redistributed; see `data/README.md`.
+```bash
+pip install -r requirements.txt
+sha256sum -c data/checksums.sha256
+python code/audit_highrep.py          # verify gate + power from raw CSVs
+python figures/make_overview.py       # rebuild hero figure
+python code/regen_manuscript_figs.py  # rebuild Fig 2 + Fig 4
+```
 
-## Citation
+Full step-by-step: [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md) ·
+Methods: [`docs/METHODS.md`](docs/METHODS.md) ·
+Data dictionary: [`docs/DATA_DICTIONARY.md`](docs/DATA_DICTIONARY.md) ·
+Colab high-rep run: [`colab/README.md`](colab/README.md)
 
-See [`CITATION.cff`](CITATION.cff). If you use this code, data, or results,
-please cite the accompanying manuscript (AASTeX source in
-[`manuscript/`](manuscript/)) and this repository.
+## 📁 Repository layout
 
-## License
+```
+├── code/          numbered pipeline (01→15, B1/B2, appendix_* , audit_highrep)
+├── data/          frozen CSVs + checksums.sha256 (offline-reproducible)
+├── results/       pipeline outputs; results/highrep/ = authoritative raw replicates
+├── figures/       fig1–fig4 + overview.png/pdf + make_overview.py
+├── manuscript/    AASTeX source, .bib, revision log, compile instructions
+├── colab/         high-replicate experiment (1,000/arm gate, 500/cell grid)
+├── docs/          METHODS, REPRODUCIBILITY, DATA_DICTIONARY, USAGE_COLAB, notes
+└── .github/workflows/ci.yml
+```
 
-Code: MIT (see [`LICENSE`](LICENSE)). Curated data files follow the access
-conditions of the NASA Exoplanet Archive, Gaia DR3, and Kepler DR25 services.
+## ⚠️ Caveats (disclosed in manuscript)
+
+- Age is host-level; M-dwarf information is dominated by population-level `v_tan` (only 12/303 hosts yield gyro ages).
+- Bootstrap grid re-uses ~301 M hosts — diversity saturates; σ ∝ N<sup>−1/2</sup> is a premise.
+- M sample (T<sub>eff</sub> < 4200 K) spans late-K–late-M, not isolated M3+.
+- Isochrone validation incomplete (`B1`/`B2`).
+
+## 📚 Citation
+
+See [`CITATION.cff`](CITATION.cff). If you use code, data, or results, cite the
+manuscript (`manuscript/`) and this repository. Curated CSVs follow NASA
+Exoplanet Archive / Gaia DR3 / Kepler DR25 access conditions (see `LICENSE`).
+
+## 🛠️ Built with (skills)
+
+- `scientific-visualization` + `matplotlib` — truthful, accessible figures
+  (Okabe–Itō palette, redundant color+marker encoding, explicit uncertainty)
+- `scientific-writing` — evidence-bound prose, no invented numbers
+- `citation-management` — verifiable references (`manuscript/sample701.bib`)
+- `astropy` — Gaia kinematics; `statsmodels`/`scipy` — sandwich SEs, CIs
+
+> Kassis, T., et al. (2026). Scientific Agent Skills. arXiv:2609.00065.
+> https://doi.org/10.48550/arXiv.2609.00065

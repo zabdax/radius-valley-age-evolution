@@ -44,7 +44,7 @@ R = pathlib.Path(__file__).resolve().parents[1] / "results"
 # generative coefficients (from the real M x vtan fit, 09)
 GAMMA_LOGP, GAMMA_LOGS = 1.613, -0.032
 GAMMA_KEP, GAMMA_K2 = -1.594, 0.893
-SIGMA_U = np.exp(-1.5)          # placeholder; overwritten below if available
+SIGMA_U = np.exp(-1.5)          # default; set to 1.5 logits in main() per v1 fit
 # reality-matched class-conditionals (audit finding: previous N(1.30,0.22)/
 # N(2.35,0.45) gave ~2x too little cross-valley ambiguity vs the real
 # M-sample modes 1.23/2.08 and boundary-window mass ~28%)
@@ -72,7 +72,7 @@ def zscore_within(df, col):
     return (v - v.mean()) / (v.std() + 1e-12)
 
 
-def synth(base, scale, beta_inj, alpha, rng):
+def synth(base, scale, beta_inj, alpha, rng, independent_hosts=False):
     """Draw one synthetic dataset."""
     hosts = base.hostname.unique()
     n_hosts = max(1, int(round(scale * len(hosts))))
@@ -90,11 +90,18 @@ def synth(base, scale, beta_inj, alpha, rng):
     eta = (alpha + beta_inj * zv + GAMMA_LOGP * zp + GAMMA_LOGS * zs
            + GAMMA_KEP * (d.fam == "Kepler").values.astype(float)
            + GAMMA_K2 * (d.fam == "K2").values.astype(float))
-    # map rows to their DRAWN host index (not categorical-sorted codes!)
-    pos = {h: i for i, h in enumerate(picked)}
-    codes = d.hostname.map(pos).values
+    # map rows to their DRAWN host occurrence (per-copy independent effects
+    # when independent_hosts=True; legacy False preserves archived behavior
+    # where duplicates shared the LAST index effect).
     uh = rng.normal(0, SIGMA_U, len(picked))
-    eta += uh[codes]
+    if independent_hosts:
+        _sizes = np.array([np.count_nonzero(base.hostname.values == h)
+                           for h in picked])
+        eta += np.repeat(uh, _sizes)
+    else:
+        pos = {h: i for i, h in enumerate(picked)}
+        codes = d.hostname.map(pos).values
+        eta += uh[codes]
     pi = 1 / (1 + np.exp(-np.clip(eta, -30, 30)))
     sn = rng.uniform(size=len(d)) < pi
     r_true = np.where(sn, rng.normal(MU_SN, S_SN, len(d)),

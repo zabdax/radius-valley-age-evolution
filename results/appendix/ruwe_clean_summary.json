@@ -1,0 +1,91 @@
+{
+ "M": {
+  "quality": {
+   "planets_pre": 417,
+   "hosts_pre": 301,
+   "planets_no_source_id": 0,
+   "planets_no_quality_row": 0,
+   "ruwe_gt1.4": 35,
+   "psnr_le5": 0,
+   "ruwe_median": 1.0880785,
+   "psnr_median": 647.3061722201716,
+   "planets_post": 382,
+   "hosts_post": 278,
+   "planets_dropped": 35,
+   "hosts_dropped": 23,
+   "vtan_median_kept": 33.702080293020614,
+   "vtan_median_dropped": 27.901159634548904
+  },
+  "real_beta_cleaned": -0.002801691002068047,
+  "real_se_cleaned": 0.3601703652602848,
+  "arms": {
+   "null": {
+    "n": 200,
+    "median": -0.006083143990930034,
+    "sd": 0.7143280163559016,
+    "q025": -1.6973864563744134,
+    "q975": 1.2642731957824431
+   },
+   "signal": {
+    "n": 200,
+    "median": -0.18790304931395613,
+    "sd": 0.7465895773743124,
+    "q025": -1.8075873141889058,
+    "q975": 0.9802498648042234
+   }
+  },
+  "arm_separation_nullSD": -0.25453279328251555,
+  "real_pct_null": 0.505,
+  "PASS": false,
+  "verdict": "FAIL(inconclusive)"
+ },
+ "FGK": {
+  "quality": {
+   "planets_pre": 2135,
+   "hosts_pre": 1588,
+   "planets_no_source_id": 0,
+   "planets_no_quality_row": 0,
+   "ruwe_gt1.4": 178,
+   "psnr_le5": 24,
+   "ruwe_median": 1.0039964,
+   "psnr_median": 73.58721346977025,
+   "planets_post": 1957,
+   "hosts_post": 1445,
+   "planets_dropped": 178,
+   "hosts_dropped": 143,
+   "vtan_median_kept": 33.19787972999335,
+   "vtan_median_dropped": 34.67803377265533
+  },
+  "real_beta_cleaned": -0.04868073761736859,
+  "real_se_cleaned": 0.11719640564029693,
+  "arms": {
+   "null": {
+    "n": 200,
+    "median": -0.044124445385562365,
+    "sd": 0.14398649942758793,
+    "q025": -0.33566955399111303,
+    "q975": 0.23818285513820014
+   },
+   "signal": {
+    "n": 200,
+    "median": -0.16462336756835882,
+    "sd": 0.15516162435657296,
+    "q025": -0.46951497456651936,
+    "q975": 0.14526340056637568
+   }
+  },
+  "arm_separation_nullSD": -0.83687653121532,
+  "real_pct_null": 0.48,
+  "PASS": false,
+  "verdict": "FAIL(inconclusive)"
+ },
+ "meta": {
+  "reps": {
+   "M": 200,
+   "FGK": 200
+  },
+  "rule": "RUWE<=1.4 & parallax_SNR>5",
+  "mode": "legacy",
+  "estimator": "pooled"
+ }
+}

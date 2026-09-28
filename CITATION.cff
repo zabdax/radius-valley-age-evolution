@@ -6,8 +6,8 @@ authors:
     given-names: Zubayer Hasan
     orcid: "https://orcid.org/0009-0002-2322-8553"
   - name: "The Radius Valley Age Evolution Collaboration"
-version: 1.0.0
-date-released: "2026-08-30"
+version: 2.0.0
+date-released: "2026-09-28"
 license: MIT
 repository-code: "https://github.com/zabdax/radius-valley-age-evolution"
 abstract: "A calibrated statistical gate (null- and signal-injected Monte Carlo ensembles) applied to the FGK radius-valley age-evolution control and the M-dwarf regime, with a 15-cell power grid quantifying the sample size and age-precision requirements for resolution."

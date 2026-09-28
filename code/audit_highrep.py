@@ -347,6 +347,6 @@ for s in SCALES:
 summary = {"gate": gate_stats, "verdict": verdict,
            "grid": {f"{s}|{e}": grid_stats[(s, e)] for s in SCALES for e in EFFECTS},
            "manifest": man, "accelerator": acc}
-(RES / "colab_audit" / "audit_summary.json").write_text(
+(RES / "audit_summary.json").write_text(
     json.dumps(summary, indent=1, default=str))
 print("\nsaved audit_summary.json")

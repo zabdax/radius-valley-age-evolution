@@ -1,0 +1,54 @@
+{
+ "legacy": {
+  "n": 300,
+  "beta_inj": {
+   "median": -0.1401936441405108,
+   "sd": 0.1605098449088401,
+   "q025": -0.4455353097595568,
+   "q975": 0.18341326301250335,
+   "frac_near_zero_lt0.05": 0.15,
+   "frac_positive": 0.19666666666666666
+  },
+  "beta_hat": {
+   "median": -0.1928553831937802,
+   "sd": 0.7276350299598172,
+   "q025": -1.6619839090283535,
+   "q975": 1.044913778099967
+  },
+  "detect_correct_sign_rate": 0.13333333333333333,
+  "resid_hat_minus_inj": {
+   "median": 0.006485639922738012,
+   "sd": 0.704419072102494
+  },
+  "corr_inj_hat": 0.2526269864938334
+ },
+ "independent": {
+  "n": 150,
+  "beta_inj": {
+   "median": -0.12709188388434833,
+   "sd": 0.1660611266403978,
+   "q025": -0.4783720730032041,
+   "q975": 0.18309213095702917,
+   "frac_near_zero_lt0.05": 0.22,
+   "frac_positive": 0.19333333333333333
+  },
+  "beta_hat": {
+   "median": -0.14853924579310557,
+   "sd": 0.6018917135118692,
+   "q025": -1.4508377753810084,
+   "q975": 0.7320039267859402
+  },
+  "detect_correct_sign_rate": 0.11333333333333333,
+  "resid_hat_minus_inj": {
+   "median": 0.029056626891421362,
+   "sd": 0.5784994927501961
+  },
+  "corr_inj_hat": 0.27607713292331065
+ },
+ "meta": {
+  "R_SD": 0.1,
+  "conversion": "median-split 1.6 SD",
+  "assumption": "independent Normal(0.10) on each ratio; redraw <=0.05",
+  "point_signal_reference": "M 1x point-beta detection 9.4% (500/cell production grid)"
+ }
+}

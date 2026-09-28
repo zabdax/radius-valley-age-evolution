@@ -1,0 +1,51 @@
+{
+  "sample": "M",
+  "dr25_only": false,
+  "strat_on": "sy_dist",
+  "valley": 1.85,
+  "gamma_logP": 4.391,
+  "cut": 75.7664,
+  "reps": 1000,
+  "b_inj": -0.14,
+  "seed": 20260826,
+  "N": 417,
+  "ESS": 139.50744116694585,
+  "real": {
+    "pooled": 0.04576344675022682,
+    "pooled_se": 0.32096502945106076,
+    "strat": null,
+    "strat_se": null,
+    "strat_low_half": null,
+    "strat_high_half": null
+  },
+  "pooled": {
+    "real": 0.04576344675022682,
+    "null_median": -0.04682086281930384,
+    "null_sd": 0.6714864326177289,
+    "null_95": [
+      -1.3313580453778455,
+      1.2559767749589648
+    ],
+    "signal_median": -0.1811530866122751,
+    "signal_sd": 0.645793952362933,
+    "signal_95": [
+      -1.4854953520342191,
+      1.053471044385053
+    ],
+    "pct_in_null": 0.551,
+    "pct_in_null_ci": [
+      0.5201713120876026,
+      0.5818286879123975
+    ],
+    "pct_in_signal": 0.648,
+    "pct_in_signal_ci": [
+      0.6183984190692456,
+      0.6776015809307544
+    ],
+    "arm_separation_sd": -0.2000520297473313,
+    "n_null": 1000,
+    "n_signal": 1000,
+    "recovery": 1.0468856138018672,
+    "verdict": "FAIL"
+  }
+}
