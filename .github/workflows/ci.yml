@@ -9,6 +9,6 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python -m py_compile code/*.py figures/make_overview.py
-      - run: sha256sum -c data/checksums.sha256
+      - run: python -m py_compile code/*.py code/audits/*/*.py figures/make_overview.py figures/make_gate_animation.py
+      - run: cd data && sha256sum -c checksums.sha256
       - run: python code/audit_highrep.py
