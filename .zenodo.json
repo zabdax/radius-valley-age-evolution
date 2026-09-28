@@ -1,0 +1,26 @@
+{
+  "title": "The Radius Valley's Age Evolution Around M Dwarfs: Calibrated Gate, Power Grid, Data, and Code",
+  "description": "Calibrated statistical gate (1,000 null- plus 1,000 signal-injected Monte Carlo replicates) testing whether current archives can discriminate a literature-sized radius-valley age-evolution effect around M dwarfs from a null effect, plus a 15-cell power grid (500 replicates/cell), frozen checksummed input data, analysis pipeline, publication figures, and an independent audit. Verdict: FAIL (inconclusive); 8x current inventory still only reaches 23.2% literature-sized detection. Manuscript .tex source is withheld until publication; figures, data, code, and results are shared.",
+  "creators": [
+    {
+      "name": "Shaad, Zubayer Hasan",
+      "orcid": "0009-0002-2322-8553"
+    }
+  ],
+  "license": {
+    "id": "mit"
+  },
+  "keywords": [
+    "exoplanets",
+    "radius valley",
+    "M dwarf stars",
+    "astrostatistics",
+    "NASA Exoplanet Archive",
+    "Gaia DR3",
+    "Kepler DR25"
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "communities": [],
+  "version": "v2.0.0"
+}
