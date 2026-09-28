@@ -1,7 +1,6 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23007310.svg)](https://doi.org/10.5281/zenodo.23007310)
-
 # The Radius Valley's Age Evolution Around M Dwarfs
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23007310.svg)](https://doi.org/10.5281/zenodo.23007310)
 ![Python](https://img.shields.io/badge/python-%3E%3D3.10-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 ![Data](https://img.shields.io/badge/data-frozen%20%2B%20checksums-0072B2)
