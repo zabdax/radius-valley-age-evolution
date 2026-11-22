@@ -124,3 +124,21 @@ Exoplanet Archive / Gaia DR3 / Kepler DR25 access conditions (see `LICENSE`).
 
 > Kassis, T., et al. (2026). Scientific Agent Skills. arXiv:2609.00065.
 > https://doi.org/10.48550/arXiv.2609.00065
+
+## v2 reproducibility bundle
+
+The v2 (Q1) results are reproducible from the self-contained bundle in
+[`repro/v2/`](repro/v2/). It contains the executed analysis scripts (with
+portable path resolution via `repro/v2/scripts/_paths.py`), the authoritative
+result tables and JSON summaries, the seven publication figures, and provenance
+records including `repro/v2/provenance/BUNDLE_SHA256.txt`.
+
+Verify the bundle with:
+
+```bash
+cd repro/v2 && sha256sum -c provenance/BUNDLE_SHA256.txt
+```
+
+The frozen input CSVs remain in top-level `data/` (covered by
+`data/checksums.sha256`); the shared analysis machinery is in top-level `code/`.
+No LaTeX source or compiled manuscript is distributed.
