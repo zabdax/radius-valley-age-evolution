@@ -1,0 +1,2037 @@
+{
+  "sample_host_count": 303,
+  "time_table_host_count": 248,
+  "matched_count": 71,
+  "matched_hosts": [
+    {
+      "sample_hosts": [
+        "EPIC 201170410"
+      ],
+      "time_table_names": [
+        "EPIC 201170410"
+      ],
+      "normalized_key": "epic201170410",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3650
+      ],
+      "prot_days": [
+        20.16
+      ],
+      "age_Gyr": [
+        1.77
+      ],
+      "e_age_Gyr": [
+        0.58
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "EPIC 211822797"
+      ],
+      "time_table_names": [
+        "EPIC 211822797"
+      ],
+      "normalized_key": "epic211822797",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3856
+      ],
+      "prot_days": [
+        15.88
+      ],
+      "age_Gyr": [
+        1.18
+      ],
+      "e_age_Gyr": [
+        0.24
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "G 9-40"
+      ],
+      "time_table_names": [
+        "G 9-40"
+      ],
+      "normalized_key": "g9-40",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3713
+      ],
+      "prot_days": [
+        34.08
+      ],
+      "age_Gyr": [
+        5.35
+      ],
+      "e_age_Gyr": [
+        2.57
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "GJ 1132"
+      ],
+      "time_table_names": [
+        "GJ 1132"
+      ],
+      "normalized_key": "gj1132",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3270
+      ],
+      "prot_days": [
+        122.3
+      ],
+      "age_Gyr": [
+        6.31
+      ],
+      "e_age_Gyr": [
+        3.23
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "GJ 1214"
+      ],
+      "time_table_names": [
+        "GJ 1214"
+      ],
+      "normalized_key": "gj1214",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3252
+      ],
+      "prot_days": [
+        125.0
+      ],
+      "age_Gyr": [
+        5.91
+      ],
+      "e_age_Gyr": [
+        3.0
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "GJ 1252"
+      ],
+      "time_table_names": [
+        "GJ 1252"
+      ],
+      "normalized_key": "gj1252",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3458
+      ],
+      "prot_days": [
+        64.0
+      ],
+      "age_Gyr": [
+        6.61
+      ],
+      "e_age_Gyr": [
+        2.34
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "GJ 3473"
+      ],
+      "time_table_names": [
+        "GJ 3473"
+      ],
+      "normalized_key": "gj3473",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3347
+      ],
+      "prot_days": [
+        168.3
+      ],
+      "age_Gyr": [
+        16.46
+      ],
+      "e_age_Gyr": [
+        8.46
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "GJ 357"
+      ],
+      "time_table_names": [
+        "GJ 357"
+      ],
+      "normalized_key": "gj357",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3480
+      ],
+      "prot_days": [
+        77.8
+      ],
+      "age_Gyr": [
+        9.76
+      ],
+      "e_age_Gyr": [
+        3.31
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "GJ 367"
+      ],
+      "time_table_names": [
+        "GJ 367"
+      ],
+      "normalized_key": "gj367",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3687
+      ],
+      "prot_days": [
+        48.0
+      ],
+      "age_Gyr": [
+        7.95
+      ],
+      "e_age_Gyr": [
+        1.31
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "GJ 3929"
+      ],
+      "time_table_names": [
+        "GJ 3929"
+      ],
+      "normalized_key": "gj3929",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3369
+      ],
+      "prot_days": [
+        122.0
+      ],
+      "age_Gyr": [
+        11.1
+      ],
+      "e_age_Gyr": [
+        5.76
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-104"
+      ],
+      "time_table_names": [
+        "K2-104"
+      ],
+      "normalized_key": "k2-104",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3701
+      ],
+      "prot_days": [
+        17.98
+      ],
+      "age_Gyr": [
+        1.33
+      ],
+      "e_age_Gyr": [
+        0.41
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-117"
+      ],
+      "time_table_names": [
+        "K2-117"
+      ],
+      "normalized_key": "k2-117",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3765
+      ],
+      "prot_days": [
+        18.78
+      ],
+      "age_Gyr": [
+        1.86
+      ],
+      "e_age_Gyr": [
+        0.65
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-122"
+      ],
+      "time_table_names": [
+        "K2-122"
+      ],
+      "normalized_key": "k2-122",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3866
+      ],
+      "prot_days": [
+        28.67
+      ],
+      "age_Gyr": [
+        4.44
+      ],
+      "e_age_Gyr": [
+        1.11
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-123"
+      ],
+      "time_table_names": [
+        "K2-123"
+      ],
+      "normalized_key": "k2-123",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3846
+      ],
+      "prot_days": [
+        18.86
+      ],
+      "age_Gyr": [
+        2.07
+      ],
+      "e_age_Gyr": [
+        0.67
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-124"
+      ],
+      "time_table_names": [
+        "K2-124"
+      ],
+      "normalized_key": "k2-124",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3570
+      ],
+      "prot_days": [
+        38.88
+      ],
+      "age_Gyr": [
+        4.46
+      ],
+      "e_age_Gyr": [
+        1.07
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-125"
+      ],
+      "time_table_names": [
+        "K2-125"
+      ],
+      "normalized_key": "k2-125",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3650
+      ],
+      "prot_days": [
+        51.34
+      ],
+      "age_Gyr": [
+        8.32
+      ],
+      "e_age_Gyr": [
+        1.86
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-129"
+      ],
+      "time_table_names": [
+        "K2-129"
+      ],
+      "normalized_key": "k2-129",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3460
+      ],
+      "prot_days": [
+        46.42
+      ],
+      "age_Gyr": [
+        4.44
+      ],
+      "e_age_Gyr": [
+        1.31
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-133"
+      ],
+      "time_table_names": [
+        "K2-133"
+      ],
+      "normalized_key": "k2-133",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3732
+      ],
+      "prot_days": [
+        35.75
+      ],
+      "age_Gyr": [
+        6.2
+      ],
+      "e_age_Gyr": [
+        3.25
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-147"
+      ],
+      "time_table_names": [
+        "K2-147"
+      ],
+      "normalized_key": "k2-147",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3775
+      ],
+      "prot_days": [
+        36.29
+      ],
+      "age_Gyr": [
+        6.78
+      ],
+      "e_age_Gyr": [
+        3.63
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-148"
+      ],
+      "time_table_names": [
+        "K2-148 A",
+        "K2-148 B"
+      ],
+      "normalized_key": "k2-148",
+      "age_statuses": [
+        "age_estimate",
+        "age_estimate"
+      ],
+      "teff_K": [
+        3926,
+        3905
+      ],
+      "prot_days": [
+        14.75,
+        16.28
+      ],
+      "age_Gyr": [
+        1.15,
+        1.38
+      ],
+      "e_age_Gyr": [
+        0.23,
+        0.36
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-151"
+      ],
+      "time_table_names": [
+        "K2-151"
+      ],
+      "normalized_key": "k2-151",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3700
+      ],
+      "prot_days": [
+        47.28
+      ],
+      "age_Gyr": [
+        7.98
+      ],
+      "e_age_Gyr": [
+        1.79
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-152"
+      ],
+      "time_table_names": [
+        "K2-152"
+      ],
+      "normalized_key": "k2-152",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3988
+      ],
+      "prot_days": [
+        15.47
+      ],
+      "age_Gyr": [
+        1.27
+      ],
+      "e_age_Gyr": [
+        0.27
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-153"
+      ],
+      "time_table_names": [
+        "K2-153"
+      ],
+      "normalized_key": "k2-153",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3845
+      ],
+      "prot_days": [
+        39.1
+      ],
+      "age_Gyr": [
+        7.06
+      ],
+      "e_age_Gyr": [
+        0.85
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-18"
+      ],
+      "time_table_names": [
+        "K2-18"
+      ],
+      "normalized_key": "k2-18",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3506
+      ],
+      "prot_days": [
+        33.62
+      ],
+      "age_Gyr": [
+        4.0
+      ],
+      "e_age_Gyr": [
+        2.34
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-22"
+      ],
+      "time_table_names": [
+        "K2-22"
+      ],
+      "normalized_key": "k2-22",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3880
+      ],
+      "prot_days": [
+        15.22
+      ],
+      "age_Gyr": [
+        1.11
+      ],
+      "e_age_Gyr": [
+        0.2
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-240"
+      ],
+      "time_table_names": [
+        "K2-240"
+      ],
+      "normalized_key": "k2-240",
+      "age_statuses": [
+        "upper_limit"
+      ],
+      "teff_K": [
+        3787
+      ],
+      "prot_days": [
+        10.98
+      ],
+      "age_Gyr": [
+        0.91
+      ],
+      "e_age_Gyr": [
+        null
+      ],
+      "already_one_of_12_gyro": true
+    },
+    {
+      "sample_hosts": [
+        "K2-242"
+      ],
+      "time_table_names": [
+        "K2-242"
+      ],
+      "normalized_key": "k2-242",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3732
+      ],
+      "prot_days": [
+        21.69
+      ],
+      "age_Gyr": [
+        2.48
+      ],
+      "e_age_Gyr": [
+        0.74
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-251"
+      ],
+      "time_table_names": [
+        "K2-251"
+      ],
+      "normalized_key": "k2-251",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3745
+      ],
+      "prot_days": [
+        17.45
+      ],
+      "age_Gyr": [
+        1.42
+      ],
+      "e_age_Gyr": [
+        0.51
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-257"
+      ],
+      "time_table_names": [
+        "K2-257"
+      ],
+      "normalized_key": "k2-257",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3619
+      ],
+      "prot_days": [
+        20.84
+      ],
+      "age_Gyr": [
+        1.76
+      ],
+      "e_age_Gyr": [
+        0.64
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-26"
+      ],
+      "time_table_names": [
+        "K2-26"
+      ],
+      "normalized_key": "k2-26",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3785
+      ],
+      "prot_days": [
+        85.9
+      ],
+      "age_Gyr": [
+        23.43
+      ],
+      "e_age_Gyr": [
+        3.46
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-264"
+      ],
+      "time_table_names": [
+        "K2-264"
+      ],
+      "normalized_key": "k2-264",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3924
+      ],
+      "prot_days": [
+        21.19
+      ],
+      "age_Gyr": [
+        2.84
+      ],
+      "e_age_Gyr": [
+        0.69
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-284"
+      ],
+      "time_table_names": [
+        "K2-284"
+      ],
+      "normalized_key": "k2-284",
+      "age_statuses": [
+        "upper_limit"
+      ],
+      "teff_K": [
+        4062
+      ],
+      "prot_days": [
+        8.84
+      ],
+      "age_Gyr": [
+        0.85
+      ],
+      "e_age_Gyr": [
+        null
+      ],
+      "already_one_of_12_gyro": true
+    },
+    {
+      "sample_hosts": [
+        "K2-286"
+      ],
+      "time_table_names": [
+        "K2-286"
+      ],
+      "normalized_key": "k2-286",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3930
+      ],
+      "prot_days": [
+        28.91
+      ],
+      "age_Gyr": [
+        4.73
+      ],
+      "e_age_Gyr": [
+        1.64
+      ],
+      "already_one_of_12_gyro": true
+    },
+    {
+      "sample_hosts": [
+        "K2-288 B"
+      ],
+      "time_table_names": [
+        "K2-288 B"
+      ],
+      "normalized_key": "k2-288",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3340
+      ],
+      "prot_days": [
+        44.7
+      ],
+      "age_Gyr": [
+        3.5
+      ],
+      "e_age_Gyr": [
+        0.84
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-3"
+      ],
+      "time_table_names": [
+        "K2-3"
+      ],
+      "normalized_key": "k2-3",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3841
+      ],
+      "prot_days": [
+        19.89
+      ],
+      "age_Gyr": [
+        2.38
+      ],
+      "e_age_Gyr": [
+        0.69
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-315"
+      ],
+      "time_table_names": [
+        "K2-315"
+      ],
+      "normalized_key": "k2-315",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3300
+      ],
+      "prot_days": [
+        59.14
+      ],
+      "age_Gyr": [
+        3.91
+      ],
+      "e_age_Gyr": [
+        1.17
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-322"
+      ],
+      "time_table_names": [
+        "K2-322"
+      ],
+      "normalized_key": "k2-322",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        4140
+      ],
+      "prot_days": [
+        16.04
+      ],
+      "age_Gyr": [
+        1.39
+      ],
+      "e_age_Gyr": [
+        0.2
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-326"
+      ],
+      "time_table_names": [
+        "K2-326"
+      ],
+      "normalized_key": "k2-326",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3920
+      ],
+      "prot_days": [
+        22.56
+      ],
+      "age_Gyr": [
+        3.17
+      ],
+      "e_age_Gyr": [
+        0.65
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-343"
+      ],
+      "time_table_names": [
+        "K2-343"
+      ],
+      "normalized_key": "k2-343",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3807
+      ],
+      "prot_days": [
+        24.4
+      ],
+      "age_Gyr": [
+        3.31
+      ],
+      "e_age_Gyr": [
+        0.75
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-345"
+      ],
+      "time_table_names": [
+        "K2-345"
+      ],
+      "normalized_key": "k2-345",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3780
+      ],
+      "prot_days": [
+        18.89
+      ],
+      "age_Gyr": [
+        1.88
+      ],
+      "e_age_Gyr": [
+        0.57
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-4"
+      ],
+      "time_table_names": [
+        "K2-4"
+      ],
+      "normalized_key": "k2-4",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        4044
+      ],
+      "prot_days": [
+        19.61
+      ],
+      "age_Gyr": [
+        2.46
+      ],
+      "e_age_Gyr": [
+        0.6
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-404"
+      ],
+      "time_table_names": [
+        "K2-404"
+      ],
+      "normalized_key": "k2-404",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3750
+      ],
+      "prot_days": [
+        34.36
+      ],
+      "age_Gyr": [
+        5.25
+      ],
+      "e_age_Gyr": [
+        1.86
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-43"
+      ],
+      "time_table_names": [
+        "K2-43"
+      ],
+      "normalized_key": "k2-43",
+      "age_statuses": [
+        "upper_limit"
+      ],
+      "teff_K": [
+        3857
+      ],
+      "prot_days": [
+        9.89
+      ],
+      "age_Gyr": [
+        0.91
+      ],
+      "e_age_Gyr": [
+        null
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-5"
+      ],
+      "time_table_names": [
+        "K2-5"
+      ],
+      "normalized_key": "k2-5",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3930
+      ],
+      "prot_days": [
+        27.9
+      ],
+      "age_Gyr": [
+        4.38
+      ],
+      "e_age_Gyr": [
+        0.77
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-54"
+      ],
+      "time_table_names": [
+        "K2-54"
+      ],
+      "normalized_key": "k2-54",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3879
+      ],
+      "prot_days": [
+        16.68
+      ],
+      "age_Gyr": [
+        1.45
+      ],
+      "e_age_Gyr": [
+        0.42
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-69"
+      ],
+      "time_table_names": [
+        "K2-69"
+      ],
+      "normalized_key": "k2-69",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        4130
+      ],
+      "prot_days": [
+        22.58
+      ],
+      "age_Gyr": [
+        2.92
+      ],
+      "e_age_Gyr": [
+        0.84
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-83"
+      ],
+      "time_table_names": [
+        "K2-83"
+      ],
+      "normalized_key": "k2-83",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3910
+      ],
+      "prot_days": [
+        31.32
+      ],
+      "age_Gyr": [
+        5.21
+      ],
+      "e_age_Gyr": [
+        0.85
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-88"
+      ],
+      "time_table_names": [
+        "K2-88"
+      ],
+      "normalized_key": "k2-88",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3537
+      ],
+      "prot_days": [
+        32.21
+      ],
+      "age_Gyr": [
+        3.27
+      ],
+      "e_age_Gyr": [
+        1.65
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-89"
+      ],
+      "time_table_names": [
+        "K2-89"
+      ],
+      "normalized_key": "k2-89",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3691
+      ],
+      "prot_days": [
+        23.79
+      ],
+      "age_Gyr": [
+        2.64
+      ],
+      "e_age_Gyr": [
+        0.81
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "K2-95"
+      ],
+      "time_table_names": [
+        "K2-95"
+      ],
+      "normalized_key": "k2-95",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3501
+      ],
+      "prot_days": [
+        23.5
+      ],
+      "age_Gyr": [
+        1.4
+      ],
+      "e_age_Gyr": [
+        0.62
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "KOI-4777"
+      ],
+      "time_table_names": [
+        "KOI-4777"
+      ],
+      "normalized_key": "koi-4777",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3396
+      ],
+      "prot_days": [
+        43.62
+      ],
+      "age_Gyr": [
+        2.84
+      ],
+      "e_age_Gyr": [
+        0.28
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "L 168-9"
+      ],
+      "time_table_names": [
+        "L 168-9"
+      ],
+      "normalized_key": "l168-9",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3800
+      ],
+      "prot_days": [
+        29.8
+      ],
+      "age_Gyr": [
+        4.35
+      ],
+      "e_age_Gyr": [
+        0.63
+      ],
+      "already_one_of_12_gyro": true
+    },
+    {
+      "sample_hosts": [
+        "L 98-59"
+      ],
+      "time_table_names": [
+        "L 98-59"
+      ],
+      "normalized_key": "l98-59",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3412
+      ],
+      "prot_days": [
+        100.0
+      ],
+      "age_Gyr": [
+        10.4
+      ],
+      "e_age_Gyr": [
+        4.48
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "LHS 1140"
+      ],
+      "time_table_names": [
+        "LHS 1140"
+      ],
+      "normalized_key": "lhs1140",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3216
+      ],
+      "prot_days": [
+        130.9
+      ],
+      "age_Gyr": [
+        5.44
+      ],
+      "e_age_Gyr": [
+        2.54
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "LHS 1815"
+      ],
+      "time_table_names": [
+        "LHS 1815"
+      ],
+      "normalized_key": "lhs1815",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3643
+      ],
+      "prot_days": [
+        47.8
+      ],
+      "age_Gyr": [
+        7.27
+      ],
+      "e_age_Gyr": [
+        1.25
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "LTT 1445 A"
+      ],
+      "time_table_names": [
+        "LTT 1445 A"
+      ],
+      "normalized_key": "ltt1445",
+      "age_statuses": [
+        "excluded"
+      ],
+      "teff_K": [
+        3340
+      ],
+      "prot_days": [
+        1.39
+      ],
+      "age_Gyr": [
+        null
+      ],
+      "e_age_Gyr": [
+        null
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-1201"
+      ],
+      "time_table_names": [
+        "TOI-1201"
+      ],
+      "normalized_key": "toi-1201",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3476
+      ],
+      "prot_days": [
+        21.0
+      ],
+      "age_Gyr": [
+        1.14
+      ],
+      "e_age_Gyr": [
+        0.49
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-1235"
+      ],
+      "time_table_names": [
+        "TOI-1235"
+      ],
+      "normalized_key": "toi-1235",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3997
+      ],
+      "prot_days": [
+        41.2
+      ],
+      "age_Gyr": [
+        7.9
+      ],
+      "e_age_Gyr": [
+        1.2
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-1238"
+      ],
+      "time_table_names": [
+        "TOI-1238"
+      ],
+      "normalized_key": "toi-1238",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        4089
+      ],
+      "prot_days": [
+        40.0
+      ],
+      "age_Gyr": [
+        6.28
+      ],
+      "e_age_Gyr": [
+        1.54
+      ],
+      "already_one_of_12_gyro": true
+    },
+    {
+      "sample_hosts": [
+        "TOI-1634"
+      ],
+      "time_table_names": [
+        "TOI-1634"
+      ],
+      "normalized_key": "toi-1634",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3550
+      ],
+      "prot_days": [
+        24.8
+      ],
+      "age_Gyr": [
+        1.79
+      ],
+      "e_age_Gyr": [
+        0.69
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-1685"
+      ],
+      "time_table_names": [
+        "TOI-1685"
+      ],
+      "normalized_key": "toi-1685",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3434
+      ],
+      "prot_days": [
+        19.0
+      ],
+      "age_Gyr": [
+        1.11
+      ],
+      "e_age_Gyr": [
+        0.41
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-1693"
+      ],
+      "time_table_names": [
+        "TOI-1693"
+      ],
+      "normalized_key": "toi-1693",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3499
+      ],
+      "prot_days": [
+        38.0
+      ],
+      "age_Gyr": [
+        3.67
+      ],
+      "e_age_Gyr": [
+        0.87
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-1759"
+      ],
+      "time_table_names": [
+        "TOI-1759"
+      ],
+      "normalized_key": "toi-1759",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        4009
+      ],
+      "prot_days": [
+        35.65
+      ],
+      "age_Gyr": [
+        6.16
+      ],
+      "e_age_Gyr": [
+        0.95
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-2136"
+      ],
+      "time_table_names": [
+        "TOI-2136"
+      ],
+      "normalized_key": "toi-2136",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3366
+      ],
+      "prot_days": [
+        85.6
+      ],
+      "age_Gyr": [
+        6.58
+      ],
+      "e_age_Gyr": [
+        2.9
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-269"
+      ],
+      "time_table_names": [
+        "TOI-269"
+      ],
+      "normalized_key": "toi-269",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3514
+      ],
+      "prot_days": [
+        35.7
+      ],
+      "age_Gyr": [
+        3.38
+      ],
+      "e_age_Gyr": [
+        0.94
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-270"
+      ],
+      "time_table_names": [
+        "TOI-270"
+      ],
+      "normalized_key": "toi-270",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3506
+      ],
+      "prot_days": [
+        58.0
+      ],
+      "age_Gyr": [
+        6.87
+      ],
+      "e_age_Gyr": [
+        2.13
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-540"
+      ],
+      "time_table_names": [
+        "TOI-540"
+      ],
+      "normalized_key": "toi-540",
+      "age_statuses": [
+        "excluded"
+      ],
+      "teff_K": [
+        3216
+      ],
+      "prot_days": [
+        0.73
+      ],
+      "age_Gyr": [
+        null
+      ],
+      "e_age_Gyr": [
+        null
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-620"
+      ],
+      "time_table_names": [
+        "TOI-620"
+      ],
+      "normalized_key": "toi-620",
+      "age_statuses": [
+        "upper_limit"
+      ],
+      "teff_K": [
+        3708
+      ],
+      "prot_days": [
+        8.9
+      ],
+      "age_Gyr": [
+        0.91
+      ],
+      "e_age_Gyr": [
+        null
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-700"
+      ],
+      "time_table_names": [
+        "TOI-700"
+      ],
+      "normalized_key": "toi-700",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3480
+      ],
+      "prot_days": [
+        54.0
+      ],
+      "age_Gyr": [
+        5.61
+      ],
+      "e_age_Gyr": [
+        1.68
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-776"
+      ],
+      "time_table_names": [
+        "TOI-776"
+      ],
+      "normalized_key": "toi-776",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3709
+      ],
+      "prot_days": [
+        22.7
+      ],
+      "age_Gyr": [
+        2.61
+      ],
+      "e_age_Gyr": [
+        0.57
+      ],
+      "already_one_of_12_gyro": false
+    },
+    {
+      "sample_hosts": [
+        "TOI-833"
+      ],
+      "time_table_names": [
+        "TOI-833"
+      ],
+      "normalized_key": "toi-833",
+      "age_statuses": [
+        "age_estimate"
+      ],
+      "teff_K": [
+        3871
+      ],
+      "prot_days": [
+        15.2
+      ],
+      "age_Gyr": [
+        1.1
+      ],
+      "e_age_Gyr": [
+        0.17
+      ],
+      "already_one_of_12_gyro": false
+    }
+  ],
+  "matched_names_flat": [
+    "EPIC 201170410",
+    "EPIC 211822797",
+    "G 9-40",
+    "GJ 1132",
+    "GJ 1214",
+    "GJ 1252",
+    "GJ 3473",
+    "GJ 357",
+    "GJ 367",
+    "GJ 3929",
+    "K2-104",
+    "K2-117",
+    "K2-122",
+    "K2-123",
+    "K2-124",
+    "K2-125",
+    "K2-129",
+    "K2-133",
+    "K2-147",
+    "K2-148",
+    "K2-151",
+    "K2-152",
+    "K2-153",
+    "K2-18",
+    "K2-22",
+    "K2-240",
+    "K2-242",
+    "K2-251",
+    "K2-257",
+    "K2-26",
+    "K2-264",
+    "K2-284",
+    "K2-286",
+    "K2-288 B",
+    "K2-3",
+    "K2-315",
+    "K2-322",
+    "K2-326",
+    "K2-343",
+    "K2-345",
+    "K2-4",
+    "K2-404",
+    "K2-43",
+    "K2-5",
+    "K2-54",
+    "K2-69",
+    "K2-83",
+    "K2-88",
+    "K2-89",
+    "K2-95",
+    "KOI-4777",
+    "L 168-9",
+    "L 98-59",
+    "LHS 1140",
+    "LHS 1815",
+    "LTT 1445 A",
+    "TOI-1201",
+    "TOI-1235",
+    "TOI-1238",
+    "TOI-1634",
+    "TOI-1685",
+    "TOI-1693",
+    "TOI-1759",
+    "TOI-2136",
+    "TOI-269",
+    "TOI-270",
+    "TOI-540",
+    "TOI-620",
+    "TOI-700",
+    "TOI-776",
+    "TOI-833"
+  ],
+  "existing_12_gyro_hosts": [
+    "HD 260655",
+    "K2-240",
+    "K2-284",
+    "K2-286",
+    "L 168-9",
+    "Ross 176",
+    "TOI-1238",
+    "TOI-1801",
+    "TOI-2018",
+    "TOI-260",
+    "TOI-4342",
+    "TOI-544"
+  ],
+  "existing_12_gyro_matched_in_time_table": [
+    "K2-240",
+    "K2-284",
+    "K2-286",
+    "L 168-9",
+    "TOI-1238"
+  ],
+  "additional_hosts_beyond_12_count": 66,
+  "additional_hosts_beyond_12": [
+    "EPIC 201170410",
+    "EPIC 211822797",
+    "G 9-40",
+    "GJ 1132",
+    "GJ 1214",
+    "GJ 1252",
+    "GJ 3473",
+    "GJ 357",
+    "GJ 367",
+    "GJ 3929",
+    "K2-104",
+    "K2-117",
+    "K2-122",
+    "K2-123",
+    "K2-124",
+    "K2-125",
+    "K2-129",
+    "K2-133",
+    "K2-147",
+    "K2-148",
+    "K2-151",
+    "K2-152",
+    "K2-153",
+    "K2-18",
+    "K2-22",
+    "K2-242",
+    "K2-251",
+    "K2-257",
+    "K2-26",
+    "K2-264",
+    "K2-288 B",
+    "K2-3",
+    "K2-315",
+    "K2-322",
+    "K2-326",
+    "K2-343",
+    "K2-345",
+    "K2-4",
+    "K2-404",
+    "K2-43",
+    "K2-5",
+    "K2-54",
+    "K2-69",
+    "K2-83",
+    "K2-88",
+    "K2-89",
+    "K2-95",
+    "KOI-4777",
+    "L 98-59",
+    "LHS 1140",
+    "LHS 1815",
+    "LTT 1445 A",
+    "TOI-1201",
+    "TOI-1235",
+    "TOI-1634",
+    "TOI-1685",
+    "TOI-1693",
+    "TOI-1759",
+    "TOI-2136",
+    "TOI-269",
+    "TOI-270",
+    "TOI-540",
+    "TOI-620",
+    "TOI-700",
+    "TOI-776",
+    "TOI-833"
+  ],
+  "additional_hosts_with_finite_age_count": 62,
+  "additional_hosts_with_finite_age": [
+    "EPIC 201170410",
+    "EPIC 211822797",
+    "G 9-40",
+    "GJ 1132",
+    "GJ 1214",
+    "GJ 1252",
+    "GJ 3473",
+    "GJ 357",
+    "GJ 367",
+    "GJ 3929",
+    "K2-104",
+    "K2-117",
+    "K2-122",
+    "K2-123",
+    "K2-124",
+    "K2-125",
+    "K2-129",
+    "K2-133",
+    "K2-147",
+    "K2-148",
+    "K2-151",
+    "K2-152",
+    "K2-153",
+    "K2-18",
+    "K2-22",
+    "K2-242",
+    "K2-251",
+    "K2-257",
+    "K2-26",
+    "K2-264",
+    "K2-288 B",
+    "K2-3",
+    "K2-315",
+    "K2-322",
+    "K2-326",
+    "K2-343",
+    "K2-345",
+    "K2-4",
+    "K2-404",
+    "K2-5",
+    "K2-54",
+    "K2-69",
+    "K2-83",
+    "K2-88",
+    "K2-89",
+    "K2-95",
+    "KOI-4777",
+    "L 98-59",
+    "LHS 1140",
+    "LHS 1815",
+    "TOI-1201",
+    "TOI-1235",
+    "TOI-1634",
+    "TOI-1685",
+    "TOI-1693",
+    "TOI-1759",
+    "TOI-2136",
+    "TOI-269",
+    "TOI-270",
+    "TOI-700",
+    "TOI-776",
+    "TOI-833"
+  ],
+  "parse_completeness": {
+    "expected_total": 249,
+    "recovered_total": 249,
+    "expected_age_estimates": 227,
+    "recovered_age_estimates": 227,
+    "expected_upper_limits": 8,
+    "recovered_upper_limits": 8,
+    "expected_excluded": 14,
+    "recovered_excluded": 14,
+    "embedded_table_rows_expected": 50,
+    "embedded_table_rows_recovered": 50,
+    "embedded_table_parse_failures": 0
+  },
+  "caveats": [
+    "NAME NORMALIZATION: trailing stellar-component letters stripped (GJ 15 A -> GJ 15; K2-148 A/B -> K2-148; TOI-1450 A -> TOI-1450). K2-148 A and B collapse to one key.",
+    "Gl / Gliese / GJ unified as one catalogue prefix. No Gl<->GJ numeric ambiguity affected any match in this run.",
+    "Kepler-N and KOI-N are NOT interchangeable designations and were never matched by number. The TIME Table lists many KOI-N stars absent from our Kepler-N named sample; those are counted as non-matches.",
+    "EPIC and TIC identifiers were kept distinct.",
+    "'Additional hosts' = cool hosts in our 303-star sample that appear in the Gaidos+23 TIME Table but are not among our 12 pipeline gyro-age hosts. It does NOT mean those stars are usable in our Angus+19 gyrointerp model (Teff 3800-6200 K, Prot <= 45 d).",
+    "Vault note embeds only the first 50 of 249 rows; full table parsed from Zenodo DOI 10.5281/zenodo.7578269 (time_table.mrt, CDS format)."
+  ]
+}

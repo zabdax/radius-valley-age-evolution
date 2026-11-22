@@ -1,0 +1,294 @@
+Table: Catalog of Cool Host Stars with Established Rotation Periods
+===================================================================================
+Catalog reference paper
+    Gaidos, E., Claytor, Z., Dungee, R., Ali, A., and Feiden, G. A.,
+    The TIME Table: Rotation and Ages of Cool Exoplanet Host Stars, MNRAS, in press
+===================================================================================
+ADC_Keywords: Stars, ages ; Stars, late-type; Planets
+
+Description:
+    Catalog of 249 late K- and M-type exoplanet host stars with rotation periods
+    obtained from the literature or new analysis of space- or ground-based time-
+    series photometry as of August 2022.  Model-based, metallicity-dependent
+    corrections are provided but not included in gyrochronological age estimates.
+    Please cite the reference paper if any information from this table is used.
+===================================================================================
+Byte-by-byte Description of file: time_table.mrt
+-----------------------------------------------------------------------------------
+   Bytes Format Units Label  Explanations
+-----------------------------------------------------------------------------------
+   1- 15 A15    ---     Name     Host star name
+  17     A1     ---     Binary   Binary flag
+  19- 22 I4     K       Teff     Effective temperature
+  24- 28 F5.2   ---     [Fe/H]   Metallicity
+  30- 35 F6.2   d       Prot     Rotation period
+  37- 41 F5.2   d     e_Prot     Rotation period uncertainty
+  43- 44 A2     ---     Method   Method for obtaining rotation period (1) 
+  46- 50 F5.2   Gyr     Age      Estimated age
+  52- 56 F5.2   Gyr   e_Age      Age uncertainty 
+  58- 62 F5.2   Gyr     corr     Metallicity-dependent age correction
+  64     A1     ---     fail     Flag for age assignment failure
+  66     A1     ---     ul       Flag for upper limit
+  68     A1     ---     pms      Flag for pre-main sequence star
+  70     A1     ---     no_err   Flag for lack of a reported period error (2)
+  72- 99 A28    ---     Note     Instrument key and citation for rotation period (3)
+
+--------------------------------------------------------------------------------
+Note (1): P=photometric; S=spectroscopy; PS=hybrid
+Note (2): If no error was reported then a value of 1 day was assumed
+Note (3): Instrument Keys: AN=All-Sky Automated Survey for Super-Novae (ASAS-SN);
+AP=APACHE, AS=All Sky Automated Survey (ASAS); CA=CARMENES; ES=ESPRESSO; FA=Fairborn;
+HA=HARPS, HN=Hungarian Automated Telescope Network (HAT-Net); K2=Kepler K2; KE=Kepler;
+LC=Las Cumbres Observatory Global Telescope; ME=MEarth, NS=Northern Sky Variability
+Survey (NSVS); OS=Observatorio de Sierra Nevada; SP=SPIRou; ST=STELLA; TE=TESSr2014};
+TJ=Telescope Joan Oro (TJO); WA=Wide Angle Search for Planets (WASP)
+--------------------------------------------------------------------------------
+EPIC 201170410  Y 3650 -0.05  20.16  1.60 P   1.77  0.58 +0.00 N N N N K2 this work
+EPIC 211822797  - 3856 +0.14  15.88  0.72 P   1.18  0.24 +0.03 N N N N K2 Reinhold2020
+G 264-012       - 3326 +0.10 100.00  6.00 PS  6.66  3.26 +0.12 N N N N TE/ME/AN/CA Amado2021
+G 9-40          - 3713 +0.04  34.08 11.46 P   5.35  2.57 +0.00 N N N N K2 Reinhold2020
+GJ 1132         - 3270 -0.12 122.30  5.50 P   6.31  3.23       N N N N ME Cloutier2017
+GJ 1148         - 3304 +0.16  73.50  0.00 P   4.44  1.60 +0.51 N N N Y HA Hartman2011
+GJ 1214         - 3252 +0.29 125.00  5.00 P   5.91  3.00       N N N N ST Mallonn2018
+GJ 1252         - 3458 +0.10  64.00  4.00 P   6.61  2.34 +0.58 N N N N WA Shporer2020
+GJ 1265         - 4052 -0.04  29.17  6.27 P   4.44  1.53 +0.11 N N N N K2 Reinhold2020
+GJ 15 A         Y 3607 -0.32  43.82  0.56 PS  5.87  1.14 -0.66 N N N N Fa/HI Howard2014
+GJ 176          - 3680 +0.14  38.92  0.00 P   5.60  0.90 +0.52 N N N Y AS Kiraga2007
+GJ 229          Y 3790        27.30  0.00 P   3.77  0.51       N N N Y AS Suarez-Mascareno2016
+GJ 251          - 3389 -0.03 122.10  2.05 PS 12.52  5.86       N N N N WA/CA Stock2020
+GJ 27.1         - 3578       139.00  3.50 P  34.94  7.93       N N N N AS this work
+GJ 273          - 3317 +0.09  93.50 16.00 S   6.12  3.17 +0.09 N N N N HA Suarez-Mascareno2017
+GJ 3138         - 3899 -0.30  42.50  0.00 S   8.44  0.95 +0.14 N N N Y HA Astudillo-Defru2017b
+GJ 3293         - 3600 +0.11  41.00  0.00 S   5.19  1.06 +0.40 N N N Y HA Astudillo-Defru2017b
+GJ 338 B        Y 3770 -0.03  10.17  0.00 P   0.91             N Y N Y K2 Magaudda2020
+GJ 3470         - 3611 +0.20  20.70  0.15 P   1.65  0.54 +0.16 N N N N Fa Biddle2014
+GJ 3473         Y 3347 +0.11 168.30  3.65 P  16.46  8.46       N N N N ME/TJ Kemmer2020
+GJ 357          - 3480 -0.12  77.80  2.10 P   9.76  3.31 -0.30 N N N N AS/AN/NS Luque2019
+GJ 367          - 3687 -0.01  48.00  2.00 P   7.95  1.31 +0.04 N N N N WA Lam2021
+GJ 3779         - 3324 +0.00  95.00  5.00 PS  6.13  2.87       N N N N ME/CA Luque2018
+GJ 3929         - 3369 +0.00 122.00 13.00 P  11.10  5.76 -0.36 N N N N HA/AN Kemmer2022
+GJ 393          - 3548 -0.18  34.15  0.22 P   3.32  0.87 -0.24 N N N N K2 Amado2021
+GJ 3942         - 3850 -0.04  16.30  0.10 PS  1.18  0.24 +0.01 N N N N AS/HA Suarez-Mascareno2018
+GJ 3998         - 3825 -0.16  33.00  0.00 P   5.25  0.69       N N N Y AP Giacobbe2020
+GJ 411          - 3719 -0.36  56.16  0.27 P  10.73  1.52 -0.52 N N N N Fa Diaz2019
+GJ 414 A        Y 4120 +0.24  40.00  4.00 P   5.87  1.77 +0.51 N N N N KE Dedrick2021
+GJ 4276         - 3440 +0.12   6.14  0.00 P                    Y N N Y AP Giacobbe2020
+GJ 436          - 3479 +0.01  44.10  0.20 P   4.32  1.09 +0.00 N N N N Fa Lothringer2018
+GJ 486          - 3290 -0.15  49.90  5.50 P   3.51  0.81 -0.13 N N N N AS/LC/WA/TJ/OS Caballero2022
+GJ 514          - 3755 -0.09  30.00  0.90 S   4.11  0.60 +0.03 N N N N HA Suarez-Mascareno2017
+GJ 581          - 3490 -0.09 130.00  2.00 S  23.26  7.70       N N N N HA Robertson2014
+GJ 625          - 3540 -0.35  76.79  0.13 P  11.96  3.14       N N N N WA Diez-Alonso2019
+GJ 628          - 3305 -0.02  89.30  1.80 P   5.27  2.32       N N N N Fa Kane2017
+GJ 649          - 3741 +0.03  23.80  0.10 P   2.96  0.51 +0.11 N N N N AS Diez-Alonso2019
+GJ 667 C        Y 3755       103.90  0.70 S  30.59  4.06       N N N N HA Suarez-Mascareno2015
+GJ 674          - 3453 -0.28  35.00  0.10 P   2.85  0.72 -0.28 N N N N AS Suarez-Mascareno2016
+GJ 676 A        Y 3827 +0.23  41.20  3.80 S   7.58  1.46 +0.56 N N N N HA Suarez-Mascareno2015
+GJ 685          - 3844 +0.10  19.30  0.30 P   2.25  0.36 +0.15 N N N N TJ Diez-Alonso2019
+GJ 687          - 3439 +0.05  61.80  1.00 P   5.82  1.99 +0.42 N N N N Fa Burt2014
+GJ 720 A        Y 4013 +0.01  36.05  1.41 S   6.26  1.05 +0.21 N N N N HA Gonzalez-Alvarez2021
+GJ 740          - 3832 +0.08  35.56  0.07 S   5.97  0.72 +0.32 N N N N CA/HA Toledo-Padron2021
+GJ 832          - 3522 -0.30  45.70  9.30 S   5.20  2.13 -0.98 N N N N HA Suarez-Mascareno2015
+GJ 849          - 3551 +0.25  39.20  6.30 S   4.33  1.55 +0.68 N N N N HA Suarez-Mascareno2015
+GJ 876          - 3472 +0.17  31.31  8.15 P   2.70  1.35 +0.29 N N N N K2 Reinhold2020
+GJ 96           - 3892 +0.14  29.50  0.50 P   4.67  0.52 +0.47 N N N N WA Diez-Alonso2019
+GJ 9689         - 3880 -0.11  39.30  0.40 S   7.35  0.82 +0.18 N N N N HA Maldonado2021
+Gl 49           Y 3740 +0.13  18.40  0.70 S   1.55  0.41 +0.07 N N N N HA Suarez-Mascareno2018
+Gl 686          - 3657 -0.25  37.00  0.00 S   4.94  0.86 -0.46 N N N Y CA Lalitha2019
+HATS-6          - 3770 +0.20  35.10  0.00 P   5.41  0.75 +0.54 N N N Y HA Hartman2015
+HATS-71         - 3405 +0.17  41.72  0.14 P   3.52  0.75 +0.57 N N N N HA Bakos2020
+HATS-75         - 3790 +0.52  35.04  0.00 P   5.55  0.71 +0.31 N N N N HA Bakos2020
+HATS-76         - 4016 +0.32  15.16  0.00 P   1.17  0.14 +0.18 N N N N HA Bakos2020
+HD 147379       Y 3893 +0.16  21.10  0.00 0   2.88  0.38 +0.28 N N N Y CA Reiners2018
+HD 180617       Y 3558 +0.10  46.04  0.20 P   5.62  1.28 +0.36 N N N N AS Diez-Alonso2019
+HD 238090       Y 3933 -0.03  96.70  3.45 PS 32.24  3.87       N N N N CA/ME/NS/SN/TJ Stock2020
+HIP 12961       - 4092 -0.07  16.60  0.00 S   1.52  0.31 +0.08 N N N Y HA Forveille2011
+K2-104          - 3701 +0.14  17.98  0.88 P   1.33  0.41 +0.02 N N N N K2 Reinhold2020
+K2-117          - 3765 -0.05  18.78  1.75 P   1.86  0.65 +0.04 N N N N K2 Reinhold2020
+K2-122          Y 3866 +0.32  28.67  4.19 P   4.44  1.11 +0.45 N N N N K2 Reinhold2020
+K2-123          - 3846 +0.03  18.86  1.77 P   2.07  0.67 +0.06 N N N N K2 Reinhold2020
+K2-124          - 3570 +0.02  38.88  2.24 P   4.46  1.07 +0.08 N N N N K2 this work
+K2-125          - 3650        51.34  4.72 P   8.32  1.86       N N N N K2 this work
+K2-129          - 3460        46.42  4.48 P   4.44  1.31       N N N N K2 this work
+K2-133          - 3732        35.75 14.06 P   6.20  3.25       N N N N K2 Reinhold2020
+K2-14           - 3870 -0.37  43.98  5.88 P   8.83  2.13 -0.18 N N N N K2 this work
+K2-147          - 3775 -0.10  36.29 15.02 P   6.78  3.63 -0.33 N N N N K2 Reinhold2020
+K2-148 A        Y 3926 -0.11  14.75  1.07 P   1.15  0.23 +0.08 N N N N K2 Reinhold2020
+K2-148 B        Y 3905 -0.11  16.28  1.29 P   1.38  0.36 +0.06 N N N N K2 Reinhold2020
+K2-151          Y 3700 -0.19  47.28  5.12 P   7.98  1.79 -0.34 N N N N K2 this work
+K2-152          - 3988 +0.12  15.47  1.17 P   1.27  0.27 +0.05 N N N N K2 Reinhold2020
+K2-153          - 3845        39.10  0.50 P   7.06  0.85       N N N N ZT this work
+K2-155          - 3920 -0.42  24.66  2.96 P   3.63  0.75 +0.05 N N N N K2 this work
+K2-17           - 4102 +0.15  14.81  1.08 P   1.20  0.21 +0.12 N N N N K2 Reinhold2020
+K2-18           Y 3506 +0.09  33.62 15.65 P   4.00  2.34 -0.02 N N N N K2 Reinhold2020
+K2-21           - 4006 -0.11  19.33  1.88 P   2.39  0.62 +0.12 N N N N K2 Reinhold2020
+K2-22           Y 3880 +0.02  15.22  0.52 P   1.11  0.20 +0.01 N N N N K2 this work
+K2-240          - 3787 -0.10  10.98  0.51 P   0.91             N Y N N K2 Reinhold2020
+K2-242          - 3732 -0.01  21.69  2.51 P   2.48  0.74 +0.02 N N N N K2 Reinhold2020
+K2-251          - 3745 -0.04  17.45  1.49 P   1.42  0.51 +0.03 N N N N K2 Reinhold2020
+K2-257          - 3619 -0.03  20.84  2.26 P   1.76  0.64 -0.01 N N N N K2 Reinhold2020
+K2-26           - 3785        85.90  4.00 P  23.43  3.46       N N N N ZT this work
+K2-264          - 3924 +0.12  21.19  2.36 P   2.84  0.69 +0.24 N N N N K2 Reinhold2020
+K2-284          - 4062 +0.00   8.84  0.52 P   0.85             N Y N N K2 Reinhold2020
+K2-286          - 3930 +0.00  28.91  6.19 P   4.73  1.64 +0.06 N N N N K2 this work
+K2-288 B        Y 3340 -0.21  44.70  4.56 P   3.50  0.84 -0.32 N N N N K2 this work
+K2-3            - 3841 -0.30  19.89  2.01 P   2.38  0.69 +0.03 N N N N K2 Reinhold2020
+K2-315          - 3300 -0.24  59.14  7.22 P   3.91  1.17 -0.30 N N N N K2 this work
+K2-322          - 4140        16.04  0.64 P   1.39  0.20       N N N N K2 this work
+K2-326          - 3920        22.56  2.37 P   3.17  0.65       N N N N K2 this work
+K2-33           - 3540         6.25  0.77 P                    Y N N N K2 Reinhold2020
+K2-343          - 3807 -0.10  24.40  3.11 P   3.31  0.75 +0.09 N N N N K2 Reinhold2020
+K2-345          - 3780 +0.26  18.89  1.19 P   1.88  0.57 +0.25 N N N N K2 this work
+K2-377          - 4200 -0.01  39.14  3.66 P   4.78  1.32 +0.12 N N N N K2 this work
+K2-387          - 3570 +0.13  34.31  6.04 P   3.63  1.43 +0.30 N N N N K2 this work
+K2-4            - 4044 -0.12  19.61  1.94 P   2.46  0.60 +0.12 N N N N K2 Reinhold2020
+K2-404          - 3750 +0.01  34.36  7.32 P   5.25  1.86 +0.11 N N N N K2 this work
+K2-43           - 3857         9.89  0.59 P   0.91             N Y N N K2 Reinhold2020
+K2-45           - 4100        21.12  1.79 P   2.81  0.45       N N N N K2 this work
+K2-5            - 3930 -0.31  27.90  2.60 P   4.38  0.77 +0.14 N N N N K2 this work
+K2-54           - 3879        16.68  1.36 P   1.45  0.42       N N N N K2 Reinhold2020
+K2-69           - 4130        22.58  4.63 P   2.92  0.84       N N N N K2 this work
+K2-83           - 3910        31.32  2.42 P   5.21  0.85       N N N N K2 this work
+K2-88           - 3537        32.21  9.10 P   3.27  1.65       N N N N K2 Reinhold2020
+K2-89           - 3691        23.79  3.24 P   2.64  0.81       N N N N K2 Reinhold2020
+K2-90           - 4136 -0.23  25.21  3.86 P   3.29  0.71 +0.21 N N N N K2 Reinhold2020
+K2-95           - 3501 +0.14  23.50  2.30 P   1.40  0.62 +0.04 N N N N K2 Reinhold2020
+L 168-9         - 3800 +0.04  29.80  1.30 P   4.35  0.63 +0.20 N N N N WA Astudillo-Defru2020
+L 98-59         - 3412       100.00  0.00 S  10.40  4.48       N N N Y HA Cloutier2019
+LHS 1140        - 3216 -0.24 130.90  3.20 PS  5.44  2.54       N N N N ES/HA/ME Lillo-Box2020
+LHS 1815        - 3643 -0.12  47.80  0.70 P   7.27  1.25 -0.14 N N N N TE/WA Gan2020
+LP 714-47       - 3950 +0.41  33.00  3.00 P   5.72  1.05 +0.34 N N N N WA Dreizler2020
+LSPM J2116+0234 - 3475 -0.05  42.00  0.00 S   4.01  0.97 -0.09 N N N Y CA Lalitha2019
+LTT 1445 A      Y 3340 -0.34   1.39  0.05 P                    Y N N N TE Canto-Martins2020
+NGTS-1          - 3916 +0.00  43.00  0.00 P   8.68  0.97 +0.15 N N N Y NG Bayliss2018
+Ross 458        Y 3725         2.89  0.00 P                    Y N N Y ME Newton2017
+TOI-1201        Y 3476 +0.05  21.00  2.00 P   1.14  0.49 -0.04 N N N N WA/AN Kossakowski2021
+TOI-1235        - 3997 +0.33  41.20  1.20 PS  7.90  1.20 +0.17 N N N N AS/NS/HA/CA Bluhm2021
+TOI-1238        - 4089 +0.31  40.00  0.50 P   6.28  1.54 +0.11 N N N N AS Gonzalez-Alvarez2022
+TOI-1634        Y 3550 +0.23  24.80  0.00 P   1.79  0.69 +0.22 N N N Y TE Hirano2021
+TOI-1685        - 3434 -0.13  19.00  0.00 S   1.11  0.41 -0.08 N N N Y CA Bluhm2021
+TOI-1693        - 3499 +0.03  38.00  0.50 P   3.67  0.87 +0.10 N N N N ZT Giacalone2022
+TOI-1759        - 4009 +0.00  35.65  0.16 S   6.16  0.95 +0.20 N N N N SP Martioli2022
+TOI-178         Y 4316 -0.23  36.00  0.00 S   3.86  0.57 +0.23 N N N Y ES Leleu2021
+TOI-2136        - 3366 -0.02  85.60  2.70 P   6.58  2.90       N N N N ZT Beard2022
+TOI-269         - 3514 -0.29  35.70  2.00 P   3.38  0.94 -0.57 N N N N WA Cointepas2021
+TOI-270         - 3506 -0.20  58.00  4.00 S   6.87  2.13 -0.80 N N N N HA/ES VanEylen2021
+TOI-3714        Y 3660 +0.10  23.30  0.30 P   2.37  0.65 +0.07 N N N N ZT Canas2022
+TOI-519         - 3350        84.30  2.00 P   6.00  2.59       N N N N ZT Parvianen2021
+TOI-540         - 3216         0.73  0.00 P                    Y N N N TE Ment2021
+TOI-620         - 3708 +0.35   8.90  0.00 P   0.91             N Y N Y TE Reefe2022
+TOI-700         - 3480 -0.07  54.00  0.80 P   5.61  1.68 -0.22 N N N N AS Gilbert2020
+TOI-776         - 3709 -0.20  22.70  0.40 P   2.61  0.57 -0.05 N N N N Ev Howard2021
+TOI-833         - 3871        15.20  0.10 P   1.10  0.17       N N N N AS this work
+TYC 2187-512-1  - 3866 +0.08  41.00  1.70 P   7.78  1.01 +0.26 N N N N WA Diez-Alonso2019
+WASP-43         - 4400 -0.05  15.69  0.07 P   1.35  0.12 +0.10 N N N N AS this work
+KOI-247         - 3732 +0.02  16.19  1.32 P   1.03  0.35 +0.00 N N N N Ke Santos2019
+KOI-249         Y 3547 -0.14  46.43  3.32 P   5.58  0.81 -0.36 N N N N Ke Santos2019
+KOI-251         - 3808 -0.06  14.39  1.04 P   1.09  0.20 +0.01 N N N N Ke Santos2019
+KOI-253         - 3757 +0.48  37.71  3.26 P   6.00  0.97 +0.39 N N N N Ke Santos2019
+KOI-254         - 3793 +0.32  15.64  1.10 P   1.14  0.24 +0.14 N N N N Ke Santos2019
+KOI-314         - 3846 -0.24  19.12  1.87 P   2.21  0.67 +0.06 N N N N Ke Santos2019
+KOI-430         - 4200 -0.12  15.74  0.61 P                    Y N N N Ke Santos2019
+KOI-463         Y 3395 -0.12  50.81  3.65 P   3.10  0.37 -0.07 N N N N Ke Santos2019
+KOI-478         - 3744 +0.20  34.22  2.86 P   5.03  0.80 +0.45 N N N N Ke Santos2019
+KOI-571         - 3751 -0.34  33.75  2.40 P   4.96  0.70 -0.34 N N N N Ke Santos2019
+KOI-596         - 3669 +0.00  36.93  1.43 P   5.11  0.54 +0.09 N N N N Ke Santos2019
+KOI-610         - 4102 -0.06  36.18  4.57 P   5.11  1.07 +0.21 N N N N Ke Santos2019
+KOI-663         - 4121 -0.34  34.71  5.07 P   4.42  0.95 +0.31 N N N N Ke Santos2019
+KOI-739         - 3736 +0.12  42.14  4.02 P   6.99  1.22 +0.35 N N N N Ke Santos2019
+KOI-775         - 4126 +0.04  11.85  0.92 P   1.01  0.15 +0.05 N N N N Ke Santos2019
+KOI-778         - 4149 -0.32  35.19  5.15 P   3.97  0.67 +0.25 N N N N Ke Santos2019
+KOI-781         - 3688 +0.00  36.17  2.64 P   5.09  0.74 +0.09 N N N N Ke Santos2019
+KOI-784         - 4077 -0.24  23.05  1.78 P   3.15  0.38 +0.19 N N N N Ke Santos2019
+KOI-812         - 3950 -0.46  38.77  3.96 P   7.80  1.43 -0.07 N N N N Ke Santos2019
+KOI-817         - 3747 +0.10  15.32  1.19 P   0.91  0.28 +0.01 N N N N Ke Santos2019
+KOI-818         - 3692 +0.28  33.75  2.36 P   4.60  0.63 +0.53 N N N N Ke Santos2019
+KOI-854         - 3593 +0.26  19.93  1.44 P   1.52  0.32 +0.11 N N N N Ke Santos2019
+KOI-870         - 4072 -0.18  17.84  1.28 P   1.91  0.46 +0.13 N N N N Ke Santos2019
+KOI-886         - 3713 -0.12  34.22  2.35 P   4.83  0.67 -0.03 N N N N Ke Santos2019
+KOI-899         - 3561 +0.00  36.17  3.32 P   3.86  0.74 +0.06 N N N N Ke Santos2019
+KOI-936         - 3582 +0.18  34.46  3.04 P   3.82  0.66 +0.42 N N N N Ke Santos2019
+KOI-947         - 3755 -0.26  25.58  2.19 P   3.40  0.47 -0.09 N N N N Ke Santos2019
+KOI-952         - 3731 -0.02  36.94  3.45 P   5.60  0.96 +0.09 N N N N Ke Santos2019
+KOI-1078        - 3789 -0.34  23.05  2.22 P   3.06  0.54 -0.13 N N N N Ke Santos2019
+KOI-1085        - 3975 -0.34  39.86  3.07 P   8.17  1.23 +0.25 N N N N Ke Santos2019
+KOI-1141        - 3968 -0.14  17.84  1.40 P   1.90  0.53 +0.12 N N N N Ke Santos2019
+KOI-1146        - 3569 -0.16  24.71  2.07 P   2.13  0.36 -0.12 N N N N Ke Santos2019
+KOI-1201        - 3683 -0.22  28.98  2.34 P   3.61  0.54 -0.17 N N N N Ke Santos2019
+KOI-1202        - 4109 -0.02  36.43  3.04 P   4.95  0.76 +0.19 N N N N Ke Santos2019
+KOI-1266        - 3823 -0.20  29.59  2.80 P   4.44  0.74 -0.04 N N N N Ke Santos2019
+KOI-1298        - 4141 -0.20  18.09  1.33 P   2.02  0.46 +0.15 N N N N Ke Santos2019
+KOI-1403        - 3976 -0.20  29.18  2.26 P   4.94  0.74 +0.16 N N N N Ke Santos2019
+KOI-1404        - 3751 -0.24  33.52  3.75 P   4.94  0.95 -0.17 N N N N Ke Santos2019
+KOI-1408        - 3957 -0.16  24.37  2.31 P   3.72  0.64 +0.15 N N N N Ke Santos2019
+KOI-1427        - 3883 -0.24  33.98  1.92 P   5.96  0.74 +0.10 N N N N Ke Santos2019
+KOI-1515        - 4042 -0.62  40.69  1.07 P   7.71  0.71 +0.25 N N N N Ke Santos2019
+KOI-1584        - 4166 -0.06  31.49  2.28 P   3.48  0.32 +0.16 N N N N Ke Santos2019
+KOI-1588        - 4132 -0.30  30.63  2.62 P   3.65  0.38 +0.23 N N N N Ke Santos2019
+KOI-1649        - 3871 +0.07  26.12  2.28 P   3.90  0.60 +0.26 N N N N Ke Santos2019
+KOI-1702        - 3364 -0.06  67.97  5.38 P   3.82  0.57 +0.10 N N N N Ke Santos2019
+KOI-1843        - 3706 +0.26  34.22  2.80 P   4.79  0.74 +0.53 N N N N Ke Santos2019
+KOI-1867        - 3716 +0.04  25.58  2.13 P   3.28  0.44 +0.15 N N N N Ke Santos2019
+KOI-1868        - 3826 -0.06  24.71  1.91 P   3.48  0.46 +0.12 N N N N Ke Santos2019
+KOI-1880        - 3951 -0.16  18.86  1.43 P   2.22  0.57 +0.14 N N N N Ke Santos2019
+KOI-1907        - 3597 +0.40  17.96  1.31 P   1.26  0.35 +0.19 N N N N Ke Santos2019
+KOI-1940        Y 3738 +0.00  18.34  1.39 P                    Y N N N Ke Santos2019
+KOI-2006        - 3758 +0.00  28.19  2.06 P   3.83  0.50 +0.13 N N N N Ke Santos2019
+KOI-2036        - 3757 +0.18  31.93  2.33 P   4.59  0.65 +0.47 N N N N Ke Santos2019
+KOI-2057        - 3974 -0.06  29.79  2.20 P   5.11  0.74 +0.22 N N N N Ke Santos2019
+KOI-2058        - 3746 +0.00  21.96  1.90 P   2.72  0.55 +0.08 N N N N Ke Santos2019
+KOI-2090        - 3879 +0.32  36.17  2.58 P   6.57  0.93 +0.35 N N N N Ke Santos2019
+KOI-2130        - 3967 +0.06  27.04  2.00 P   4.36  0.63 +0.28 N N N N Ke Santos2019
+KOI-2156        - 3731 -0.28  27.80  1.96 P   3.68  0.45 -0.17 N N N N Ke Santos2019
+KOI-2179        - 3825 +0.07  19.25  1.53 P   2.21  0.61 +0.15 N N N N Ke Santos2019
+KOI-2191        - 3867 +0.10  17.47  1.28 P   1.65  0.48 +0.10 N N N N Ke Santos2019
+KOI-2238        - 3810 -0.02  14.79  1.12 P   1.13  0.21 +0.02 N N N N Ke Santos2019
+KOI-2329        - 3821 -0.28  34.46  1.15 P   5.62  0.56 -0.07 N N N N Ke Santos2019
+KOI-2418        - 3576 +0.16  17.47  1.48 P   1.33  0.32 -0.03 N N N N Ke Santos2019
+KOI-2453        Y 3462 -0.42  59.17  5.71 P   5.71  1.01 -1.46 N N N N Ke Santos2019
+KOI-2480        - 3993 -0.20  32.15  2.42 P   5.72  0.83 +0.21 N N N N Ke Santos2019
+KOI-2588        - 4102 -0.14  28.78  2.04 P   3.73  0.40 +0.21 N N N N Ke Santos2019
+KOI-2626        - 3554 -0.04  31.92  2.85 P   2.87  0.67 -0.04 N N N N Ke Santos2019
+KOI-2650        - 3765 +0.02  19.66  1.57 P   2.11  0.62 +0.07 N N N N Ke Santos2019
+KOI-2662        - 3605 +0.07  33.06  3.01 P   3.76  0.68 +0.20 N N N N Ke Santos2019
+KOI-2715        - 3640 +0.21  43.02  4.33 P   6.26  1.14 +0.60 N N N N Ke Santos2019
+KOI-2764        - 4039 -0.16  27.04  1.99 P   4.06  0.55 +0.23 N N N N Ke Santos2019
+KOI-2793        - 3698 -0.20  19.25  1.57 P   1.76  0.57 -0.03 N N N N Ke Santos2019
+KOI-2839        - 3941 -0.04  17.72  1.42 P   1.82  0.53 +0.11 N N N N Ke Santos2019
+KOI-2862        - 3678 +0.26  17.59  1.28 P   1.20  0.39 +0.10 N N N N Ke Santos2019
+KOI-2926        - 3891 +0.21  24.20  1.82 P   3.56  0.49 +0.40 N N N N Ke Santos2019
+KOI-2992        - 3952 -0.10  14.69  1.04 P   1.13  0.22 +0.06 N N N N Ke Santos2019
+KOI-3090        - 3729 +0.06  27.04  2.12 P   3.55  0.46 +0.24 N N N N Ke Santos2019
+KOI-3094        - 3805 -0.10  35.68  2.50 P   5.83  0.82 +0.07 N N N N Ke Santos2019
+KOI-3102        - 3773 -0.80  30.63  3.05 P   4.41  0.79 -1.20 N N N N Ke Santos2019
+KOI-3144        - 3675 -0.32  33.52  2.76 P   4.41  0.71 -0.48 N N N N Ke Santos2019
+KOI-3282        - 3899 -0.20  17.96  1.35 P   1.86  0.53 +0.08 N N N N Ke Santos2019
+KOI-4087        - 4133 -0.30  17.47  1.41 P   1.83  0.46 +0.16 N N N N Ke Santos2019
+KOI-4252        - 3872 +0.12  30.63  2.31 P   4.98  0.73 +0.37 N N N N Ke Santos2019
+KOI-4419        - 3939 -0.20  24.03  2.31 P   3.61  0.64 +0.14 N N N N Ke Santos2019
+KOI-4777        - 3396 -0.10  43.62  3.16 P   2.84  0.28 -0.12 N N N N Ke Santos2019
+KOI-4875        - 3880 +0.14  30.00  2.08 P   4.85  0.67 +0.34 N N N N Ke Santos2019
+KOI-4957        - 3747 +0.00  16.08  1.31 P                    Y N N N Ke Santos2019
+KOI-5162        Y 3697 -0.30  21.51  1.75 P   2.43  0.57 -0.09 N N N N Ke Santos2019
+KOI-5228        - 3434 +0.00  52.96  3.61 P   4.05  0.55 +0.10 N N N N Ke Santos2019
+KOI-5387        - 4192 -0.30  38.77  3.20 P   3.72  0.35 +0.23 N N N N Ke Santos2019
+KOI-5644        - 3732 +0.00  17.60  1.37 P                    Y N N N Ke Santos2019
+KOI-5692        - 4147 +0.44  42.72  6.64 P   5.15  1.22 -0.76 N N N N Ke Santos2019
+KOI-5831        - 4031 -0.10  31.49  2.67 P   5.24  0.83 +0.24 N N N N Ke Santos2019
+KOI-5879        - 3827 -0.40  11.37  0.78 P   0.95             N Y N N Ke Santos2019
+KOI-5930        - 3358 +0.00  44.54  3.05 P   2.82  0.00 +0.12 N N N N Ke Santos2019
+KOI-5966        - 4071 +0.00  14.19  1.03 P                    Y N N N Ke Santos2019
+KOI-6276        - 3628 -0.20  18.86  1.43 P   1.38  0.36 -0.00 N N N N Ke Santos2019
+KOI-6568        - 3914 -0.20  32.60  2.72 P   5.76  0.92 +0.08 N N N N Ke Santos2019
+KOI-6752        - 4183 -0.26  28.58  2.11 P   3.22  0.29 +0.20 N N N N Ke Santos2019
+KOI-6863        - 3236 +0.00   3.45  0.24 P                    Y N N N Ke Santos2019
+KOI-7182        - 4199 +0.44  24.20  2.07 P   2.93  0.28 +0.24 N N N N Ke Santos2019
+KOI-7319        - 3761 +0.00  42.13  3.47 P   7.19  1.14 +0.13 N N N N Ke Santos2019
+KOI-7408        - 3900 -0.10   2.86  0.20 P                    Y N N N Ke Santos2019
+KOI-7562        - 4144 +0.00  21.84  2.10 P                    Y N N N Ke Santos2019
+KOI-7592        - 3761 +0.00  36.94  3.20 P   5.83  0.95 +0.13 N N N N Ke Santos2019
+KOI-7617        - 3578 -0.20  19.79  1.47 P   1.52  0.29 -0.08 N N N N Ke Santos2019
+KOI-7630        - 3905 -0.20  25.40  1.86 P   3.86  0.54 +0.14 N N N N Ke Santos2019
+KOI-7793        - 3799 -0.10  34.22  2.26 P   5.41  0.73 +0.04 N N N N Ke Santos2019
+KOI-8007        - 3391 +0.00  33.75  2.51 P   2.65             N Y N N Ke Santos2019
+KOI-8012        - 3374 -0.36  26.85  2.12 P   2.91             N Y N N Ke Santos2019
+KOI-8037        - 3704 -0.20   2.39  0.17 P                    Y N N N Ke Santos2019
