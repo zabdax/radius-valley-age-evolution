@@ -1,0 +1,34 @@
+{
+  "status": "completed",
+  "reps_per_arm": 60,
+  "note": "60-replicate spot check; use only as sanity check, not the production curve",
+  "rows": [
+    {
+      "point": "quick_null",
+      "beta_inj": 0.0,
+      "n": 60,
+      "median": -0.11045443127598888,
+      "mean": -0.04475333633065009,
+      "sd": 0.698830128693135,
+      "arm_separation_nullSD": 0.0
+    },
+    {
+      "point": "quick_gaidos",
+      "beta_inj": -0.8824,
+      "n": 60,
+      "median": -1.2223431014629287,
+      "mean": -1.2520060601815668,
+      "sd": 0.6999628380334784,
+      "arm_separation_nullSD": -1.591071455757432
+    },
+    {
+      "point": "quick_primary",
+      "beta_inj": -0.1419,
+      "n": 60,
+      "median": -0.28269722294127897,
+      "mean": -0.2179400315715827,
+      "sd": 0.7032843059726694,
+      "arm_separation_nullSD": -0.24647304773106607
+    }
+  ]
+}
