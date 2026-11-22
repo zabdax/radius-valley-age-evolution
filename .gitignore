@@ -23,3 +23,7 @@ colab_gate_data/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Private journal / preprint submission preparation (contact details, checklists)
+RESEARCH_SQUARE_SUBMISSION.md
+
