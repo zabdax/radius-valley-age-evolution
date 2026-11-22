@@ -7,9 +7,10 @@ files by hand.
 
 ## Status
 
-- Current archived release: **v2.0.1**, DOI 10.5281/zenodo.23007310
-- Next release to publish: **v2.0.3**
-- No v2.0.3 DOI exists yet. Do not insert a guessed DOI into the manuscript.
+- Current archived release: **v2.0.3**, DOI 10.5281/zenodo.24444755
+- Earlier release: **v2.0.1**, DOI 10.5281/zenodo.23007310 (preserves the
+  superseded v1 material)
+- The v2.0.3 GitHub release is published and Zenodo has minted the DOI above.
 
 ## Record metadata (use these verbatim)
 
@@ -48,12 +49,10 @@ and provenance records are included.
    curve, Gaia production cuts, regenerated figures, and the new animation.
 6. Publish the release. GitHub notifies Zenodo, which archives the tag and mints
    a new DOI (a new version of the same concept DOI).
-7. Wait until the Zenodo record shows version v2.0.3 and copy its **version DOI**
-   (not the concept DOI).
-8. Update the README release paragraph with that DOI, and optionally paste it
-   into the Data Availability section of the manuscript before submission.
-9. Commit and push the README change. The Zenodo archive of v2.0.3 is immutable;
-   a README fix afterwards is fine and does not require a new DOI.
+7. The Zenodo version DOI is **10.5281/zenodo.24444755**. It is already in the
+   README release paragraph and in the manuscript's Data Availability section.
+8. If the manuscript or README changes again, commit and push normally. The
+   Zenodo archive of v2.0.3 is immutable, so a later edit needs no new DOI.
 
 ## If you must upload manually instead
 

@@ -17,10 +17,10 @@
   ],
   "related_identifiers": [
     {
-      "identifier": "10.5281/zenodo.23007310",
+      "identifier": "10.5281/zenodo.24444755",
       "scheme": "doi",
       "relation_type": "IsVersionOf",
-      "note": "This preparation is a revised/extended v2 release relative to the existing record. If the deposit turns out to be byte-identical reuse of that record instead, change relation_type to IsIdenticalTo."
+      "note": "Current v2.0.3 archived release of the analysis pipeline and results. The earlier v2.0.1 release (10.5281/zenodo.23007310) preserves the superseded v1 material."
     }
   ],
   "keywords": [

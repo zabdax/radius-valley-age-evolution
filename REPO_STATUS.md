@@ -13,7 +13,9 @@ machinery), for any current claim. Verify the bundle with:
 cd repro/v2 && sha256sum -c provenance/BUNDLE_SHA256.txt
 ```
 
-The release metadata is `v2.0.3` (`.zenodo.json`, `CITATION.cff`).
+The release metadata is `v2.0.3` (`.zenodo.json`, `CITATION.cff`); the
+archived release DOI is
+[10.5281/zenodo.24444755](https://doi.org/10.5281/zenodo.24444755).
 
 ## Historical material (do not use for v2 claims)
 

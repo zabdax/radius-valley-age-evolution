@@ -130,10 +130,12 @@ No LaTeX source or compiled manuscript is distributed.
 
 Cite the accompanying manuscript via its journal or arXiv record and this
 repository; see [CITATION.cff](CITATION.cff) for the structured citation.
-The archived Zenodo release is v2.0.1
-([doi:10.5281/zenodo.23007310](https://doi.org/10.5281/zenodo.23007310)).
-The v2.0.3 release manifest and file list are in
-`repro/v2/provenance/`; its Zenodo DOI will be added on deposit.
+The current archived release is v2.0.3
+([doi:10.5281/zenodo.24444755](https://doi.org/10.5281/zenodo.24444755)).
+The earlier v2.0.1 release
+([doi:10.5281/zenodo.23007310](https://doi.org/10.5281/zenodo.23007310))
+preserves the superseded v1 material. Release manifests and the file list are
+in `repro/v2/provenance/`.
 
 Curated CSVs follow NASA Exoplanet Archive, Gaia DR3, and Kepler DR25 access
 conditions. See [LICENSE](LICENSE).
