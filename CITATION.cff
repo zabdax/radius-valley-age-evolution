@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this code, data, or results, please cite the accompanying manuscript and this repository."
-title: "The Radius Valley's Age Evolution Around M Dwarfs: An Inconclusive Verdict and a Quantified Path Forward"
+message: "If you use this code, data, or results, cite the accompanying manuscript and this repository."
+title: "Radius-valley age evolution around cool stars: an inconclusive calibrated gate and a quantified path forward"
 authors:
   - family-names: Shaad
     given-names: Zubayer Hasan
@@ -12,9 +12,10 @@ version: 2.1.0
 date-released: "2026-11-22"
 license: MIT
 repository-code: "https://github.com/zabdax/radius-valley-age-evolution"
-abstract: "A calibrated statistical gate (null- and signal-injected Monte Carlo ensembles) applied to the FGK radius-valley age-evolution control and the M-dwarf regime, with a 15-cell power grid quantifying the sample size and age-precision requirements for resolution."
+abstract: "A calibrated null/signal injection gate applied to the radius-valley age-evolution question around cool stars (Teff < 4200 K), with an FGK control, a 15-cell power grid, a power-versus-effect curve, and an external TIME Table age-ordering check. The verdict is inconclusive; both samples lack the power to discriminate a literature-sized effect from no effect."
 keywords:
   - exoplanets
   - radius valley
+  - cool stars
   - M dwarf stars
   - astrostatistics
