@@ -8,8 +8,8 @@ authors:
   - family-names: Al Abrar
     given-names: Md Mahdin
     orcid: "https://orcid.org/0009-0009-9645-152X"
-version: 2.1.0
-date-released: "2026-11-22"
+version: 2.0.3
+date-released: "2026-11-23"
 license: MIT
 repository-code: "https://github.com/zabdax/radius-valley-age-evolution"
 abstract: "A calibrated null/signal injection gate applied to the radius-valley age-evolution question around cool stars (Teff < 4200 K), with an FGK control, a 15-cell power grid, a power-versus-effect curve, and an external TIME Table age-ordering check. The verdict is inconclusive; both samples lack the power to discriminate a literature-sized effect from no effect."

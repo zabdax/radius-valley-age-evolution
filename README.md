@@ -10,7 +10,7 @@ answer is inconclusive, and the repo quantifies exactly what would resolve it.
 ![Gate](https://img.shields.io/badge/gate-1000%20reps%2Farm-D55E00)
 ![Power](https://img.shields.io/badge/power--grid-15%20cells%20%C3%97%20500-009E73)
 ![Verdict](https://img.shields.io/badge/verdict-FAIL%20(inconclusive)-999999)
-![Version](https://img.shields.io/badge/release-v2.1.0-0072B2)
+![Version](https://img.shields.io/badge/release-v2.0.3-0072B2)
 
 > **Start here.** Read [REPO_STATUS.md](REPO_STATUS.md) before using any number.
 > It states which results are current and which older files are historical.
@@ -80,7 +80,6 @@ code/          numbered analysis pipeline (01-15, B1/B2, appendix_*, audits)
 data/          frozen CSV inputs + checksums.sha256
 results/       pipeline outputs; results/highrep/ holds the raw replicates
 figures/       overview figure, gate animation, and earlier publication figures
-archive/v1/    superseded v1 notes and drafts (read REPO_STATUS.md first)
 colab/         high-replicate gate and power-grid experiment
 docs/          METHODS, REPRODUCIBILITY, DATA_DICTIONARY, USAGE_COLAB, notes
 repro/v2/      CURRENT bundle: scripts, results, figures, provenance, checksums
@@ -133,7 +132,7 @@ Cite the accompanying manuscript via its journal or arXiv record and this
 repository; see [CITATION.cff](CITATION.cff) for the structured citation.
 The archived Zenodo release is v2.0.1
 ([doi:10.5281/zenodo.23007310](https://doi.org/10.5281/zenodo.23007310)).
-The v2.1.0 release manifest and file list are in
+The v2.0.3 release manifest and file list are in
 `repro/v2/provenance/`; its Zenodo DOI will be added on deposit.
 
 Curated CSVs follow NASA Exoplanet Archive, Gaia DR3, and Kepler DR25 access

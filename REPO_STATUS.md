@@ -13,17 +13,14 @@ machinery), for any current claim. Verify the bundle with:
 cd repro/v2 && sha256sum -c provenance/BUNDLE_SHA256.txt
 ```
 
-The v2 release metadata is `v2.1.0` (`.zenodo.json`, `CITATION.cff`).
+The release metadata is `v2.0.3` (`.zenodo.json`, `CITATION.cff`).
 
 ## Historical material (do not use for v2 claims)
 
-The following were moved to [`archive/v1/`](archive/v1/) so they cannot be
-mistaken for current results. They are preserved for provenance only and
-contain **superseded** numbers:
-
-- `archive/v1/notes/` — early analysis notes
-- `archive/v1/legacy_draft/` — the pre-audit paper draft and its PDF
-- `archive/v1/manuscript/` — earlier revision records and build files
+The v1 notes, pre-audit draft, and earlier revision records were removed from
+the active repository. They remain available in the immutable Zenodo v2.0.1
+snapshot (doi:10.5281/zenodo.23007310), so the audit trail is preserved
+without cluttering the current tree.
 
 Still in place but explicitly historical:
 

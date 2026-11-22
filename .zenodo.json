@@ -1,6 +1,6 @@
 {
   "title": "Radius-valley age evolution around cool stars: calibrated gate, power grid, data, and code",
-  "description": "A calibrated null/signal injection gate testing whether current archival data can distinguish a literature-sized age evolution of the sub-Neptune fraction from no effect around cool stars (Teff < 4200 K), with an FGK control. Includes a 15-cell power grid (500 replicates per cell), a full power-versus-effect curve, frozen checksummed inputs, an external TIME Table age-ordering check, publication figures, and provenance records. The gate returns FAIL (inconclusive) for both samples; even an eightfold inventory reaches only 23.2 percent detection. Version v2.1.0 adds the self-contained reproducibility bundle under repro/v2/. LaTeX manuscript source is withheld; data, code, results, and figures are shared.",
+  "description": "A calibrated null/signal injection gate testing whether current archival data can distinguish a literature-sized age evolution of the sub-Neptune fraction from no effect around cool stars (Teff < 4200 K), with an FGK control. Includes a 15-cell power grid (500 replicates per cell), a full power-versus-effect curve, frozen checksummed inputs, an external TIME Table age-ordering check, publication figures, and provenance records. The gate returns FAIL (inconclusive) for both samples; even an eightfold inventory reaches only 23.2 percent detection. Version v2.0.3 adds the self-contained reproducibility bundle under repro/v2/. LaTeX manuscript source is withheld; data, code, results, and figures are shared.",
   "creators": [
     {
       "name": "Shaad, Zubayer Hasan",
@@ -28,5 +28,5 @@
   ],
   "upload_type": "software",
   "access_right": "open",
-  "version": "v2.1.0"
+  "version": "v2.0.3"
 }
