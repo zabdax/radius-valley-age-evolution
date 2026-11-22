@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE",
+  "description": "Spearman rank correlation of Gaia tangential velocity with independent TIME Table gyrochronological age, cool-host crossmatch",
+  "n_matched": 65,
+  "n_additional": 62,
+  "n_overlapping_pipeline_gyro": 3,
+  "rho_all": 0.3724116832753688,
+  "p_all": 0.00225117638111711,
+  "rho_additional_only": 0.38242737911165986,
+  "p_additional_only": 0.0021587870574695583,
+  "source_crossmatch": "results/science/time_table_crossmatch.json",
+  "source_kinematics": "radius-valley-age-evolution/data/hosts_kinematics_M.csv",
+  "note": "Validation only. These ages are not used in the primary gate because they fall outside the Angus+19 validity domain (3800-6200 K, P_rot <= 45 d)."
+}
