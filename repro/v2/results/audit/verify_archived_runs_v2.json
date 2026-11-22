@@ -1,0 +1,379 @@
+{
+  "item2_confirm": {
+    "archived_summary_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\confirm_summary.json",
+    "archived_all_raw_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\confirm_independent_all_raw.csv",
+    "archived_per_arm_raw_paths": [
+      "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\confirm_independent_M_null_raw.csv",
+      "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\confirm_independent_M_signal_raw.csv",
+      "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\confirm_independent_FGK_null_raw.csv",
+      "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\confirm_independent_FGK_signal_raw.csv"
+    ],
+    "script_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\code\\confirm_independent_production.py",
+    "model_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\code\\appendix_A_arm_delta.py",
+    "synth_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\code\\15_stratified_gate.py",
+    "meta": {
+      "reps": {
+        "M": 1000,
+        "FGK": 400
+      },
+      "mode": "independent",
+      "production_legacy": {
+        "M_arm": -0.19,
+        "FGK_arm": -1.01
+      }
+    },
+    "raw_total_rows": 2800,
+    "raw_modes": [
+      "independent"
+    ],
+    "raw_per_arm_n": {
+      "M": {
+        "null": 1000,
+        "signal": 1000
+      },
+      "FGK": {
+        "null": 400,
+        "signal": 400
+      }
+    },
+    "recomputed_vs_archived": {
+      "M": {
+        "null.n": {
+          "archived": 1000,
+          "recomputed": 1000,
+          "match": true
+        },
+        "null.median": {
+          "archived": -0.021909600768802648,
+          "recomputed": -0.0219096007688026,
+          "match": true
+        },
+        "null.sd": {
+          "archived": 0.6023771001790615,
+          "recomputed": 0.6023771001790614,
+          "match": true
+        },
+        "null.q025": {
+          "archived": -1.283551771754821,
+          "recomputed": -1.283551771754821,
+          "match": true
+        },
+        "null.q975": {
+          "archived": 1.037497791822017,
+          "recomputed": 1.037497791822017,
+          "match": true
+        },
+        "null.pct_rank_of_real": {
+          "archived": 0.563,
+          "recomputed": 0.563,
+          "match": true
+        },
+        "signal.n": {
+          "archived": 1000,
+          "recomputed": 1000,
+          "match": true
+        },
+        "signal.median": {
+          "archived": -0.17611460574327498,
+          "recomputed": -0.17611460574327498,
+          "match": true
+        },
+        "signal.sd": {
+          "archived": 0.6169048503353697,
+          "recomputed": 0.6169048503353697,
+          "match": true
+        },
+        "signal.q025": {
+          "archived": -1.5217522943792756,
+          "recomputed": -1.5217522943792756,
+          "match": true
+        },
+        "signal.q975": {
+          "archived": 0.8466090000806972,
+          "recomputed": 0.8466090000806972,
+          "match": true
+        },
+        "signal.pct_rank_of_real": {
+          "archived": 0.658,
+          "recomputed": 0.658,
+          "match": true
+        },
+        "arm_separation_nullSD": {
+          "archived": -0.2559941354487639,
+          "recomputed": -0.25599413544876404,
+          "match": true
+        }
+      },
+      "FGK": {
+        "null.n": {
+          "archived": 400,
+          "recomputed": 400,
+          "match": true
+        },
+        "null.median": {
+          "archived": -0.026312163432448018,
+          "recomputed": -0.026312163432447952,
+          "match": true
+        },
+        "null.sd": {
+          "archived": 0.11993227076670557,
+          "recomputed": 0.11993227076670554,
+          "match": true
+        },
+        "null.q025": {
+          "archived": -0.25384823447986055,
+          "recomputed": -0.2538482344798605,
+          "match": true
+        },
+        "null.q975": {
+          "archived": 0.2295774257513943,
+          "recomputed": 0.22957742575139425,
+          "match": true
+        },
+        "null.pct_rank_of_real": {
+          "archived": 0.4875,
+          "recomputed": 0.4875,
+          "match": true
+        },
+        "signal.n": {
+          "archived": 400,
+          "recomputed": 400,
+          "match": true
+        },
+        "signal.median": {
+          "archived": -0.12644717616222617,
+          "recomputed": -0.12644717616222614,
+          "match": true
+        },
+        "signal.sd": {
+          "archived": 0.12203580191413851,
+          "recomputed": 0.12203580191413851,
+          "match": true
+        },
+        "signal.q025": {
+          "archived": -0.3878445502040689,
+          "recomputed": -0.3878445502040689,
+          "match": true
+        },
+        "signal.q975": {
+          "archived": 0.08936381055374668,
+          "recomputed": 0.08936381055374662,
+          "match": true
+        },
+        "signal.pct_rank_of_real": {
+          "archived": 0.8225,
+          "recomputed": 0.8225,
+          "match": true
+        },
+        "arm_separation_nullSD": {
+          "archived": -0.8349296823084639,
+          "recomputed": -0.8349296823084644,
+          "match": true
+        }
+      }
+    },
+    "all_fields_match": true,
+    "scale_matches_claim": true,
+    "mode_is_independent": true,
+    "separation_M_approx_minus0.26": true,
+    "separation_FGK_approx_minus0.83": true
+  },
+  "item3_beta_dist": {
+    "archived_summary_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\beta_dist_summary.json",
+    "archived_all_raw_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\beta_dist_M_all_raw.csv",
+    "archived_legacy_raw_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\beta_dist_M_legacy_raw.csv",
+    "archived_indep_raw_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\appendix\\beta_dist_M_indep_raw.csv",
+    "script_path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\code\\appendix_B_beta_dist.py",
+    "recomputed_vs_archived": {
+      "legacy": {
+        "n": {
+          "archived": 300,
+          "recomputed": 300,
+          "match": true
+        },
+        "beta_inj.median": {
+          "archived": -0.1401936441405108,
+          "recomputed": -0.14019364414051078,
+          "match": true
+        },
+        "beta_inj.sd": {
+          "archived": 0.1605098449088401,
+          "recomputed": 0.1605098449088401,
+          "match": true
+        },
+        "beta_inj.q025": {
+          "archived": -0.4455353097595568,
+          "recomputed": -0.44553530975955674,
+          "match": true
+        },
+        "beta_inj.q975": {
+          "archived": 0.18341326301250335,
+          "recomputed": 0.1834132630125033,
+          "match": true
+        },
+        "beta_inj.frac_near_zero_lt0.05": {
+          "archived": 0.15,
+          "recomputed": 0.15,
+          "match": true
+        },
+        "beta_inj.frac_positive": {
+          "archived": 0.19666666666666666,
+          "recomputed": 0.19666666666666666,
+          "match": true
+        },
+        "beta_hat.median": {
+          "archived": -0.1928553831937802,
+          "recomputed": -0.1928553831937802,
+          "match": true
+        },
+        "beta_hat.sd": {
+          "archived": 0.7276350299598172,
+          "recomputed": 0.7276350299598172,
+          "match": true
+        },
+        "beta_hat.q025": {
+          "archived": -1.6619839090283535,
+          "recomputed": -1.6619839090283535,
+          "match": true
+        },
+        "beta_hat.q975": {
+          "archived": 1.044913778099967,
+          "recomputed": 1.044913778099967,
+          "match": true
+        },
+        "resid_hat_minus_inj.median": {
+          "archived": 0.006485639922738012,
+          "recomputed": 0.006485639922738012,
+          "match": true
+        },
+        "resid_hat_minus_inj.sd": {
+          "archived": 0.704419072102494,
+          "recomputed": 0.704419072102494,
+          "match": true
+        },
+        "detect_correct_sign_rate": {
+          "archived": 0.13333333333333333,
+          "recomputed": 0.13333333333333333,
+          "match": true
+        },
+        "corr_inj_hat": {
+          "archived": 0.2526269864938334,
+          "recomputed": 0.25262698649383347,
+          "match": true
+        }
+      },
+      "independent": {
+        "n": {
+          "archived": 150,
+          "recomputed": 150,
+          "match": true
+        },
+        "beta_inj.median": {
+          "archived": -0.12709188388434833,
+          "recomputed": -0.12709188388434825,
+          "match": true
+        },
+        "beta_inj.sd": {
+          "archived": 0.1660611266403978,
+          "recomputed": 0.16606112664039777,
+          "match": true
+        },
+        "beta_inj.q025": {
+          "archived": -0.4783720730032041,
+          "recomputed": -0.47837207300320406,
+          "match": true
+        },
+        "beta_inj.q975": {
+          "archived": 0.18309213095702917,
+          "recomputed": 0.18309213095702917,
+          "match": true
+        },
+        "beta_inj.frac_near_zero_lt0.05": {
+          "archived": 0.22,
+          "recomputed": 0.22,
+          "match": true
+        },
+        "beta_inj.frac_positive": {
+          "archived": 0.19333333333333333,
+          "recomputed": 0.19333333333333333,
+          "match": true
+        },
+        "beta_hat.median": {
+          "archived": -0.14853924579310557,
+          "recomputed": -0.14853924579310554,
+          "match": true
+        },
+        "beta_hat.sd": {
+          "archived": 0.6018917135118692,
+          "recomputed": 0.6018917135118692,
+          "match": true
+        },
+        "beta_hat.q025": {
+          "archived": -1.4508377753810084,
+          "recomputed": -1.4508377753810084,
+          "match": true
+        },
+        "beta_hat.q975": {
+          "archived": 0.7320039267859402,
+          "recomputed": 0.7320039267859402,
+          "match": true
+        },
+        "resid_hat_minus_inj.median": {
+          "archived": 0.029056626891421362,
+          "recomputed": 0.029056626891421286,
+          "match": true
+        },
+        "resid_hat_minus_inj.sd": {
+          "archived": 0.5784994927501961,
+          "recomputed": 0.5784994927501961,
+          "match": true
+        },
+        "detect_correct_sign_rate": {
+          "archived": 0.11333333333333333,
+          "recomputed": 0.11333333333333333,
+          "match": true
+        },
+        "corr_inj_hat": {
+          "archived": 0.27607713292331065,
+          "recomputed": 0.2760771329233106,
+          "match": true
+        }
+      }
+    },
+    "injection_regeneration": {
+      "legacy": {
+        "seed": 9001,
+        "reps": 300,
+        "max_abs_diff_vs_archived": 9.71445146547012e-17,
+        "exact_match": true,
+        "regen_median": -0.1401936441405108,
+        "regen_sd": 0.1605098449088401,
+        "regen_q025": -0.4455353097595568,
+        "regen_q975": 0.18341326301250335
+      },
+      "independent": {
+        "seed": 9101,
+        "reps": 150,
+        "max_abs_diff_vs_archived": 9.367506770274758e-17,
+        "exact_match": true,
+        "regen_median": -0.12709188388434833,
+        "regen_sd": 0.1660611266403978,
+        "regen_q025": -0.4783720730032041,
+        "regen_q975": 0.18309213095702917
+      }
+    },
+    "all_fields_match": true,
+    "all_injections_regenerated": true
+  },
+  "highrep_manifest": {
+    "path": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution\\results\\highrep\\manifest.json",
+    "gate_reps_per_arm": 1000,
+    "grid_reps_per_cell": 500,
+    "elapsed_hours": 6.0348035832246145,
+    "model_spec_unchanged": true,
+    "rng_stream_exact": true,
+    "generated_by": "colab_highrep_gate_fast_v3.py",
+    "note": "This manifest governs the high-rep GATE/POWER grid run (1000 reps/arm gate, 500/cell grid, ~6.03 h). It is the production-scale compute context, not the confirm run itself; the confirm run is archived separately under results/appendix/."
+  },
+  "verification_python": "C:/Users/MIT/AppData/Local/Programs/Python/Python312/python.exe"
+}
