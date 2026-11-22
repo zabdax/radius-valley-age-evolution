@@ -75,7 +75,7 @@ repository-relative paths.
 - `results/highrep/task2_calibration_kepler_only_trim0.95_rep1000.json`
 - `results/highrep/power_grid_rep500_replicates_raw.csv` (7,500 replicates)
 - `results/highrep/power_analysis_rep500.json`
-- `results/colab_audit/AUDIT_REPORT.md` (independent audit of the earlier run)
+- `results/colab_audit/AUDIT_REPORT.md` (independent audit of the earlier run; superseded values, see `REPO_STATUS.md`)
 
 ## 5. High-replicate Colab run
 

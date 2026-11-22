@@ -34,6 +34,6 @@ All files in `data/` are committed snapshots; verify with `data/checksums.sha256
 | `power_analysis_rep500.json` | Per-cell detection/coverage table |
 | `manifest.json`, `accelerator_manifest.json` | Run provenance |
 
-Derived data behind the RNAAS figure lives in `manuscript/`-adjacent CSVs in the
-full project archive; the open-source figure CSVs regenerate via
-`figures/make_overview.py` and `code/regen_manuscript_figs.py`.
+The figure CSVs regenerate via `figures/make_overview.py` and
+`code/regen_manuscript_figs.py`. The current v2 figure data is in
+`repro/v2/results/science/`.

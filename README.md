@@ -80,7 +80,7 @@ code/          numbered analysis pipeline (01-15, B1/B2, appendix_*, audits)
 data/          frozen CSV inputs + checksums.sha256
 results/       pipeline outputs; results/highrep/ holds the raw replicates
 figures/       overview figure, gate animation, and earlier publication figures
-manuscript/    revision notes and build files (LaTeX source withheld)
+archive/v1/    superseded v1 notes and drafts (read REPO_STATUS.md first)
 colab/         high-replicate gate and power-grid experiment
 docs/          METHODS, REPRODUCIBILITY, DATA_DICTIONARY, USAGE_COLAB, notes
 repro/v2/      CURRENT bundle: scripts, results, figures, provenance, checksums

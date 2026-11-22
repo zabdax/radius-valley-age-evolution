@@ -17,13 +17,19 @@ The v2 release metadata is `v2.1.0` (`.zenodo.json`, `CITATION.cff`).
 
 ## Historical material (do not use for v2 claims)
 
-The following were kept intact for provenance and reproducibility of the
-earlier analysis, but contain **superseded** numbers:
+The following were moved to [`archive/v1/`](archive/v1/) so they cannot be
+mistaken for current results. They are preserved for provenance only and
+contain **superseded** numbers:
 
-- `docs/` and `docs/notes/` — early analysis notes and method descriptions
-- `manuscript/README.md`, `manuscript/REVISION_NOTES.md`, `manuscript/FIX_LOG.md` — earlier manuscript revision records
-- `results/colab_audit/AUDIT_REPORT.md` — the v1 audit report
-- top-level `figures/` — earlier overview figures (the v2 figures are in `repro/v2/figures/`)
+- `archive/v1/notes/` — early analysis notes
+- `archive/v1/legacy_draft/` — the pre-audit paper draft and its PDF
+- `archive/v1/manuscript/` — earlier revision records and build files
+
+Still in place but explicitly historical:
+
+- `results/colab_audit/AUDIT_REPORT.md` — the v1 audit report (banner added at top)
+- top-level `figures/` — earlier figures plus the two active animations; the v2
+  publication figures are in `repro/v2/figures/`
 
 ## Superseded -> current values
 

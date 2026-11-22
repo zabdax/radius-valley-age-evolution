@@ -1,3 +1,7 @@
+> **Historical v1 audit report.** Its headline numbers (18.7% detection,
+> 11.7% FPR, 83--98% coverage) are superseded by the v2 results in
+> `repro/v2/`. See `REPO_STATUS.md` for the full supersession table.
+
 # HIGH-REPLICATE MONTE CARLO AUDIT REPORT
 **Project:** The Radius Valley's Age Evolution Around M Dwarfs — calibrated-gate pipeline
 **Auditor:** Monte Carlo Results Auditor | **Date:** 2026-08-30
