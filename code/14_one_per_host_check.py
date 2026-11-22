@@ -166,7 +166,7 @@ def null_gate(df, b_real, iqr, sd, reps):
             "q975": float(np.quantile(bets, .975)),
             "pct_rank_of_real": pct_below,
             "p_upper": float(1.0 - pct_below),
-            "distinguishable_from_null": bool(1.0 - pct_below <= 0.05),
+            "distinguishable_from_null": bool(pct_below <= 0.05),  # lower tail
             "null_betas": [float(b) for b in bets]}
 
 

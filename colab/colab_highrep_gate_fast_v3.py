@@ -603,10 +603,11 @@ def run_gate_fast(df, ess):
                     "q975": float(base.np.quantile(vals, .975)),
                     "pct_rank_of_real": float(base.np.mean(vals <= b_real))}
 
-    p_null_upper = 1.0 - res["null"]["pct_rank_of_real"]
+    # One-sided LOWER tail (negative injected effect).
+    p_null_lower = res["null"]["pct_rank_of_real"]            # P(null <= real)
     inside_signal = (res["signal"]["q025"] <= b_real <= res["signal"]["q975"])
     res["verdict"] = {
-        "distinguishable_from_null": bool(p_null_upper <= 0.05),
+        "distinguishable_from_null": bool(p_null_lower <= 0.05),
         "consistent_with_signal": bool(inside_signal),
     }
     res["verdict"]["PASS"] = bool(res["verdict"]["distinguishable_from_null"] and
@@ -614,7 +615,7 @@ def run_gate_fast(df, ess):
 
     atomic_json(summary_path, res)
 
-    logger.info(f"Gate complete: P(null>=real)={p_null_upper:.4f}; "
+    logger.info(f"Gate complete: P(null<=real)={p_null_lower:.4f}; "
                 f"inside_signal={inside_signal}; "
                 f"VERDICT={'PASS' if res['verdict']['PASS'] else 'FAIL'}")
     return time.time()

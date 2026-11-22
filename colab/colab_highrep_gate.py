@@ -764,16 +764,17 @@ def run_gate(df, ess):
               f"real percentile {res[name]['pct_rank_of_real']:.3f}")
 
     # ---- PASS/FAIL per protocol (verbatim 13 logic) ----
-    p_null_upper = 1.0 - res["null"]["pct_rank_of_real"]
+    # One-sided LOWER tail (negative injected effect).
+    p_null_lower = res["null"]["pct_rank_of_real"]            # P(null <= real)
     inside_sig = (res["signal"]["q025"] <= b_real <= res["signal"]["q975"])
     res["verdict"] = {
-        "distinguishable_from_null": bool(p_null_upper <= 0.05),
+        "distinguishable_from_null": bool(p_null_lower <= 0.05),
         "consistent_with_signal": bool(inside_sig)}
     res["verdict"]["PASS"] = bool(
         res["verdict"]["distinguishable_from_null"]
         and res["verdict"]["consistent_with_signal"])
     print("\n=== TASK 2 VERDICT (high-replicate) ===")
-    print(f"P(null-injected >= real): {p_null_upper:.4f}")
+    print(f"P(null-injected <= real): {p_null_lower:.4f}")
     print(f"real inside 95% of signal-injected distribution: {inside_sig}")
     print("VERDICT:", "PASS" if res["verdict"]["PASS"] else
           ("FAIL(inconclusive)" if not

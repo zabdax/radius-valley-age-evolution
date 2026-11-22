@@ -167,16 +167,18 @@ def main():
               f" | real percentile {pct_below:.3f}")
 
     # ---- PASS/FAIL per protocol ----
-    p_null_upper = 1.0 - res["null"]["pct_rank_of_real"]      # P(null >= real)
+    # One-sided LOWER tail: the injected effect is negative, so evidence for
+    # it is a real coefficient in the lower tail of the null ensemble.
+    p_null_lower = res["null"]["pct_rank_of_real"]            # P(null <= real)
     inside_sig = (res["signal"]["q025"] <= b_real <= res["signal"]["q975"])
     res["verdict"] = {
-        "distinguishable_from_null": bool(p_null_upper <= 0.05),
+        "distinguishable_from_null": bool(p_null_lower <= 0.05),
         "consistent_with_signal": bool(inside_sig),
     }
     res["verdict"]["PASS"] = bool(res["verdict"]["distinguishable_from_null"]
                                   and inside_sig)
     print("\n=== TASK 2 VERDICT ===")
-    print(f"P(null-injected >= real): {p_null_upper:.4f}")
+    print(f"P(null-injected <= real): {p_null_lower:.4f}")
     print(f"real inside 95% of signal-injected distribution: {inside_sig}")
     print("VERDICT:", "PASS" if res["verdict"]["PASS"] else
           ("FAIL(inconclusive)" if not

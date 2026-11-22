@@ -1,0 +1,24 @@
+{
+  "status": "VERIFIED",
+  "note": "Correct lower-tail test and legacy upper-tail test both return FAIL for both samples; published verdicts are unchanged.",
+  "rows": [
+    {
+      "sample": "FGK control",
+      "real_beta": -0.0296,
+      "P_null_le_real": 0.456,
+      "P_null_ge_real": 0.544,
+      "real_inside_signal_95pct": true,
+      "verdict_lower_tail_correct": "FAIL",
+      "verdict_upper_tail_legacy": "FAIL"
+    },
+    {
+      "sample": "Cool hosts",
+      "real_beta": 0.0458,
+      "P_null_le_real": 0.553,
+      "P_null_ge_real": 0.447,
+      "real_inside_signal_95pct": true,
+      "verdict_lower_tail_correct": "FAIL",
+      "verdict_upper_tail_legacy": "FAIL"
+    }
+  ]
+}
