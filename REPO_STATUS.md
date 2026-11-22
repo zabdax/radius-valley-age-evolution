@@ -42,6 +42,17 @@ an empirically demonstrated requirement. v2 reports both the Gaussian
 independent-host estimate (1.7e4) and the scaling measured in the grid (4.7e4),
 and recommends quoting the bracket.
 
+## Two easily confused Gaia counts
+
+- **2,424** host source IDs were re-queried for the RUWE / parallax-S/N
+  sensitivity gate (301 cool + 2,123 FGK).
+- **2,420** unique `source_id` rows are present in the frozen quality table
+  `data/gaia_quality_DR3_v2.csv`, which is why the audit files under
+  `repro/v2/results/audit/` quote 2,420.
+
+Both are correct: the second is the deduplicated row count of the downloaded
+quality table, not a correction to the first.
+
 ## Manuscript source
 
 LaTeX source (`.tex`, `.bib`) and the compiled manuscript PDF are deliberately
