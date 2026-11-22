@@ -9,6 +9,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - run: python -m py_compile code/*.py code/audits/*/*.py figures/make_overview.py figures/make_gate_animation.py
-      - run: cd data && sha256sum -c checksums.sha256
-      - run: python code/audit_highrep.py
+
+      # Syntax-check every shipped script, including the v2 bundle.
+      - name: Compile all Python sources
+        run: python -m py_compile code/*.py code/audits/*/*.py figures/*.py repro/v2/scripts/*.py
+
+      # Frozen inputs and the self-contained v2 bundle must stay byte-identical.
+      - name: Verify frozen input checksums
+        run: cd data && sha256sum -c checksums.sha256
+      - name: Verify v2 bundle checksums
+        run: cd repro/v2 && sha256sum -c provenance/BUNDLE_SHA256.txt
+
+      # Re-derive the headline gate and power numbers from the raw replicates.
+      - name: Audit archived high-replicate results
+        run: python code/audit_highrep.py

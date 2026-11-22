@@ -4,5 +4,6 @@ data/* -text
 
 # Explicit binary (no conversion, no diff text)
 *.png binary
+*.gif binary
 *.pdf binary
 *.zip binary
