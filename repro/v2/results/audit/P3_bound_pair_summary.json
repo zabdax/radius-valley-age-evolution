@@ -1,0 +1,90 @@
+{
+  "task": "P3 end-to-end Gaia DR3 bound-pair crossmatch for host sample",
+  "date": "2026-11-21",
+  "status": "failed_crossmatch_endpoints_blocked",
+  "crossmatch_performed": false,
+  "fabricated_counts": false,
+  "catalog": {
+    "identified": true,
+    "name": "J/MNRAS/506/2269",
+    "description": "Validation of Gaia EDR3 parallaxes (El-Badry, Rix & Heintz 2021, MNRAS 506, 2269)",
+    "landing_page": "https://cdsarc.cds.unistra.fr/viz-bin/cat/J/MNRAS/506/2269",
+    "tables": ["catalog.dat", "shift.dat"],
+    "n_pairs_main_table": 1817594,
+    "columns": {
+      "id_primary": "source_id_o1",
+      "id_secondary": "source_id_o2",
+      "separation_angular_deg": "pairdistance",
+      "separation_projected_au": "sep_AU",
+      "chance_alignment_probability": "R_chance_align",
+      "binary_type": "binary_type"
+    },
+    "planned_bound_cut": "R_chance_align < 0.1",
+    "archive_copy": {
+      "service": "Zenodo",
+      "record": 4435257,
+      "doi": "10.5281/zenodo.4435257",
+      "api": "https://zenodo.org/api/records/4435257",
+      "main_file": "all_columns_catalog.fits.gz",
+      "main_file_bytes": 1419826533
+    }
+  },
+  "input_host_lists": {
+    "M": {"file": "radius-valley-age-evolution/data/gaia_hosts_M.csv", "n_hosts": 301},
+    "FGK": {"file": "radius-valley-age-evolution/data/gaia_hosts_FGK.csv", "n_hosts": 2123},
+    "union_source_ids_planned": 2424,
+    "note": "Input counts only. No matched host counts exist because the crossmatch never ran."
+  },
+  "network": {
+    "cds_vizier_query_endpoints": "blocked",
+    "cds_landing_page": "reachable (HTTP 200, metadata only)",
+    "vizier_mirror_naoj": "reachable but catalog absent",
+    "zenodo_api": "reachable",
+    "zenodo_bulk_transfer": "prohibitively slow (~0.07 MB/s observed on a 10 MB range), ~5.6 h projected for 1.42 GB"
+  },
+  "endpoints_tried": [
+    {"endpoint": "https://vizier.cds.unistra.fr/viz-bin/asu-tap-sync", "method": "GET and POST (ADQL, FORMAT=json/csv)", "result": "HTTP 404, 4245-byte 'Page unavailable - CDS' block page"},
+    {"endpoint": "https://vizier.u-strasbg.fr/viz-bin/asu-tap-sync", "method": "GET/POST", "result": "HTTP 404, same block page"},
+    {"endpoint": "https://vizier.cds.unistra.fr/viz-bin/asu-tsv?-source=J/MNRAS/506/2269&-out.max=1", "method": "GET (also browser UA, URL-encoded source, control catalog II/246)", "result": "HTTP 404, same block page for all variants"},
+    {"endpoint": "https://cdsarc.cds.unistra.fr/viz-bin/ReadMe/J/MNRAS/506/2269?format=html&tex=true", "method": "GET", "result": "HTTP 404, same block page"},
+    {"endpoint": "https://cdsarc.cds.unistra.fr/ftp/J/MNRAS/506/2269/ReadMe", "method": "GET", "result": "HTTP 404, same block page"},
+    {"endpoint": "https://cdsarc.cds.unistra.fr/viz-bin/cat/J/MNRAS/506/2269", "method": "GET", "result": "HTTP 200, landing page metadata only - no query capability"},
+    {"endpoint": "https://tapvizier.cds.unistra.fr/TAPVizieR/tap/sync (and /tables)", "method": "GET, HTTPS and HTTP", "result": "ConnectTimeout (ports 443 and 80)"},
+    {"endpoint": "http://tapvizier.u-strasbg.fr/TAPVizieR/tap/sync", "method": "GET", "result": "ConnectTimeout (port 80)"},
+    {"endpoint": "https://vizier.cds.unistra.fr/viz-bin/votable (astroquery Vizier.query_constraints)", "method": "POST via astroquery", "result": "HTTPError 404 Client Error: Not Found"},
+    {"endpoint": "http://vizier.nao.ac.jp/viz-bin/asu-tsv?-source=J/MNRAS/506/2269", "method": "GET", "result": "HTTP 200 but 'Error=Table or Catalog not found: J/MNRAS/506/2269' (also for /catalog and /shift)"},
+    {"endpoint": "https://vizier.nao.ac.jp/viz-bin/VizieR?-source=J/MNRAS/506/2269", "method": "GET", "result": "ConnectTimeout (port 443)"},
+    {"endpoint": "https://zenodo.org/api/records/4435257", "method": "GET", "result": "HTTP 200, file list obtained"},
+    {"endpoint": "https://zenodo.org/api/records/4435257/files/all_columns_catalog.fits.gz/content", "method": "GET with Range: bytes=0-9999999", "result": "HTTP 206; 10 MB in 135.4 s (~0.07 MB/s); ~5.6 h projected for full file"},
+    {"endpoint": "https://zenodo.org/records/4435257/files/all_columns_catalog.fits.gz?download=1 and API content URL", "method": "GET with Range: bytes=0-19999999", "result": "ABORTED by final instruction before producing a result; no throughput claimed"}
+  ],
+  "results": {
+    "M_hosts_with_bound_companion": null,
+    "FGK_hosts_with_bound_companion": null,
+    "M_binary_fraction": null,
+    "FGK_binary_fraction": null,
+    "young_binary_fraction": null,
+    "old_binary_fraction": null,
+    "young_old_split": "planned at v_tan median but never computed",
+    "fisher_exact_p_value": null,
+    "chi2_p_value": null,
+    "age_differential_binary_incidence_pp": null,
+    "induced_sn_fraction_change_pp": null,
+    "induced_ame_change_pp": null,
+    "explains_plus_4_14_pp_residual": null,
+    "null_reason": "Crossmatch never executed: CDS query endpoints blocked, mirror lacks catalog, Zenodo bulk transfer rate prohibitive. No values are estimated or fabricated."
+  },
+  "systematic_budget": {
+    "literature_only_estimate_retained": true,
+    "source": "P3_multiplicity_budget.md (Bergsten+2026 6-24% detectability differential)",
+    "literature_delta_companion_incidence_pp": "25 (observed 20% vs field 45%)",
+    "literature_induced_sn_fraction_shift_pp": "0.6-2.4",
+    "residual_to_explain_pp": 4.14,
+    "sample_specific_measurement_available": false
+  },
+  "verdict": {
+    "disclosure_can_be_removed": false,
+    "reason": "No end-to-end measurement was obtained; the multiplicity/companion-blending disclosure must remain in the manuscript.",
+    "next_step": "Retry via an unblocked VizieR mirror hosting J/MNRAS/506/2269, a locally cached all_columns_catalog.fits.gz, or CDS TAP access from another network; then run chunked source_id_o1/source_id_o2 ID query with R_chance_align < 0.1."
+  }
+}

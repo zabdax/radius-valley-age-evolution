@@ -1,0 +1,22 @@
+population,variable,statistic,value,unit,n_total,n_below,fraction,fraction_pct,note
+host,sample,n_hosts,303,hosts,303,,,,unique hostname in planet_sample_M.csv
+planet,sample,n_planets,419,planets,419,,,,rows in planet_sample_M.csv
+host,st_teff,n_usable,303,hosts,303,,,,all hosts have a Teff value
+host,st_teff,median,3683.0,K,,,,,
+host,st_teff,Q1_linear,3417.0,K,,,,,numpy/pandas default linear interpolation
+host,st_teff,Q3_linear,3866.5,K,,,,,numpy/pandas default linear interpolation
+host,st_teff,Q1_lower_hinge,3415.0,K,,,,,discrete lower hinge; matches task-stated 3415 K
+host,st_teff,Q3_upper_hinge,3867.0,K,,,,,discrete upper hinge; matches task-stated 3867 K
+host,st_teff,min,2566.0,K,,,,,
+host,st_teff,max,4195.0,K,,,,,
+host,st_teff,fraction_below,3400,K,303,71,0.234323,23.4323,host-level; one value per unique hostname
+planet,st_teff,fraction_below,3400,K,419,100,0.238663,23.8663,"planet-level; gate weights planets, not hosts"
+host,st_teff,fraction_below,3000,K,303,4,0.013201,1.3201,host-level; one value per unique hostname
+planet,st_teff,fraction_below,3000,K,419,13,0.031026,3.1026,"planet-level; gate weights planets, not hosts"
+host,st_mass,n_usable,282,M_sun,303,,,,21 of 303 hosts lack usable st_mass
+host,st_mass,fraction_below,0.4,M_sun,282,101,0.358156,35.8156,host-level; denominator = hosts with usable st_mass
+planet,st_mass,fraction_below,0.4,M_sun,385,139,0.361039,36.1039,"planet-level, usable-mass denominator"
+planet,st_mass,fraction_below_all_planets,0.4,M_sun,419,139,0.331742,33.1742,"planet-level, all 419 planets as denominator"
+host,st_mass,fraction_below,0.3,M_sun,282,58,0.205674,20.5674,host-level; denominator = hosts with usable st_mass
+planet,st_mass,fraction_below,0.3,M_sun,385,83,0.215584,21.5584,"planet-level, usable-mass denominator"
+planet,st_mass,fraction_below_all_planets,0.3,M_sun,419,83,0.198091,19.8091,"planet-level, all 419 planets as denominator"

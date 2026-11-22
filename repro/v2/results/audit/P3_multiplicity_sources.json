@@ -1,0 +1,142 @@
+{
+  "scope": "Literature-based systematic budget for multiplicity / companion blending. NO end-to-end crossmatch of our hosts to the El-Badry+21 bound-pair catalog was performed.",
+  "crossmatch_status": {
+    "done": false,
+    "detail": "The frozen data contain gaia_hosts_M.csv with 301 unique Gaia DR3 source_ids covering 301 of the 303 M-dwarf host names (Kepler-1410 and Kepler-1652 are absent). The El-Badry+21 bound-pair catalog is not present in the frozen data and was not downloaded, so no source_id1/source_id2 lookup was run and no sample-specific binary fraction is claimed.",
+    "gaia_host_rows": 301,
+    "gaia_unique_source_ids": 301,
+    "planet_host_names": 303,
+    "host_names_with_gaia_id": 301,
+    "host_names_without_gaia_id": [
+      "Kepler-1410",
+      "Kepler-1652"
+    ]
+  },
+  "sources": [
+    {
+      "note_id": "draft-version-january-23-2026",
+      "citation": "Bergsten et al. (2026), arXiv:2601.16031, 'Modeling the Impact of Unresolved Stellar Companions on Detection Sensitivity in Kepler's Small Planet Occurrence Rates' (draft 2026-01-23)",
+      "url": "https://arxiv.org/abs/2601.16031",
+      "sample": "198 Kepler stars with Earth-like-planet sensitivity, AO-imaged; 40 systems with close companions = 20% unresolved companion rate; field rate used as upper limit = 45%",
+      "effects": [
+        {
+          "effect": "unresolved-companion occurrence correction, all small planets (1-3.5 R_E, 2-100 d)",
+          "magnitude": "1.08 (+0.14/-0.12) observed treatment; 1.18 (+0.17/-0.14) field treatment; abstract range 1.08-1.19",
+          "quote": "Median occurrence rates for small planets between 2-100 days increased by an average factor of 1.08-1.19 (depending on statistical treatments), with the largest differences found for smaller planets at larger orbital periods.",
+          "direction_on_beta": "Upward bias on small-planet occurrence, concentrated in super-Earths at long period; can inflate SN fraction of the older/longer-period population and bias the raw age contrast upward."
+        },
+        {
+          "effect": "radius- and period-dependent differential (the '6-24%' figure)",
+          "magnitude": "Table 1 occurrence ratios span 1.06 (minimum) to 1.24 (maximum); super-Earths 1.10 vs sub-Neptunes 1.06; at long period 1.24 vs 1.13; Savel+2020 71-star precedent 1.06 Earth-like / 1.26 super-Earths+sub-Neptunes",
+          "quote": "with a factor of 1.26 increase for super-earths and sub-Neptunes",
+          "direction_on_beta": "Period-dependent, not age-dependent: acts mainly on the period-mixing component of the signal; no evidence it discriminates old from young hosts at fixed period."
+        },
+        {
+          "effect": "Kepler completeness/reliability products ignore unresolved-companion blending",
+          "magnitude": "systematic in the published completeness maps; 20% (observed) to 45% (field) companion-rate treatments",
+          "quote": "the construction of the Kepler occurrence rate products (e.g., the Kepler candidate list, the completeness, and the reliability products) do not take into account the blending of nearby companions",
+          "direction_on_beta": "Under-corrected detectability for multi-star hosts; sign of the net bias on our beta depends on the (unmeasured) age dependence of companion incidence."
+        }
+      ],
+      "quantified_in_our_sample": false,
+      "applies_to": "FGK control sample (the sample that carries the +4.14 pp residual AME), but no companion classification exists in our frozen files"
+    },
+    {
+      "note_id": "astronomy-astrophysics-manuscript-no-aa59086-26",
+      "citation": "Messamah, Bouchy, Venturini, Parc & Nigioni (2026), A&A manuscript aa59086-26, arXiv:2605.31523v2, 'Mind the companion: Demographics of transiting S-type exoplanets'",
+      "url": "https://arxiv.org/abs/2605.31523",
+      "sample": "PlanetS catalogue 860 transiting planets; 133 S-type planets in Gaia-DR3 bound binaries (El-Badry+21 crossmatch), projected separations 76-9655 AU, 552-planet matched single-star control",
+      "effects": [
+        {
+          "effect": "binary fraction of transiting-planet hosts",
+          "magnitude": "19.4% relative to matched control; 15.5% relative to full single sample; field-star binary fraction ~11% (13148/118650)",
+          "quote": "We find a binary fraction of 19.4% relative to the control sample (15.5% relative to the full single-star sample), consistent with previous estimates but derived from a larger and more homogeneous dataset.",
+          "direction_on_beta": "If companion incidence differs between our old and young host subsets, it can change the effective detectability and radius classification; direction unknown without an age-resolved count."
+        },
+        {
+          "effect": "giant planets around M dwarfs in binaries",
+          "magnitude": "~50% of M-dwarf giant planets in binaries (2.6 sigma excess vs FGK); field M-dwarf value 12.2+/-0.4%; 55.6% of M-dwarf companions within 1000 AU",
+          "quote": "In particular, we derive that ~50% of giant planets orbiting M-dwarfs are in binary systems, predominantly with separations < 1000 AU, a 2.6 sigma excess compared to FGK-type hosts",
+          "direction_on_beta": "Giant-planet regime only; our M-dwarf sample is small planets (0.5-4 R_E), so this is contextual, not a direct systematic on beta."
+        },
+        {
+          "effect": "small planets: no significant spectral-type dependence of binary fraction",
+          "magnitude": "no statistically significant difference; limited statistics; only resolved S-type binaries (tighter unresolved systems explicitly excluded)",
+          "quote": "In contrast, the small planet regime shows no statistically significant difference in binary fraction across stellar spectral types, although current statistics remain limited.",
+          "direction_on_beta": "Reassuring for the M-dwarf small-planet gate: no evidence of a large spectral-type-dependent multiplicity bias in the regime we use, but unresolved companions are out of scope here."
+        }
+      ],
+      "quantified_in_our_sample": false,
+      "applies_to": "both M-dwarf science sample and FGK control, via literature only"
+    },
+    {
+      "note_id": "draft-version-february-20-2023",
+      "citation": "Sullivan et al. (2023), arXiv:2302.08532v1, 'There is No Observed Radius Gap For Kepler Planets in Binary Star Systems' (draft 2023-02-20)",
+      "url": "https://arxiv.org/abs/2302.08532",
+      "sample": "119 planet-host binary stars; 122 planets in binaries around primary stars",
+      "effects": [
+        {
+          "effect": "no significant radius gap in binary-host planets",
+          "magnitude": "no statistically significant radius gap; AD-test p<0.05 against consistency with the single-star small-planet population",
+          "quote": "We found no statistically significant evidence for a radius gap for our sample of 122 planets in binaries when assuming the primary stars are the planet hosts, with a low probability (p < 0.05) of the binary planet sample radius distribution being consistent with the single-star small planet population via an Anderson-Darling test.",
+          "direction_on_beta": "Binary hosts can blur or remove the valley; if binaries are more common in one age bin, the valley-based AME is diluted toward zero."
+        },
+        {
+          "effect": "undetected multiplicity shrinks apparent planet radii",
+          "magnitude": "qualitative, not quantified for our sample",
+          "quote": "Binaries cause observational biases in planet parameters, with undetected multiplicity causing transiting planets to appear smaller than they truly are.",
+          "direction_on_beta": "Flux dilution moves planets across the radius gate from sub-Neptune to super-Earth; sign on the SN excess depends on which age group is more blended."
+        }
+      ],
+      "quantified_in_our_sample": false,
+      "applies_to": "FGK control sample primarily"
+    },
+    {
+      "note_id": "draft-version-june-26-2024",
+      "citation": "Sullivan et al. (2024), arXiv:2406.17648v1, 'The Radius Distribution of Small Planets in Binary Star Systems is Dependent on Stellar Separation' (draft 2024-06-26)",
+      "url": "https://arxiv.org/abs/2406.17648",
+      "sample": "207 binary systems hosting 283 confirmed and candidate transiting Kepler planets, recharacterized for secondary-star bias",
+      "effects": [
+        {
+          "effect": "close binaries show unimodal, super-Earth-peaked radius distribution",
+          "magnitude": "close binaries (a <~ 100 au) unimodal, peak Rp ~ 1.3 R_E, suppressed sub-Neptunes; distinct from wider binaries (>300 au) and single stars",
+          "quote": "In contrast to planets around single stars, planets in close binaries appear to have a unimodal radius distribution with a peak near the expected super-Earth peak of Rp ~ 1.3 R_E and a suppressed population of sub-Neptunes.",
+          "direction_on_beta": "If close binaries were more common among older hosts, they would raise the old-host super-Earth fraction and bias the AME upward; if more common among younger hosts, downward. Our frozen data contain no separation-resolved binary flag."
+        }
+      ],
+      "quantified_in_our_sample": false,
+      "applies_to": "FGK control sample primarily"
+    },
+    {
+      "note_id": "mnras-000-126-2021",
+      "citation": "El-Badry, Rix & Heintz (2021), MNRAS 000, 1-26, 'A million binaries from Gaia eDR3: sample selection and validation of Gaia parallax uncertainties'",
+      "url": "https://arxiv.org/abs/2102.04595",
+      "sample": "Gaia eDR3 bound-pair catalog within ~1 kpc; projected separations a few au to 1 pc",
+      "effects": [
+        {
+          "effect": "catalog size and bound-probability completeness (enabler, not a bias on beta itself)",
+          "magnitude": "1.3 million pairs with >90% bound probability; 1.1 million with >99% bound probability; 16,000 WD+MS and 1,400 WD+WD pairs",
+          "quote": "The catalog contains 1.3 (1.1) million binaries with >90% (>99%) probability of being bound, including 16,000 white dwarf - main sequence (WD+MS) binaries and 1,400 WD+WD binaries.",
+          "direction_on_beta": "Enables a future crossmatch; no direct effect on beta without applying it to our hosts."
+        },
+        {
+          "effect": "chance-alignment control at wide separations",
+          "magnitude": "all pairs with projected separations >10,000 AU have chance-alignment probability >0.01 and are excluded",
+          "quote": "Essentially, all pairs with projected separations greater than 10, 000 AU have chance-alignment probabilities > 0.01; therefore, no robustly bound wide binaries are excluded by this criterion.",
+          "direction_on_beta": "Sets the reliability floor for any companion classification; does not itself bias beta."
+        }
+      ],
+      "quantified_in_our_sample": false,
+      "applies_to": "enabler for both samples"
+    }
+  ],
+  "bottom_line": {
+    "residual_ame_pp": 4.14,
+    "unadjusted_ame_pp": 6.27,
+    "period_mixing_component_pp": 2.13,
+    "bergsten_detectability_range": "1.06-1.24 occurrence ratio (6-24% relative), largest for super-Earths at long period",
+    "max_age_differential_companion_incidence_available_pp": 25,
+    "verdict": "The 6-24% period-dependent detectability differential is NOT sufficient to account for the +4.14 pp residual AME: it is period-dependent (the component already conditioned out), not age-dependent, and the largest companion-rate contrast quoted in the literature (20% observed vs 45% field = 25 pp) predicts only ~0.6-2.4 pp on a ~0.4 super-Earth fraction, and that only under the untested assumption that the 45% treatment applies exclusively to the older hosts. Explaining +4.14 pp outright would require an age-differential companion incidence of 43-173 pp, which is unphysical at the low-correction end and implausible at the high-correction end.",
+    "quantified_in_our_sample": false
+  }
+}

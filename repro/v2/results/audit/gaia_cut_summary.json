@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "rule": "RUWE <= 1.4 AND parallax/parallax_error > 5",
+    "estimator": "pooled",
+    "mode": "legacy",
+    "frozen_root": "F:\\Research_Radius-Valley-Age-Evolution\\radius-valley-age-evolution",
+    "quality_file_used": "data/gaia_quality_DR3_v2.csv (identical to DR3.csv used by archive)",
+    "ESS_definition": "sum(w)^2 / sum(w^2) on 95%-trimmed completeness weights",
+    "arms": "RECOMPUTED from archived raw ruwe_*_raw.csv",
+    "recomputed_vs_carried": {
+      "RECOMPUTED": [
+        "post-hoc quality counts",
+        "arm statistics/separation from raw CSVs",
+        "production-cut N/hosts/ESS",
+        "production-cut real beta/SE",
+        "parallax error quantiles"
+      ],
+      "CARRIED_FROM_ARCHIVE": [
+        "baseline (no-cut) ESS values",
+        "baseline production arm separations (-0.19 M / -1.01 FGK)",
+        "null/signal arm draws when --gate-reps=0",
+        "verdict labels (FAIL/inconclusive)"
+      ]
+    }
+  },
+  "quality_table_check": {
+    "rows_DR3": 2420,
+    "rows_DR3_v2": 2420,
+    "columns_identical": true,
+    "max_abs_diff": {
+      "ruwe": 0.0,
+      "parallax": 0.0,
+      "parallax_error": 0.0
+    },
+    "identical": true
+  },
+  "posthoc_verification": {
+    "M": {
+      "arms": {
+        "null": {
+          "n": 200,
+          "median": -0.0060831439909300004,
+          "sd": 0.7143280163559016,
+          "q025": -1.6973864563744134,
+          "q975": 1.2642731957824431
+        },
+        "signal": {
+          "n": 200,
+          "median": -0.1879030493139561,
+          "sd": 0.7465895773743124,
+          "q025": -1.807587314188906,
+          "q975": 0.9802498648042235
+        }
+      },
+      "arm_separation_nullSD": -0.2545327932825156,
+      "real_pct_null": 0.505,
+      "archive_arms": {
+        "null": {
+          "n": 200,
+          "median": -0.006083143990930034,
+          "sd": 0.7143280163559016,
+          "q025": -1.6973864563744134,
+          "q975": 1.2642731957824431
+        },
+        "signal": {
+          "n": 200,
+          "median": -0.18790304931395613,
+          "sd": 0.7465895773743124,
+          "q025": -1.8075873141889058,
+          "q975": 0.9802498648042234
+        }
+      },
+      "archive_arm_separation_nullSD": -0.25453279328251555,
+      "archive_real_pct_null": 0.505,
+      "max_abs_diff_arm_stats": 2.220446049250313e-16,
+      "sep_diff": 5.551115123125783e-17,
+      "archive_verdict": "FAIL(inconclusive)"
+    },
+    "FGK": {
+      "arms": {
+        "null": {
+          "n": 200,
+          "median": -0.0441244453855623,
+          "sd": 0.14398649942758793,
+          "q025": -0.335669553991113,
+          "q975": 0.23818285513820012
+        },
+        "signal": {
+          "n": 200,
+          "median": -0.16462336756835874,
+          "sd": 0.15516162435657296,
+          "q025": -0.46951497456651936,
+          "q975": 0.14526340056637563
+        }
+      },
+      "arm_separation_nullSD": -0.83687653121532,
+      "real_pct_null": 0.48,
+      "archive_arms": {
+        "null": {
+          "n": 200,
+          "median": -0.044124445385562365,
+          "sd": 0.14398649942758793,
+          "q025": -0.33566955399111303,
+          "q975": 0.23818285513820014
+        },
+        "signal": {
+          "n": 200,
+          "median": -0.16462336756835882,
+          "sd": 0.15516162435657296,
+          "q025": -0.46951497456651936,
+          "q975": 0.14526340056637568
+        }
+      },
+      "archive_arm_separation_nullSD": -0.83687653121532,
+      "archive_real_pct_null": 0.48,
+      "max_abs_diff_arm_stats": 8.326672684688674e-17,
+      "sep_diff": 0.0,
+      "archive_verdict": "FAIL(inconclusive)"
+    },
+    "baseline_production_arm": {
+      "M_arm": -0.19,
+      "FGK_arm": -1.01
+    }
+  },
+  "production_cut": {
+    "M": {
+      "quality_posthoc_recomputed": {
+        "planets_pre": 417,
+        "hosts_pre": 301,
+        "planets_no_source_id": 0,
+        "planets_no_quality_row": 0,
+        "ruwe_gt1.4": 35,
+        "psnr_le5": 0,
+        "dropped_union": 35,
+        "dropped_intersection": 0,
+        "ruwe_median": 1.0880785,
+        "psnr_median": 647.3061722201716,
+        "planets_post": 382,
+        "hosts_post": 278,
+        "planets_dropped": 35,
+        "hosts_dropped": 23,
+        "vtan_median_kept": 33.702080293020614,
+        "vtan_median_dropped": 27.901159634548904
+      },
+      "quality_matches_archive": true,
+      "baselineARCHIVE": {
+        "N": 417,
+        "hosts": 301,
+        "ESS": 139.50744116694585,
+        "real_beta": 0.04576344675022682,
+        "real_se": 0.32096502945106076
+      },
+      "production_cut_RECOMPUTED": {
+        "N": 382,
+        "hosts": 278,
+        "ESS_recomputed": 129.39654394991584,
+        "ESS_retention": 0.338734408245853,
+        "real_beta_recomputed": -0.002801691002068047,
+        "real_se_recomputed": 0.3601703652602848
+      },
+      "archive_real_beta_cleaned": -0.002801691002068047,
+      "archive_real_se_cleaned": 0.3601703652602848,
+      "real_beta_matches_archive": true
+    },
+    "FGK": {
+      "quality_posthoc_recomputed": {
+        "planets_pre": 2135,
+        "hosts_pre": 1588,
+        "planets_no_source_id": 0,
+        "planets_no_quality_row": 0,
+        "ruwe_gt1.4": 178,
+        "psnr_le5": 24,
+        "dropped_union": 178,
+        "dropped_intersection": 24,
+        "ruwe_median": 1.0039964,
+        "psnr_median": 73.58721346977025,
+        "planets_post": 1957,
+        "hosts_post": 1445,
+        "planets_dropped": 178,
+        "hosts_dropped": 143,
+        "vtan_median_kept": 33.19787972999335,
+        "vtan_median_dropped": 34.67803377265533
+      },
+      "quality_matches_archive": true,
+      "baselineARCHIVE": {
+        "N": 2135,
+        "hosts": 1588,
+        "ESS": 1644.987404492584,
+        "real_beta": -0.029595804682207193,
+        "real_se": 0.10610266655040212
+      },
+      "production_cut_RECOMPUTED": {
+        "N": 1957,
+        "hosts": 1445,
+        "ESS_recomputed": 1512.5436486246285,
+        "ESS_retention": 0.7728889364459012,
+        "real_beta_recomputed": -0.04868073761736859,
+        "real_se_recomputed": 0.11719640564029693
+      },
+      "archive_real_beta_cleaned": -0.04868073761736859,
+      "archive_real_se_cleaned": 0.11719640564029693,
+      "real_beta_matches_archive": true
+    }
+  },
+  "parallax": {
+    "definition": "d=1/pi (mas->kpc); sigma_d/d = sigma_pi/pi = parallax_error/parallax",
+    "quality_table": "data/gaia_quality_DR3_v2.csv",
+    "quality_rows": 2420,
+    "unique_source_ids": 2420,
+    "nonpositive_parallax": 0,
+    "parallax_vs_gaia_hosts_max_abs_diff": 0.0,
+    "all_hosts": {
+      "n": 2420,
+      "median": 0.008766281155478818,
+      "p95": 0.046225257280490116,
+      "p05": 0.0007121703012165783,
+      "max": 3.5044144425382755
+    },
+    "M_hosts": {
+      "n": 301,
+      "median": 0.001487251156440117,
+      "p95": 0.013434744123083443,
+      "p05": 0.00030089351228591773,
+      "max": 0.12214235552390228
+    },
+    "FGK_hosts": {
+      "n": 2119,
+      "median": 0.01016146504681699,
+      "p95": 0.049484101750028105,
+      "p05": 0.001101081035778547,
+      "max": 3.5044144425382755
+    },
+    "snr_le5_failures": {
+      "n": 20,
+      "median": 0.3495893973452231,
+      "p95": 2.4237775300669697,
+      "p05": 0.21993448868927826,
+      "max": 3.5044144425382755
+    },
+    "snr_gt5_passes": {
+      "n": 2400,
+      "median": 0.008644510484945373,
+      "p95": 0.0431781863111475,
+      "p05": 0.0007032578503703613,
+      "max": 0.18548663775259758
+    },
+    "failures_by_class": {
+      "FGK": 20
+    }
+  },
+  "optional_arm_rerun": null
+}
