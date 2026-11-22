@@ -5,7 +5,9 @@ authors:
   - family-names: Shaad
     given-names: Zubayer Hasan
     orcid: "https://orcid.org/0009-0002-2322-8553"
-  - name: "The Radius Valley Age Evolution Collaboration"
+  - family-names: Al Abrar
+    given-names: Md Mahdin
+    orcid: "https://orcid.org/0009-0009-9645-152X"
 version: 2.1.0
 date-released: "2026-11-22"
 license: MIT

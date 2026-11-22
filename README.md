@@ -127,6 +127,9 @@ Exoplanet Archive / Gaia DR3 / Kepler DR25 access conditions (see `LICENSE`).
 
 ## v2 reproducibility bundle
 
+Read [REPO_STATUS.md](REPO_STATUS.md) first: it states which numbers are
+current and which older files are historical.
+
 The v2 (Q1) results are reproducible from the self-contained bundle in
 [`repro/v2/`](repro/v2/). It contains the executed analysis scripts (with
 portable path resolution via `repro/v2/scripts/_paths.py`), the authoritative
