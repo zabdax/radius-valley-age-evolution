@@ -30,6 +30,14 @@ literature-sized effect is detected in only 23.2 percent of realizations.
 *The calibrated gate converging to the published percentiles as replicates
 accumulate. Rebuild with `python figures/make_gate_animation.py`.*
 
+![Power versus injected effect](figures/power_effect_curve.gif)
+
+*The full ten-point power-versus-effect curve being built from the frozen v2
+results. The arms separate and detection rises with the injected effect, yet
+the verdict stays FAIL at every point because the real coefficient's null
+placement does not change. Rebuild with
+`python figures/make_power_effect_animation.py`.*
+
 ## What this repository provides
 
 - **Frozen, checksummed inputs.** Every number can be reproduced offline from
