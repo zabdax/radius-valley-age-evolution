@@ -1,0 +1,27 @@
+{
+  "pooled_within_metallicity": {
+    "stored_z": 1.53,
+    "stored_p": 0.1256,
+    "recomputed_z_from_dSN_over_se": 1.5,
+    "recomputed_p": 0.133614,
+    "note": "stored z/p inconsistent with stored dSN/se; corrected z=1.50 p=0.134"
+  },
+  "logP_adjusted": {
+    "stored_z": 1.61,
+    "AME_pp": 4.16,
+    "AME_se_pp_from_task2b_status": 2.61,
+    "recomputed_z": 1.59387,
+    "recomputed_p": 0.110965,
+    "note": "corrected z=1.594 vs stored 1.61"
+  },
+  "size_adjusted_wilson_lo_1x_SWEET": {
+    "exact": 0.0524580314,
+    "pct": 5.2458,
+    "rounded_1dp_pct": 5.2,
+    "csv_stored": 0.0525
+  },
+  "source_files": [
+    "radius-valley-age-evolution/results/phaseA_task2b.json",
+    "radius-valley-age-evolution/results/appendix/size_adjusted_power.csv"
+  ]
+}

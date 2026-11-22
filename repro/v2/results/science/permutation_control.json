@@ -1,0 +1,18 @@
+{
+  "statistic": "period-adjusted weighted-logistic AME (is_sn ~ old + Fe/H + log10 P), fixed 1.88 Re cut, finite-metallicity complete case",
+  "observed_AME_pp": 4.1423347219537465,
+  "observed_beta_logP": 2.3826497898293066,
+  "null_hypothesis": "host-level v_tan labels exchangeable among hosts",
+  "permutation_unit": "host (all planets of a host share the permuted v_tan)",
+  "n_permutations": 2000,
+  "seed": 20261121,
+  "null_mean_pp": -0.07477696342165507,
+  "null_sd_pp": 2.5492504186493026,
+  "null_median_pp": -0.07581230758810886,
+  "null_q95_pp": 4.019735808584919,
+  "n_ge_observed": 90,
+  "frac_ge_observed": 0.045,
+  "one_sided_p_perm": 0.045,
+  "two_sided_frac_abs_ge": 0.104,
+  "passes_5pct": true
+}
