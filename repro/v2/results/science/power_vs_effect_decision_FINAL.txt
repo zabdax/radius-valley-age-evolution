@@ -1,0 +1,63 @@
+DECISION BRANCH (COMPLETE RUN, 150 reps/arm, fullcurve_ checkpoints)
+FAIL at Gaidos-sized effect: rotation-based cool-host signals cannot be reproduced with kinematic proxies in this archive
+
+Real cool-host beta = +0.045763 (rounded +0.0458); sits at the 54.7 percentile of the null
+(needs <=5% to pass distinguishability), so the gate FAILS for every injected effect by construction.
+
+Gaidos raw (-0.8824/SD true age): {
+  "point": "Gaidos_raw_true_age",
+  "beta_inj": -0.8824,
+  "reps_null": 150,
+  "reps_signal": 150,
+  "null_median": -0.018426208258866913,
+  "null_sd": 0.567219254635187,
+  "null_q025": -1.0730521647167732,
+  "null_q975": 1.0049315068602178,
+  "signal_median": -0.9118253740403037,
+  "signal_sd": 0.618268192591696,
+  "arm_separation_nullSD": -1.5750508440621183,
+  "real_beta": 0.04576344675022682,
+  "real_pct_in_null": 0.5466666666666666,
+  "real_pct_in_signal": 0.98,
+  "detect_rate": 0.42,
+  "detect_rate_lo_wilson": 0.34397871737684205,
+  "detect_rate_hi_wilson": 0.5000166648864729,
+  "detect_rate_two_sided": 0.42,
+  "detect_correct_sign_rate": 0.98,
+  "verdict": "FAIL",
+  "signal_arm_is_null": false
+}
+Gaidos rho=0.25 (-0.2206/SD v_tan): {
+  "point": "Gaidos_rho025_vtan",
+  "beta_inj": -0.2206,
+  "reps_null": 150,
+  "reps_signal": 150,
+  "null_median": -0.018426208258866913,
+  "null_sd": 0.567219254635187,
+  "null_q025": -1.0730521647167732,
+  "null_q975": 1.0049315068602178,
+  "signal_median": -0.2333364221151128,
+  "signal_sd": 0.699375609094116,
+  "arm_separation_nullSD": -0.37888384800066005,
+  "real_beta": 0.04576344675022682,
+  "real_pct_in_null": 0.5466666666666666,
+  "real_pct_in_signal": 0.6733333333333333,
+  "detect_rate": 0.10666666666666667,
+  "detect_rate_lo_wilson": 0.06672979536363804,
+  "detect_rate_hi_wilson": 0.16624750076432737,
+  "detect_rate_two_sided": 0.14,
+  "detect_correct_sign_rate": 0.64,
+  "verdict": "FAIL",
+  "signal_arm_is_null": false
+}
+Archived reproduction: {
+  "source": "archived stratified_gate/M/strat_gate_M_vmag_*_r1000_raw.csv",
+  "beta_inj": -0.14,
+  "null_median": -0.05126870662226285,
+  "null_sd": 0.6720019645850073,
+  "signal_median": -0.1811530866122751,
+  "arm_separation_nullSD": -0.19327976231471578,
+  "n_null": 1000,
+  "n_signal": 1000,
+  "verdict": "CHECK"
+}
