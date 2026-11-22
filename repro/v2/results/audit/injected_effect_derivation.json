@@ -1,0 +1,18 @@
+{
+  "quantity": "Kamulali 136/687 injected-effect derivation",
+  "split": "136/687",
+  "percentile_exact": 19.7962,
+  "z_of_split": -0.848923,
+  "normal_pdf_at_z": 0.278239,
+  "group_mean_separation_SD": 1.752434,
+  "logit_gap": -0.227,
+  "beta_inj_per_SD": -0.129534,
+  "pct_smaller_than_0.14": 7.476,
+  "stale_assumption_percentile": 17.0,
+  "stale_separation_SD": 1.793434,
+  "stale_beta": -0.126573,
+  "stale_pct_smaller": 9.591,
+  "method": "normal upper/lower tail group means phi(z)/p + phi(z)/(1-p) = phi(z)/(p(1-p))",
+  "verified_by": "scipy.stats.norm, C:\\Users\\MIT\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+  "verdicts_impact": "none; gate signal arm unchanged at -0.14 primary, -0.130 carried as documented sensitivity; appendix B beta-injection already tests effect uncertainty"
+}

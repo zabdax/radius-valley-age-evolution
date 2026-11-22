@@ -1,0 +1,97 @@
+{
+  "formulas": {
+    "SE_SN_ratio": "f_SN = 1/(1 + SE/SN); logit gap = logit(f_old) - logit(f_young)",
+    "SN_SE_ratio": "f_SN = (SN/SE)/(1 + SN/SE); logit gap as above",
+    "beta_per_SD": "beta = delta_logit / group_mean_separation; separation = 1.60 SD for a median split",
+    "proxy_attenuation": "beta_in_vtan = rho * beta_true; cool-host rho ~= 0.25 (not significant, p~0.43)"
+  },
+  "median_split_separation_SD": 1.6,
+  "sources": {
+    "Kamulali+26": {
+      "f_young": 0.6622516556291391,
+      "f_old": 0.6097560975609756,
+      "logit_young": 0.6733445532637657,
+      "logit_old": 0.44628710262841953,
+      "delta_logit": -0.22705745063534621,
+      "beta_per_sd": -0.14191090664709138,
+      "published_ratio": "SE/SN 0.51 (<3 Gyr) -> 0.64 (>3 Gyr)",
+      "source_note": "research/notes/astronomy-astrophysics-manuscript-no-aanda.md",
+      "split": "3 Gyr (not a median split; 1.60 divisor is an approximation)",
+      "role": "PRIMARY injected effect used in production (rounded to -0.14/SD)"
+    },
+    "Berger+20": {
+      "f_young": 0.6211180124223603,
+      "f_old": 0.5,
+      "logit_young": 0.4942963218147804,
+      "logit_old": 0.0,
+      "delta_logit": -0.4942963218147804,
+      "beta_per_sd": -0.3089352011342377,
+      "published_ratio": "SE/SN 0.61 (<1 Gyr) -> 1.00 (>1 Gyr)",
+      "source_note": "research/notes/arxiv190505900v1-astro-phep-15-may-2019.md; ratio quoted in research/notes/draft-version-february-23-2021.md line 25-26",
+      "split": "1 Gyr (not a median split; 1.60 divisor approximate)",
+      "role": "FGK literature anchor, larger than primary"
+    },
+    "Sandoval+21": {
+      "base_3Gyr": {
+        "f_young": 0.5494505494505495,
+        "f_old": 0.5076142131979695,
+        "logit_young": 0.19845093872383843,
+        "logit_old": 0.03045920748470844,
+        "delta_logit": -0.16799173123913,
+        "beta_per_sd": -0.10499483202445624,
+        "published_ratio": "SE/SN 0.82 (<3 Gyr) +/- 0.10 -> 0.97 (>3 Gyr) +/- 0.04",
+        "role": "FGK anchor (exact ratio found; no fallback needed)"
+      },
+      "base_1Gyr": {
+        "f_young": 0.5681818181818182,
+        "f_old": 0.5154639175257733,
+        "logit_young": 0.2744368457017605,
+        "logit_old": 0.06187540371808766,
+        "delta_logit": -0.21256144198367286,
+        "beta_per_sd": -0.13285090123979554,
+        "published_ratio": "SE/SN 0.76 (<1 Gyr) +/- 0.08 -> 0.94 (>1 Gyr) +/- 0.07"
+      },
+      "hot_3Gyr": {
+        "f_young": 0.5617977528089888,
+        "f_old": 0.5,
+        "logit_young": 0.24846135929849972,
+        "logit_old": 0.0,
+        "delta_logit": -0.24846135929849972,
+        "beta_per_sd": -0.15528834956156232,
+        "published_ratio": "SE/SN 0.78 (<3 Gyr) +/- 0.17 -> 1.00 (>3 Gyr) +/- 0.04, Teff>5500 K"
+      },
+      "source_note": "research/notes/draft-version-february-23-2021.md lines 398-414",
+      "note": "trend ~2 sigma over 1-10 Gyr; ratio available, so Kamulali fallback not required"
+    },
+    "Gaidos+24": {
+      "f_young": 0.7041420118343196,
+      "f_old": 0.36708860759493667,
+      "logit_young": 0.8671004876833834,
+      "logit_old": -0.5447271754416723,
+      "delta_logit": -1.4118276631250557,
+      "beta_per_sd": -0.8823922894531597,
+      "published_ratio": "SN/SE 2.38 (mean age 2.6 Gyr) -> 0.58 (mean age 5.4 Gyr)",
+      "source_note": "research/notes/mnras-000-114.md lines 805-816 (median gyro age split 3.86 Gyr, KS p=0.08)",
+      "split": "3.86 Gyr median split -- exact median split, 1.60 divisor exact",
+      "role": "Gaidos-sized cool-host signal",
+      "beta_true_age_per_SD": -0.8823922894531597,
+      "caveat": "rho=0.25 cool-host proxy correlation is not significant (p~0.43); raw -0.88 is an optimistic upper bracket",
+      "beta_vtan_rho0_25": -0.22059807236328993,
+      "beta_vtan_rho0_50": -0.44119614472657986
+    }
+  },
+  "bracket_points": {
+    "null": 0.0,
+    "half_primary": -0.07,
+    "Kamulali_primary": -0.1419,
+    "Gaidos_rho025_vtan": -0.2206,
+    "Berger_FGK": -0.3089,
+    "Sandoval_FGK_base3Gyr": -0.105,
+    "Gaidos_rho050_vtan": -0.4412,
+    "strong_2x": -0.6,
+    "Gaidos_raw_true_age": -0.8824,
+    "upper": -1.2
+  },
+  "rho_cool_host": 0.25,
+  "cross_check": "manuscripts/q1-paper/v2-2026-11/results/science/effect_size_derivation_orchestrator_check.md"
+}
