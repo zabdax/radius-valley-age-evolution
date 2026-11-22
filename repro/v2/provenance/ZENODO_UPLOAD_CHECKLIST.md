@@ -1,4 +1,4 @@
-﻿# Zenodo upload checklist for Q1 paper v2 (2026-11-21)
+# Zenodo upload checklist for Q1 paper v2 (2026-11-21)
 
 Preparation only. No DOI has been minted and no Zenodo record has been created.
 
@@ -124,7 +124,8 @@ print("MISMATCHES:", bad if bad else "none")
 PY
 ``
 
-Frozen data checksums (independent of the upload set), from adius-valley-age-evolution/data/:
+Frozen data checksums (independent of the upload set), from 
+adius-valley-age-evolution/data/:
 
 ``bash
 cd radius-valley-age-evolution/data && sha256sum -c checksums.sha256
@@ -132,8 +133,10 @@ cd radius-valley-age-evolution/data && sha256sum -c checksums.sha256
 
 ## Frozen data checksum verification (re-run for this manifest)
 
-adius-valley-age-evolution/data/checksums.sha256: **31/31 verified, 0 mismatches, 0 missing files** (SHA-256, re-checked 2026-11-21 before preparation of this manifest). The frozen project was read-only throughout.
+
+adius-valley-age-evolution/data/checksums.sha256: **31/31 verified, 0 mismatches, 0 missing files** (SHA-256, re-checked 2026-11-21 before preparation of this manifest). The frozen project was read-only throughout.
 
 ## Scope
 
-The three ZENODO_* files in esults/audit/ are release metadata created by this curation pass and are intentionally not part of the inventoried file list or the upload set.
+The three ZENODO_* files in 
+esults/audit/ are release metadata created by this curation pass and are intentionally not part of the inventoried file list or the upload set.

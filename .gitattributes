@@ -2,6 +2,10 @@
 # on Linux CI and Windows checkouts alike, so Git must never convert them.
 data/* -text
 
+# The v2 bundle checksums are computed on LF-normalized text; force the
+# same bytes on every platform.
+repro/v2/** text=auto eol=lf
+
 # Explicit binary (no conversion, no diff text)
 *.png binary
 *.gif binary
