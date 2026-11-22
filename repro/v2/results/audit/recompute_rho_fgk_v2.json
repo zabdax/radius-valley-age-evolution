@@ -1,0 +1,58 @@
+{
+  "method": "scipy.stats.spearmanr(vtan, age_gyr) on inner join of host_ages_<TAG>.csv and hosts_kinematics_<TAG>.csv; selection gyro_ok=True & finite age_gyr & finite vtan",
+  "source_files": {
+    "FGK": [
+      "data/host_ages_FGK.csv",
+      "data/hosts_kinematics_FGK.csv"
+    ],
+    "M": [
+      "data/host_ages_M.csv",
+      "data/hosts_kinematics_M.csv"
+    ]
+  },
+  "FGK": {
+    "n_hosts_gyro_ok": 79,
+    "n": 79,
+    "rho": 0.49779358283313035,
+    "p_exact_scipy": 3.0461137475077886e-06,
+    "censored_among_gyro_ok": 14,
+    "frac_censored_among_gyro_ok": 0.17721518987341772,
+    "n_kinematics_hosts": 2123,
+    "n_age_table_rows": 88
+  },
+  "cool_M": {
+    "n_hosts_gyro_ok": 12,
+    "n": 12,
+    "rho": 0.2517482517482518,
+    "p_exact_scipy": 0.42991878503288405,
+    "censored_among_gyro_ok": 4,
+    "frac_censored_among_gyro_ok": 0.3333333333333333,
+    "n_kinematics_hosts": 301,
+    "n_age_table_rows": 66
+  },
+  "manuscript_claims": {
+    "FGK": {
+      "rho": 0.5,
+      "n": 79,
+      "p": 3e-06
+    },
+    "cool_M": {
+      "rho": 0.25,
+      "n": 12,
+      "p": 0.43
+    },
+    "host_count": "12 of 303 M-dwarf hosts (planet_sample_M.csv unique hosts = 303)",
+    "censoring": "4 of 12 gyro-ok M hosts censored = 33%"
+  },
+  "support": {
+    "FGK_rho_supported": true,
+    "FGK_n_supported": true,
+    "FGK_p_supported": true,
+    "M_rho_supported": true,
+    "M_n_supported": true,
+    "M_p_supported": true,
+    "M_censored_33pct_supported": true
+  },
+  "python": "C:/Users/MIT/AppData/Local/Programs/Python/Python312/python.exe",
+  "note": "Archived results/proxy_validation_fgk_recomputed.json reports rho=0.497794, n=79 and p=4.7e-7 using a NORMAL approximation; the exact scipy p-value is 3.05e-6, consistent with the manuscript's p=3e-6."
+}

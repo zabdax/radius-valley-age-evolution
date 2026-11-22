@@ -1,0 +1,14 @@
+{
+  "quantity": "Spearman rho between v_tan and gyrochronological age (FGK control)",
+  "source_files": [
+    "data/host_ages_FGK.csv",
+    "data/hosts_kinematics_FGK.csv"
+  ],
+  "selection": "hosts with gyro_ok=True, finite age_gyr and finite v_tan",
+  "n_hosts": 79,
+  "rho": 0.497794,
+  "t_statistic": 5.0365,
+  "p_two_sided_normal_approx": 4.7e-07,
+  "p_note": "normal approximation to the t distribution; adequate at n~79",
+  "recomputed_by": "research/runs/radius-valley-q1-004a31/temp/recompute_rho_fgk.py"
+}
